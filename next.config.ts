@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
+import million from "million/compiler";
+import createNextIntlPlugin from "next-intl/plugin";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const withNextIntl = createNextIntlPlugin();
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
 };
 
-export default nextConfig;
+const millionConfig = {
+  auto: true, // if you're using RSC: auto: { rsc: true },
+};
+
+export default withNextIntl(
+  million.next(
+    nextConfig as unknown as Parameters<typeof million.next>[0],
+    millionConfig,
+  ),
+);
