@@ -36,9 +36,9 @@
     "shareText": "☕ {amount} {currency} = {count} {type} ! Essayez sur CoffeeCalc",
     "copied": "Copié ! ☕",
     "ad728": "📢 Bannière Google AdSense (728×90)",
-    "ad728Hint": "Remplacez par votre code : <ins class=\"adsbygoogle\"...>",
+    "ad728Hint": "Remplacez par votre extrait AdSense (bloc ins.adsbygoogle depuis la console éditeur).",
     "ad300": "📢 Bannière Google AdSense (300×250)",
-    "ad300Hint": "Remplacez par votre code : <ins class=\"adsbygoogle\"...>",
+    "ad300Hint": "Remplacez par votre extrait AdSense (bloc ins.adsbygoogle depuis la console éditeur).",
     "brandLine": "☕ CoffeeCalc — {footer}"
   }
 }

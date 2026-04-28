@@ -36,9 +36,9 @@
     "shareText": "☕ {amount} {currency} = {count} {type}! CoffeeCalc で確認",
     "copied": "コピーしました！☕",
     "ad728": "📢 Google AdSense バナー (728x90)",
-    "ad728Hint": "広告コードに差し替え: <ins class=\"adsbygoogle\"...>",
+    "ad728Hint": "AdSense のコードに差し替え（発行者向けコンソールの ins.adsbygoogle ブロック）。",
     "ad300": "📢 Google AdSense バナー (300x25)",
-    "ad300Hint": "広告コードに差し替え: <ins class=\"adsbygoogle\"...>",
+    "ad300Hint": "AdSense のコードに差し替え（発行者向けコンソールの ins.adsbygoogle ブロック）。",
     "brandLine": "☕ CoffeeCalc — {footer}"
   }
 }
