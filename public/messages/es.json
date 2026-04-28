@@ -2,5 +2,43 @@
   "global": {
     "loading": "Cargando...",
     "backButton": "Volver"
+  },
+  "CoffeeCalc": {
+    "metadataTitle": "☕ CoffeeCalc — ¿Cuántos cafés es eso?",
+    "metadataDescription": "Convierte cualquier precio en tazas de café. Calculadora multimoneda.",
+    "title": "¿Cuántos <accent>Cafés</accent> Es Eso?",
+    "subtitle": "Convierte cualquier precio en tazas de café. Porque todo tiene más sentido medido en cafeína.",
+    "labelAmount": "Tu monto",
+    "labelCoffee": "Elige tu café",
+    "resultLabel": "{type}",
+    "resultDetail": "a ~{price} cada uno en {currency}",
+    "shareBtn": "Compartir",
+    "funFactLabel": "☕ Dato curioso",
+    "funFacts": [
+      "Finlandia consume más café per cápita — ¡unos 12 kg por persona al año!",
+      "El café es el segundo producto más comercializado en el mundo, después del petróleo.",
+      "Un estadounidense promedio gasta unos $1,100 al año en café.",
+      "Colombia es el tercer productor de café del mundo y su café es considerado de los mejores.",
+      "Brasil produce alrededor de un tercio del café mundial."
+    ],
+    "seoTitle": "¿Por qué medir en café?",
+    "seoText": "Gastamos en café todos los días, lo que lo convierte en la unidad perfecta para entender el costo real de las cosas. Ya sea que estés presupuestando, comparando precios o simplemente curioso — CoffeeCalc te ayuda a ver cualquier precio a través de tu bebida favorita. El soporte multimoneda te permite comparar costos del café en todo el mundo.",
+    "footer": "Hecho con amor y cafeína",
+    "disclaimer": "Los precios son promedios aproximados. Los precios reales varían según la ubicación.",
+    "coffeeNames": {
+      "espresso": "Espresso",
+      "cappuccino": "Cappuccino",
+      "latte": "Latte",
+      "americano": "Americano",
+      "mocha": "Mocha",
+      "coldBrew": "Cold Brew"
+    },
+    "shareText": "☕ {amount} {currency} = ¡{count} {type}! Míralo en CoffeeCalc",
+    "copied": "¡Copiado! ☕",
+    "ad728": "📢 Banner Google AdSense (728x90)",
+    "ad728Hint": "Sustituye por tu código: <ins class=\"adsbygoogle\"...>",
+    "ad300": "📢 Banner Google AdSense (300x250)",
+    "ad300Hint": "Sustituye por tu código: <ins class=\"adsbygoogle\"...>",
+    "brandLine": "☕ CoffeeCalc — {footer}"
   }
 }

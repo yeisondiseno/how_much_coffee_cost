@@ -1,0 +1,561 @@
+.coffee-calc-page {
+  --coffee-espresso: #1b0e07;
+  --coffee-crema: #d4a76a;
+  --coffee-latte: #f5e6d3;
+  --coffee-foam: #fff8f0;
+  --coffee-steam: #e8d5c4;
+  --coffee-accent: #c05621;
+  --coffee-accent-light: #ed8936;
+  --coffee-milk: #fefcf9;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-coffee-dm), system-ui, sans-serif;
+  background: var(--coffee-foam);
+  color: var(--coffee-espresso);
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.coffee-calc-page *,
+.coffee-calc-page *::before,
+.coffee-calc-page *::after {
+  box-sizing: border-box;
+}
+
+.coffee-calc-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 999;
+}
+
+@keyframes coffee-calc-steam {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-40px) scaleX(1.4);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-80px) scaleX(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes coffee-calc-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes coffee-calc-pour-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes coffee-calc-shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-3deg);
+  }
+  40% {
+    transform: rotate(3deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes coffee-calc-count-up {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.coffee-calc-top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 12px;
+}
+
+.coffee-calc-lang-btn {
+  background: transparent;
+  border: 1.5px solid var(--coffee-crema);
+  color: var(--coffee-espresso);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-coffee-dm), system-ui, sans-serif;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.coffee-calc-lang-btn:hover,
+.coffee-calc-lang-btn.coffee-calc-lang-btn-active {
+  background: var(--coffee-espresso);
+  color: var(--coffee-foam);
+  border-color: var(--coffee-espresso);
+}
+
+.coffee-calc-hero {
+  text-align: center;
+  padding: 40px 20px 30px;
+  animation: coffee-calc-fade-up 0.8s ease;
+}
+
+.coffee-calc-hero-icon {
+  font-size: 64px;
+  display: inline-block;
+  animation: coffee-calc-shake 2s ease-in-out infinite;
+  filter: drop-shadow(0 4px 12px rgba(27, 14, 7, 0.15));
+}
+
+.coffee-calc-hero-title {
+  font-family: var(--font-coffee-playfair), ui-serif, Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  color: var(--coffee-espresso);
+  margin: 16px 0 8px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.coffee-calc-title-accent {
+  color: var(--coffee-accent);
+  position: relative;
+}
+
+.coffee-calc-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: var(--coffee-crema);
+  font-weight: 500;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.coffee-calc-card {
+  max-width: 520px;
+  margin: 30px auto;
+  background: var(--coffee-milk);
+  border-radius: 24px;
+  padding: 40px 36px;
+  box-shadow:
+    0 1px 3px rgba(27, 14, 7, 0.06),
+    0 12px 40px rgba(27, 14, 7, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  animation: coffee-calc-pour-in 0.8s ease 0.2s both;
+  position: relative;
+  overflow: hidden;
+}
+
+.coffee-calc-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--coffee-crema),
+    var(--coffee-accent),
+    var(--coffee-crema)
+  );
+}
+
+.coffee-calc-input-group {
+  margin-bottom: 24px;
+}
+
+.coffee-calc-input-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--coffee-crema);
+  margin-bottom: 10px;
+}
+
+.coffee-calc-amount-row {
+  display: flex;
+  gap: 12px;
+}
+
+.coffee-calc-amount-wrap {
+  flex: 1;
+  position: relative;
+}
+
+.coffee-calc-currency-symbol {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--coffee-crema);
+  pointer-events: none;
+  transition: color 0.3s;
+}
+
+.coffee-calc-amount-wrap:focus-within .coffee-calc-currency-symbol {
+  color: var(--coffee-accent);
+}
+
+.coffee-calc-amount-input {
+  width: 100%;
+  padding: 16px 16px 16px 40px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--font-coffee-dm), system-ui, sans-serif;
+  border: 2px solid var(--coffee-steam);
+  border-radius: 14px;
+  background: var(--coffee-foam);
+  color: var(--coffee-espresso);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.coffee-calc-amount-input:focus {
+  border-color: var(--coffee-accent);
+  box-shadow: 0 0 0 4px rgba(192, 86, 33, 0.1);
+}
+
+.coffee-calc-currency-select {
+  width: 110px;
+  padding: 16px 12px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-coffee-dm), system-ui, sans-serif;
+  border: 2px solid var(--coffee-steam);
+  border-radius: 14px;
+  background: var(--coffee-foam);
+  color: var(--coffee-espresso);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23D4A76A' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+.coffee-calc-currency-select:focus {
+  border-color: var(--coffee-accent);
+}
+
+.coffee-calc-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.coffee-calc-type {
+  padding: 14px 8px;
+  border: 2px solid var(--coffee-steam);
+  border-radius: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--coffee-foam);
+  border-style: solid;
+}
+
+.coffee-calc-type:hover {
+  border-color: var(--coffee-crema);
+  transform: translateY(-2px);
+}
+
+.coffee-calc-type.coffee-calc-type-active {
+  border-color: var(--coffee-accent);
+  background: linear-gradient(
+    135deg,
+    rgba(192, 86, 33, 0.06),
+    rgba(212, 167, 106, 0.08)
+  );
+  box-shadow: 0 2px 8px rgba(192, 86, 33, 0.12);
+}
+
+.coffee-calc-type-emoji {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.coffee-calc-type__cont {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: anchor-center;
+}
+
+.coffee-calc-type-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--coffee-espresso);
+  line-height: 1.2;
+}
+
+.coffee-calc-type-price {
+  font-size: 10px;
+  color: var(--coffee-crema);
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+.coffee-calc-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.coffee-calc-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--coffee-steam),
+    transparent
+  );
+}
+
+.coffee-calc-divider-icon {
+  font-size: 20px;
+  animation: coffee-calc-shake 3s ease-in-out infinite;
+}
+
+.coffee-calc-result {
+  text-align: center;
+  padding: 20px 0 10px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coffee-calc-result-number {
+  font-family: var(--font-coffee-playfair), ui-serif, Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 10vw, 5rem);
+  color: var(--coffee-accent);
+  line-height: 1;
+  animation: coffee-calc-count-up 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  text-shadow: 0 2px 10px rgba(192, 86, 33, 0.15);
+}
+
+.coffee-calc-result-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--coffee-espresso);
+  margin-top: 8px;
+}
+
+.coffee-calc-result-detail {
+  font-size: 13px;
+  color: var(--coffee-crema);
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.coffee-calc-cups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 16px;
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.coffee-calc-mini-cup {
+  font-size: 16px;
+  opacity: 0;
+  animation: coffee-calc-count-up 0.3s ease forwards;
+}
+
+.coffee-calc-share {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 12px 28px;
+  background: var(--coffee-espresso);
+  color: var(--coffee-foam);
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--font-coffee-dm), system-ui, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(27, 14, 7, 0.2);
+}
+
+.coffee-calc-share:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(27, 14, 7, 0.3);
+  background: var(--coffee-accent);
+}
+
+.coffee-calc-share:active {
+  transform: scale(0.97);
+}
+
+.coffee-calc-ad {
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  animation: coffee-calc-fade-up 1s ease 0.6s both;
+}
+
+.coffee-calc-ad-box {
+  background: linear-gradient(135deg, var(--coffee-steam), var(--coffee-latte));
+  border: 2px dashed var(--coffee-crema);
+  border-radius: 16px;
+  padding: 30px 20px;
+  color: var(--coffee-crema);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.coffee-calc-ad-box span {
+  display: block;
+  font-size: 11px;
+  margin-top: 4px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  opacity: 0.7;
+}
+
+.coffee-calc-fun-fact {
+  max-width: 520px;
+  margin: 0 auto 30px;
+  padding: 20px 28px;
+  background: var(--coffee-milk);
+  border-radius: 16px;
+  border-left: 4px solid var(--coffee-accent);
+  font-size: 14px;
+  color: var(--coffee-espresso);
+  line-height: 1.6;
+  animation: coffee-calc-fade-up 1s ease 0.8s both;
+  box-shadow: 0 2px 10px rgba(27, 14, 7, 0.04);
+}
+
+.coffee-calc-fun-fact-label {
+  font-weight: 700;
+  color: var(--coffee-accent);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.coffee-calc-footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--coffee-crema);
+  font-size: 13px;
+  animation: coffee-calc-fade-up 1s ease 1s both;
+}
+
+.coffee-calc-footer a {
+  color: var(--coffee-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.coffee-calc-seo {
+  max-width: 520px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  animation: coffee-calc-fade-up 1s ease 1s both;
+}
+
+.coffee-calc-seo h2 {
+  font-family: var(--font-coffee-playfair), ui-serif, Georgia, serif;
+  font-size: 1.3rem;
+  color: var(--coffee-espresso);
+  margin-bottom: 10px;
+}
+
+.coffee-calc-seo p {
+  font-size: 14px;
+  color: #8b7355;
+  line-height: 1.7;
+}
+
+@media (max-width: 560px) {
+  .coffee-calc-card {
+    margin: 20px 16px;
+    padding: 28px 20px;
+  }
+
+  .coffee-calc-types {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .coffee-calc-top-bar {
+    padding: 12px 16px;
+  }
+
+  .coffee-calc-ad,
+  .coffee-calc-fun-fact,
+  .coffee-calc-seo {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
