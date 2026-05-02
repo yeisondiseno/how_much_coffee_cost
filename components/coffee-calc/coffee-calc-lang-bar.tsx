@@ -3,31 +3,35 @@
 // Libraries
 import { useLocale } from "next-intl";
 // Components (local)
-import { Link, usePathname } from "@/i18n/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
 // Constants
 import { routing } from "@/i18n/routing";
-// Utils
-import { cn } from "@/lib/utils";
 
-export function CoffeeCalcLangBar() {
+export const CoffeeCalcLangBar = () => {
   const locale = useLocale();
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    router.push(pathname, { locale: e.target.value });
+  };
 
   return (
     <div className="coffee-calc-top-bar">
-      {routing.locales.map((loc) => (
-        <Link
-          key={loc}
-          href={pathname}
-          locale={loc}
-          className={cn(
-            "coffee-calc-lang-btn",
-            locale === loc && "coffee-calc-lang-btn-active",
-          )}
+      <div className="coffee-calc-lang-dropdown">
+        <select
+          className="coffee-calc-lang-select"
+          value={locale}
+          onChange={handleChange}
+          aria-label="Select language"
         >
-          {loc.toUpperCase()}
-        </Link>
-      ))}
+          {routing.locales.map((loc) => (
+            <option key={loc} value={loc}>
+              {loc.toUpperCase()}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
-}
+};

@@ -38,6 +38,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       template: "%s · CoffeeCalc",
     },
     description: t("metadataDescription"),
+    verification: {
+      google: "QITtAvbig7mPV9WpAzkPTSM8xsaa5YjXWOYZV-tMnpU",
+    },
   };
 }
 

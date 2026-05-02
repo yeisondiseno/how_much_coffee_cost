@@ -4,6 +4,8 @@
 import { useCallback, useMemo, useState } from "react";
 // Libraries
 import { useTranslations } from "next-intl";
+// Components
+import { Input } from "@/components/ui/input";
 // Utils (local)
 import { formatAmountForLocale } from "@/components/coffee-calc/coffee-calc.utils";
 // Utils
@@ -112,7 +114,7 @@ export function CoffeeCalcConverterCard() {
             <span className="coffee-calc-currency-symbol" aria-hidden>
               {CURRENCY_SYMBOLS[currency]}
             </span>
-            <input
+            <Input
               id="coffee-amount"
               type="number"
               className="coffee-calc-amount-input"
