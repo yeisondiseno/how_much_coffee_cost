@@ -531,6 +531,16 @@
   font-weight: 600;
 }
 
+.coffee-calc-footer-langs {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  opacity: 0.5;
+}
+
 .coffee-calc-seo {
   max-width: 520px;
   margin: 0 auto 40px;

@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { routing } from "@/i18n/routing";
+import { BASE_URL } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import "../globals.css";
 
@@ -41,6 +42,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t("metadataDescription"),
     verification: {
       google: "QITtAvbig7mPV9WpAzkPTSM8xsaa5YjXWOYZV-tMnpU",
+    },
+    alternates: {
+      canonical: `${BASE_URL}/${locale}`,
+      languages: {
+        "x-default": `${BASE_URL}/en`,
+        ...Object.fromEntries(
+          routing.locales.map((loc) => [loc, `${BASE_URL}/${loc}`]),
+        ),
+      },
+    },
+    openGraph: {
+      title: t("metadataTitle"),
+      description: t("metadataDescription"),
+      url: `${BASE_URL}/${locale}`,
+      siteName: "CoffeeCalc",
+      locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("metadataTitle"),
+      description: t("metadataDescription"),
     },
   };
 }

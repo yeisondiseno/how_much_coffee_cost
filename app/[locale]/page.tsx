@@ -1,24 +1,40 @@
-import { use } from "react";
-import { CoffeeCalcPage } from "@/components/coffee-calc/coffee-calc-page";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { CoffeeCalcPage } from "@/components/coffee-calc/coffee-calc-page";
+import { BASE_URL } from "@/lib/config";
+import Script from "next/script";
 
 type Props = Readonly<{
   params: Promise<{ locale: string }>;
 }>;
 
-export async function generateMetadata({ params }: Props) {
+export default async function Home({ params }: Props) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "CoffeeCalc" });
-
-  return {
-    title: t("metadataTitle"),
-    description: t("metadataDescription"),
-  };
-}
-
-export default function Home({ params }: Props) {
-  const { locale } = use(params);
   setRequestLocale(locale);
 
-  return <CoffeeCalcPage />;
+  const t = await getTranslations({ locale, namespace: "CoffeeCalc" });
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "CoffeeCalc",
+    description: t("metadataDescription"),
+    url: `${BASE_URL}/${locale}`,
+    applicationCategory: "UtilityApplication",
+    operatingSystem: "Web",
+    inLanguage: locale,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  };
+
+  return (
+    <>
+      <Script
+        id="application/ld+json"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replaceAll("<", String.raw`\u003c`),
+        }}
+      />
+      <CoffeeCalcPage />
+    </>
+  );
 }

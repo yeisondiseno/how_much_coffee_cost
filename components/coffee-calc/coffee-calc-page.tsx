@@ -1,5 +1,3 @@
-"use client";
-
 // Components (local)
 import { CoffeeCalcAd } from "@/components/coffee-calc/coffee-calc-ad";
 import { CoffeeCalcConverterCard } from "@/components/coffee-calc/coffee-calc-converter-card";
