@@ -19,7 +19,7 @@ import "./coffee-calc.css";
 
 export function CoffeeCalcPage() {
   return (
-    <div
+    <main
       className={cn(
         "coffee-calc-page",
         coffeeCalcPlayfair.variable,
@@ -34,6 +34,6 @@ export function CoffeeCalcPage() {
       <CoffeeCalcSeoBlock />
       <CoffeeCalcAd variant="300" />
       <CoffeeCalcFooter />
-    </div>
+    </main>
   );
 }

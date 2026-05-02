@@ -117,27 +117,41 @@
   gap: 12px;
 }
 
-.coffee-calc-lang-btn {
-  background: transparent;
-  border: 1.5px solid var(--coffee-crema);
-  color: var(--coffee-espresso);
-  padding: 6px 14px;
+.coffee-calc-lang-dropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+.coffee-calc-lang-dropdown::after {
+  content: "▾";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--coffee-foam);
+  font-size: 11px;
+  line-height: 1;
+}
+
+.coffee-calc-lang-select {
+  appearance: none;
+  background: var(--coffee-espresso);
+  border: 1.5px solid var(--coffee-espresso);
+  color: var(--coffee-foam);
+  padding: 6px 30px 6px 14px;
   border-radius: 20px;
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: var(--font-coffee-dm), system-ui, sans-serif;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
 }
 
-.coffee-calc-lang-btn:hover,
-.coffee-calc-lang-btn.coffee-calc-lang-btn-active {
-  background: var(--coffee-espresso);
-  color: var(--coffee-foam);
-  border-color: var(--coffee-espresso);
+.coffee-calc-lang-select:hover,
+.coffee-calc-lang-select:focus {
+  outline: none;
+  opacity: 0.88;
 }
 
 .coffee-calc-hero {
