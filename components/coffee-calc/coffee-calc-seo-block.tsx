@@ -1,10 +1,8 @@
-"use client";
-
 // Libraries
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export function CoffeeCalcSeoBlock() {
-  const t = useTranslations("CoffeeCalc");
+export const CoffeeCalcSeoBlock = async () => {
+  const t = await getTranslations("CoffeeCalc");
 
   return (
     <section className="coffee-calc-seo">
@@ -12,4 +10,4 @@ export function CoffeeCalcSeoBlock() {
       <p>{t("seoText")}</p>
     </section>
   );
-}
+};

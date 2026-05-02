@@ -5,7 +5,7 @@
   },
   "CoffeeCalc": {
     "metadataTitle": "☕ CoffeeCalc — Quantos cafés é isso?",
-    "metadataDescription": "Converta qualquer preço em xícaras de café. Calculadora multimoneda.",
+    "metadataDescription": "Converta qualquer preço em xícaras de café — espresso, latte, cappuccino e mais. Calculadora de múltiplas moedas com suporte a 14 moedas. Experimente grátis!",
     "title": "Quantos <accent>Cafés</accent> É Isso?",
     "subtitle": "Converta qualquer preço em xícaras de café. Porque tudo faz mais sentido medido em cafeína.",
     "labelAmount": "Seu valor",
@@ -35,10 +35,6 @@
     },
     "shareText": "☕ {amount} {currency} = {count} {type}! Veja no CoffeeCalc",
     "copied": "Copiado! ☕",
-    "ad728": "📢 Banner Google AdSense (728×90)",
-    "ad728Hint": "Substitua pelo snippet do AdSense (bloco ins.adsbygoogle no console do editor).",
-    "ad300": "📢 Banner Google AdSense (300×250)",
-    "ad300Hint": "Substitua pelo snippet do AdSense (bloco ins.adsbygoogle no console do editor).",
     "brandLine": "☕ CoffeeCalc — {footer}"
   }
 }
