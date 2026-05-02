@@ -27,10 +27,10 @@ export function CoffeeCalcPage() {
       <CoffeeCalcLangBar />
       <CoffeeCalcHero />
       <CoffeeCalcConverterCard />
-      <CoffeeCalcAd variant="728" />
+      <CoffeeCalcAd slot="4872820829" />
       <CoffeeCalcFunFact />
       <CoffeeCalcSeoBlock />
-      <CoffeeCalcAd variant="300" />
+      <CoffeeCalcAd slot="2403493591" />
       <CoffeeCalcFooter />
     </main>
   );

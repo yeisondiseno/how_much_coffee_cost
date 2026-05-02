@@ -34,6 +34,7 @@ export default async function Home({ params }: Props) {
           __html: JSON.stringify(jsonLd).replaceAll("<", String.raw`\u003c`),
         }}
       />
+
       <CoffeeCalcPage />
     </>
   );

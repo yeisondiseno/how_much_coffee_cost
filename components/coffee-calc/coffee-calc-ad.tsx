@@ -1,31 +1,43 @@
 "use client";
 
-// Libraries
-import { useTranslations } from "next-intl";
+import { useEffect } from "react";
+// Next
+import { usePathname } from "next/navigation";
 
 // Types (module-local)
-type AdVariant = "728" | "300";
-
-const AD_KEYS: Record<
-  AdVariant,
-  Readonly<{ title: "ad728" | "ad300"; hint: "ad728Hint" | "ad300Hint" }>
-> = {
-  "728": { title: "ad728", hint: "ad728Hint" },
-  "300": { title: "ad300", hint: "ad300Hint" },
+type CoffeeCalcAd = {
+  slot: string;
 };
 
-type Props = Readonly<{ variant: AdVariant }>;
+declare global {
+  var adsbygoogle: Record<string, unknown>[];
+}
 
-export function CoffeeCalcAd({ variant }: Props) {
-  const t = useTranslations("CoffeeCalc");
-  const keys = AD_KEYS[variant];
+export const CoffeeCalcAd = ({ slot }: CoffeeCalcAd) => {
+  // Hooks
+  const pathname = usePathname();
+
+  useEffect(() => {
+    try {
+      globalThis.adsbygoogle = globalThis.adsbygoogle || [];
+      globalThis.adsbygoogle.push({});
+    } catch (error) {
+      console.error("Error cargando el anuncio de AdSense:", error);
+    }
+  }, [pathname]);
 
   return (
     <div className="coffee-calc-ad">
       <div className="coffee-calc-ad-box">
-        {t(keys.title)}
-        <span>{t(keys.hint)}</span>
+        <ins
+          className="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-client="ca-pub-8195825937047934"
+          data-ad-slot={slot}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
       </div>
     </div>
   );
-}
+};

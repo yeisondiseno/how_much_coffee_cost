@@ -35,10 +35,6 @@
     },
     "shareText": "☕ {amount} {currency} = {count} {type}! Veja no CoffeeCalc",
     "copied": "Copiado! ☕",
-    "ad728": "📢 Banner Google AdSense (728×90)",
-    "ad728Hint": "Substitua pelo snippet do AdSense (bloco ins.adsbygoogle no console do editor).",
-    "ad300": "📢 Banner Google AdSense (300×250)",
-    "ad300Hint": "Substitua pelo snippet do AdSense (bloco ins.adsbygoogle no console do editor).",
     "brandLine": "☕ CoffeeCalc — {footer}"
   }
 }
