@@ -36,6 +36,7 @@ export const CoffeeCalcAd = ({ slot }: CoffeeCalcAd) => {
           data-ad-slot={slot}
           data-ad-format="auto"
           data-full-width-responsive="true"
+          suppressHydrationWarning
         ></ins>
       </div>
     </div>
