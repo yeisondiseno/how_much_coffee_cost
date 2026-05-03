@@ -2,6 +2,25 @@
 alwaysApply: true
 ---
 
+## Functions — prefer arrow functions
+
+Use arrow functions for **everything**: components, hooks, helpers, callbacks, and event handlers. Never use `function` declarations or `function` expressions.
+
+```ts
+// ✅
+export const MyComponent = () => { … }
+export const useMyHook = () => { … }
+const handleClick = () => { … }
+
+// ❌
+export default function MyComponent() { … }
+function handleClick() { … }
+```
+
+Exceptions: Next.js file-convention **default exports** that Next.js itself requires as `function` (e.g. `generateMetadata`, `generateStaticParams`) — use `export async function` only there.
+
+---
+
 ## React imports — named types and hooks
 
 Import from `react` by name (`ReactNode`, `useState`, `useMemo`, etc.). Do **not** use `React.ReactNode`, `React.useState`, etc. Only combine default + named imports when the default is genuinely required.
