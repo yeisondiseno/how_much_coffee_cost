@@ -42,16 +42,16 @@ Before proposing solutions, consult:
 - **`.cursor/rules/`**: dtos, services, data-fetching, translations, styles, code-patterns, page-creation, project-stack, commit-format
 - **`.cursor/skills/vercel-react-best-practices`**: React/Next.js performance (waterfalls, bundle, server/client, rerender, rendering)
 
-| If the task involves… | Rule / Skill |
-| -------------------- | ------------ |
-| DTOs, Zod, schemas | `.cursor/rules/dtos.md` |
-| Fetchers, actions, API | `.cursor/rules/services.mdc` |
-| SSR vs CSR, useQuery, infinite scroll | `.cursor/rules/data-fetching.md` |
-| UI text, next-intl | `.cursor/rules/translations.md` |
-| Styles, SCSS | `.cursor/rules/styles.md` |
-| Import order, component structure | `.cursor/rules/code-patterns.md` |
-| New pages/routes | `.cursor/rules/page-creation.md` |
-| React/Next.js performance | `.cursor/skills/vercel-react-best-practices` |
+| If the task involves…                 | Rule / Skill                                 |
+| ------------------------------------- | -------------------------------------------- |
+| DTOs, Zod, schemas                    | `.cursor/rules/dtos.md`                      |
+| Fetchers, actions, API                | `.cursor/rules/services.mdc`                 |
+| SSR vs CSR, useQuery, infinite scroll | `.cursor/rules/data-fetching.md`             |
+| UI text, next-intl                    | `.cursor/rules/translations.md`              |
+| Styles, SCSS                          | `.cursor/rules/styles.md`                    |
+| Import order, component structure     | `.cursor/rules/code-patterns.md`             |
+| New pages/routes                      | `.cursor/rules/page-creation.md`             |
+| React/Next.js performance             | `.cursor/skills/vercel-react-best-practices` |
 
 ## Analysis Methodology
 

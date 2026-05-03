@@ -3,6 +3,11 @@
     "loading": "Loading...",
     "backButton": "Back"
   },
+  "NotFound": {
+    "title": "Page Not Found",
+    "message": "Oops! This page seems to have gone cold — like a forgotten coffee.",
+    "cta": "Back to Home"
+  },
   "CoffeeCalc": {
     "metadataTitle": "☕ CoffeeCalc — How Many Coffees Is That?",
     "metadataDescription": "CoffeeCalc converts any price into cups of coffee — espresso, latte, cappuccino and more. Multi-currency support for 14 currencies worldwide. Try it free!",
