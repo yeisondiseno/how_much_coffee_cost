@@ -30,11 +30,11 @@ After imports, label file-level sections: `// Constants` (literals / mapping obj
 
 ## File length — split when a module grows
 
-| Length | Action |
-|--------|--------|
-| ≤ ~200 lines | No action needed. |
+| Length            | Action                                                                      |
+| ----------------- | --------------------------------------------------------------------------- |
+| ≤ ~200 lines      | No action needed.                                                           |
 | > ~200 and ≤ ~250 | Optional: extract subcomponents, local hooks, helpers, constants, or types. |
-| > ~250 | **Required to split** before merging. |
+| > ~250            | **Required to split** before merging.                                       |
 
 ---
 

@@ -3,6 +3,11 @@
     "loading": "Wird geladen...",
     "backButton": "Zurück"
   },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "message": "Ups! Diese Seite scheint abgekühlt zu sein, wie ein vergessener Kaffee.",
+    "cta": "Zurück zur Startseite"
+  },
   "CoffeeCalc": {
     "metadataTitle": "☕ CoffeeCalc — Wie viele Kaffees sind das?",
     "metadataDescription": "Rechne jeden Preis in Tassen Kaffee um. Multiwährungs-Rechner.",

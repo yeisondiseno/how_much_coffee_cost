@@ -3,6 +3,11 @@
     "loading": "Carregando...",
     "backButton": "Voltar"
   },
+  "NotFound": {
+    "title": "Página não encontrada",
+    "message": "Ops! Esta página parece ter esfriado, como um café esquecido.",
+    "cta": "Voltar ao início"
+  },
   "CoffeeCalc": {
     "metadataTitle": "☕ CoffeeCalc — Quantos cafés é isso?",
     "metadataDescription": "Converta qualquer preço em xícaras de café — espresso, latte, cappuccino e mais. Calculadora de múltiplas moedas com suporte a 14 moedas. Experimente grátis!",

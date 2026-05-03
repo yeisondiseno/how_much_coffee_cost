@@ -3,6 +3,11 @@
     "loading": "Chargement...",
     "backButton": "Retour"
   },
+  "NotFound": {
+    "title": "Page introuvable",
+    "message": "Oups ! Cette page semble s'être refroidie, comme un café oublié.",
+    "cta": "Retour à l'accueil"
+  },
   "CoffeeCalc": {
     "metadataTitle": "☕ CoffeeCalc — Combien de cafés ?",
     "metadataDescription": "Convertissez n'importe quel prix en tasses de café. Calculateur multi-devises.",

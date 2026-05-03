@@ -304,13 +304,14 @@
 }
 
 .coffee-calc-types {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 8px;
 }
 
 .coffee-calc-type {
+  flex: 1 1 0;
   padding: 14px 8px;
   border: 2px solid var(--coffee-steam);
   border-radius: 14px;
