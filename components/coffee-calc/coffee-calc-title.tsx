@@ -1,5 +1,3 @@
-"use client";
-
 // React
 import { type ReactNode } from "react";
 
