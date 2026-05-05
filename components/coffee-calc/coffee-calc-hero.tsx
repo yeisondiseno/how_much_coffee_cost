@@ -1,12 +1,10 @@
-"use client";
-
 // Libraries
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 // Components (local)
 import { renderTitleAccent } from "@/components/coffee-calc/coffee-calc-title";
 
-export function CoffeeCalcHero() {
-  const t = useTranslations("CoffeeCalc");
+export const CoffeeCalcHero = async () => {
+  const t = await getTranslations("CoffeeCalc");
 
   return (
     <section className="coffee-calc-hero">
@@ -21,4 +19,4 @@ export function CoffeeCalcHero() {
       <p className="coffee-calc-subtitle">{t("subtitle")}</p>
     </section>
   );
-}
+};

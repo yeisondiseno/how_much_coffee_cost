@@ -9,8 +9,8 @@
     "cta": "ホームに戻る"
   },
   "CoffeeCalc": {
-    "metadataTitle": "☕ CoffeeCalc — それはコーヒー何杯分？",
-    "metadataDescription": "あらゆる価格をコーヒーの杯数に換算。多通貨対応のコーヒー計算ツール。",
+    "metadataTitle": "コーヒー価格計算機 — それはコーヒー何杯分？",
+    "metadataDescription": "価格をコーヒーの杯数に換算 — エスプレッソ、ラテ、カプチーノなど。14通貨に対応した多通貨コーヒー計算ツール。無料でお試しください!",
     "title": "それは<accent>コーヒー</accent>何杯分？",
     "subtitle": "あらゆる価格をコーヒーの杯数に変換。カフェインで測ると、すべてが分かりやすくなります。",
     "labelAmount": "金額",
