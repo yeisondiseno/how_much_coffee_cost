@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${BASE_URL}/${locale}`,
       languages: {
-        "x-default": `${BASE_URL}/en`,
+        "x-default": BASE_URL,
         ...Object.fromEntries(
           routing.locales.map((loc) => [loc, `${BASE_URL}/${loc}`]),
         ),
@@ -58,11 +58,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "CoffeeCalc",
       locale,
       type: "website",
+      images: [
+        {
+          url: `${BASE_URL}/${locale}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: t("metadataTitle"),
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: t("metadataTitle"),
       description: t("metadataDescription"),
+      images: [`${BASE_URL}/${locale}/opengraph-image`],
     },
   };
 }
