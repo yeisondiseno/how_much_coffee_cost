@@ -4,46 +4,58 @@
 import { useCallback, useMemo, useState } from "react";
 // Libraries
 import { useTranslations } from "next-intl";
+// Hooks
+import { useCoffeeCalcStore } from "@/components/coffee-calc/use-coffee-calc-store";
 // Components
 import { Input } from "@/components/ui/input";
-// Utils (local)
-import { formatAmountForLocale } from "@/components/coffee-calc/coffee-calc.utils";
 // Utils
+import { formatAmountForLocale } from "@/components/coffee-calc/coffee-calc.utils";
 import { cn } from "@/lib/utils";
 // Constants
 import {
-  CURRENCY_OPTIONS,
-  CURRENCY_SYMBOLS,
   COFFEE_PRICES_USD,
   COFFEE_TYPES,
+  CURRENCY_OPTIONS,
+  CURRENCY_SYMBOLS,
   EXCHANGE_RATES,
-  type CoffeeId,
   type CurrencyCode,
 } from "@/lib/coffee-calc-data";
 
-export function CoffeeCalcConverterCard() {
+export const CoffeeCalcConverterCard = () => {
+  // Hooks
   const t = useTranslations("CoffeeCalc");
   const tCoffee = useTranslations("CoffeeCalc.coffeeNames");
+  const {
+    amountInput,
+    currency,
+    selectedCoffee,
+    setAmountInput,
+    setCurrency,
+    setSelectedCoffee,
+  } = useCoffeeCalcStore();
 
-  const [amountInput, setAmountInput] = useState("100");
-  const [currency, setCurrency] = useState<CurrencyCode>("USD");
-  const [selectedCoffee, setSelectedCoffee] = useState<CoffeeId>("cappuccino");
+  // State
   const [shareIdle, setShareIdle] = useState(true);
 
+  // Values
   const amount = useMemo(() => {
     const n = Number.parseFloat(amountInput);
     return Number.isFinite(n) && n >= 0 ? n : 0;
   }, [amountInput]);
 
-  const amountUSD = amount / EXCHANGE_RATES[currency];
-  const coffeeCount =
-    amount > 0 ? Math.floor(amountUSD / COFFEE_PRICES_USD[selectedCoffee]) : 0;
+  const coffeeCount = useMemo(() => {
+    if (amount <= 0) return 0;
+    const amountUSD = amount / EXCHANGE_RATES[currency];
+    return Math.floor(amountUSD / COFFEE_PRICES_USD[selectedCoffee]);
+  }, [amount, currency, selectedCoffee]);
 
-  const localCoffeePrice =
-    COFFEE_PRICES_USD[selectedCoffee] * EXCHANGE_RATES[currency];
-  const formattedPrice =
-    CURRENCY_SYMBOLS[currency] +
-    formatAmountForLocale(localCoffeePrice, currency);
+  const formattedPrice = useMemo(() => {
+    const localPrice =
+      COFFEE_PRICES_USD[selectedCoffee] * EXCHANGE_RATES[currency];
+    return (
+      CURRENCY_SYMBOLS[currency] + formatAmountForLocale(localPrice, currency)
+    );
+  }, [currency, selectedCoffee]);
 
   const coffeeName = tCoffee(selectedCoffee);
 
@@ -59,9 +71,7 @@ export function CoffeeCalcConverterCard() {
       </span>
     ));
 
-    if (coffeeCount <= 50) {
-      return items;
-    }
+    if (coffeeCount <= 50) return items;
 
     return [
       ...items,
@@ -79,6 +89,7 @@ export function CoffeeCalcConverterCard() {
     ];
   }, [coffeeCount]);
 
+  // Actions
   const shareResult = useCallback(async () => {
     const text = t("shareText", {
       amount: formatAmountForLocale(amount, currency),
@@ -105,112 +116,116 @@ export function CoffeeCalcConverterCard() {
 
   return (
     <div className="coffee-calc-card">
-      <div className="coffee-calc-input-group">
-        <label className="coffee-calc-input-label" htmlFor="coffee-amount">
-          {t("labelAmount")}
-        </label>
-        <div className="coffee-calc-amount-row">
-          <div className="coffee-calc-amount-wrap">
-            <span className="coffee-calc-currency-symbol" aria-hidden>
-              {CURRENCY_SYMBOLS[currency]}
-            </span>
-            <Input
-              id="coffee-amount"
-              type="number"
-              className="coffee-calc-amount-input"
-              placeholder="100"
-              min={0}
-              value={amountInput}
-              onChange={(e) => setAmountInput(e.target.value)}
-            />
+      <form onSubmit={(e) => e.preventDefault()}>
+        <div className="coffee-calc-input-group">
+          <label className="coffee-calc-input-label" htmlFor="coffee-amount">
+            {t("labelAmount")}
+          </label>
+          <div className="coffee-calc-amount-row">
+            <div className="coffee-calc-amount-wrap">
+              <span className="coffee-calc-currency-symbol" aria-hidden>
+                {CURRENCY_SYMBOLS[currency]}
+              </span>
+              <Input
+                id="coffee-amount"
+                type="number"
+                className="coffee-calc-amount-input"
+                placeholder="100"
+                min={0}
+                value={amountInput}
+                onChange={(e) => setAmountInput(e.target.value)}
+              />
+            </div>
+            <select
+              className="coffee-calc-currency-select"
+              value={currency}
+              onChange={(e) => setCurrency(e.target.value as CurrencyCode)}
+              aria-label="Currency"
+            >
+              {CURRENCY_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>
+                  {o.label}
+                </option>
+              ))}
+            </select>
           </div>
-          <select
-            className="coffee-calc-currency-select"
-            value={currency}
-            onChange={(e) => setCurrency(e.target.value as CurrencyCode)}
-            aria-label={t("labelAmount")}
-          >
-            {CURRENCY_OPTIONS.map((o) => (
-              <option key={o.value} value={o.value}>
-                {o.label}
-              </option>
-            ))}
-          </select>
         </div>
-      </div>
 
-      <div className="coffee-calc-input-group">
-        <div className="coffee-calc-input-label">{t("labelCoffee")}</div>
-        <ul className="coffee-calc-types list-none p-0 m-0">
-          {COFFEE_TYPES.map((c) => {
-            const localPrice =
-              COFFEE_PRICES_USD[c.id] * EXCHANGE_RATES[currency];
-            const label = formatAmountForLocale(localPrice, currency);
-            const name = tCoffee(c.id);
-            return (
-              <li key={c.id} className="contents">
-                <button
-                  type="button"
-                  className={cn(
-                    "coffee-calc-type",
-                    selectedCoffee === c.id && "coffee-calc-type-active",
-                  )}
-                  onClick={() => setSelectedCoffee(c.id)}
-                >
-                  <span className="coffee-calc-type-emoji" aria-hidden>
-                    {c.emoji}
-                  </span>
-                  <span className="coffee-calc-type__cont">
-                    <span className="coffee-calc-type-name">{name}</span>
-                    <span className="coffee-calc-type-price">
-                      {CURRENCY_SYMBOLS[currency]}
-                      {label}
-                    </span>
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-
-      <div className="coffee-calc-divider">
-        <div className="coffee-calc-divider-line" />
-        <span className="coffee-calc-divider-icon" aria-hidden>
-          ⬇️
-        </span>
-        <div className="coffee-calc-divider-line" />
-      </div>
-
-      <div className="coffee-calc-result">
-        <div className="coffee-calc-result-number">
-          {amount > 0 ? coffeeCount.toLocaleString() : "—"}
-        </div>
-        <div className="coffee-calc-result-label">
-          {t("resultLabel", { type: coffeeName })}
-        </div>
-        <div className="coffee-calc-result-detail">
-          {amount > 0
-            ? t("resultDetail", {
-                price: formattedPrice,
-                currency,
-              })
-            : ""}
-        </div>
-        <div className="coffee-calc-cups" aria-hidden>
-          {cupsVisual}
-        </div>
-      </div>
-
-      <div style={{ textAlign: "center" }}>
-        <button
-          type="button"
-          className="coffee-calc-share"
-          onClick={() => void shareResult()}
+        <fieldset
+          className="coffee-calc-input-group"
+          style={{ border: "none", padding: 0, margin: 0 }}
         >
-          📤 {shareIdle ? t("shareBtn") : `✅ ${t("copied")}`}
-        </button>
-      </div>
+          <legend className="coffee-calc-input-label">
+            {t("labelCoffee")}
+          </legend>
+          <ul className="coffee-calc-types list-none p-0 m-0">
+            {COFFEE_TYPES.map((c) => {
+              const localPrice =
+                COFFEE_PRICES_USD[c.id] * EXCHANGE_RATES[currency];
+              const label = formatAmountForLocale(localPrice, currency);
+              const name = tCoffee(c.id);
+              return (
+                <li key={c.id} className="contents">
+                  <button
+                    type="button"
+                    className={cn(
+                      "coffee-calc-type",
+                      selectedCoffee === c.id && "coffee-calc-type-active",
+                    )}
+                    onClick={() => setSelectedCoffee(c.id)}
+                  >
+                    <span className="coffee-calc-type-emoji" aria-hidden>
+                      {c.emoji}
+                    </span>
+                    <span className="coffee-calc-type__cont">
+                      <span className="coffee-calc-type-name">{name}</span>
+                      <span className="coffee-calc-type-price">
+                        {CURRENCY_SYMBOLS[currency]}
+                        {label}
+                      </span>
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </fieldset>
+
+        <div className="coffee-calc-divider">
+          <div className="coffee-calc-divider-line" />
+          <span className="coffee-calc-divider-icon" aria-hidden>
+            ⬇️
+          </span>
+          <div className="coffee-calc-divider-line" />
+        </div>
+
+        <output htmlFor="coffee-amount" className="coffee-calc-result">
+          <div className="coffee-calc-result-number">
+            {amount > 0 ? coffeeCount.toLocaleString() : "—"}
+          </div>
+          <div className="coffee-calc-result-label">
+            {t("resultLabel", { type: coffeeName })}
+          </div>
+          <div className="coffee-calc-result-detail">
+            {amount > 0
+              ? t("resultDetail", { price: formattedPrice, currency })
+              : ""}
+          </div>
+          <div className="coffee-calc-cups" aria-hidden>
+            {cupsVisual}
+          </div>
+        </output>
+
+        <div style={{ textAlign: "center" }}>
+          <button
+            type="button"
+            className="coffee-calc-share"
+            onClick={() => void shareResult()}
+          >
+            📤 {shareIdle ? t("shareBtn") : `✅ ${t("copied")}`}
+          </button>
+        </div>
+      </form>
     </div>
   );
-}
+};
