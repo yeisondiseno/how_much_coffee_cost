@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Figtree, Geist, Geist_Mono } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -105,6 +106,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         />
       </head>
       <body className="min-h-full flex flex-col">
+        <GoogleTagManager gtmId="GTM-MBD3HG86" />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
