@@ -466,6 +466,8 @@
 }
 
 .coffee-calc-ad {
+  width: 100%;
+  max-width: 520px;
   display: block;
   margin: 30px auto;
   padding: 20px;
