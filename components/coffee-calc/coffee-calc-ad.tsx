@@ -32,11 +32,9 @@ export const CoffeeCalcAd = ({ slot }: CoffeeCalcAd) => {
       <div className="coffee-calc-ad-box">
         <ins
           className="adsbygoogle"
-          style={{ display: "block" }}
+          style={{ display: "inline-block", width: "300px", height: "250px" }}
           data-ad-client="ca-pub-8195825937047934"
           data-ad-slot={slot}
-          data-ad-format="auto"
-          data-full-width-responsive="true"
           suppressHydrationWarning
         ></ins>
       </div>
