@@ -1,5 +1,4 @@
 "use client";
-// million-ignore
 
 import { useEffect } from "react";
 // Next
@@ -14,6 +13,7 @@ declare global {
   var adsbygoogle: Record<string, unknown>[];
 }
 
+// million-ignore
 export const CoffeeCalcAd = ({ slot }: CoffeeCalcAd) => {
   // Hooks
   const pathname = usePathname();
