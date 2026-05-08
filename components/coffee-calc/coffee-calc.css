@@ -466,7 +466,7 @@
 }
 
 .coffee-calc-ad {
-  display: contents;
+  display: block;
   margin: 30px auto;
   padding: 20px;
   text-align: center;
@@ -475,7 +475,7 @@
 
 .coffee-calc-ad-box {
   width: 100%;
-  display: contents;
+  display: block;
   background: linear-gradient(135deg, var(--coffee-steam), var(--coffee-latte));
   border: 2px dashed var(--coffee-crema);
   border-radius: 16px;
