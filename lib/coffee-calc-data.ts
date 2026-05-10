@@ -54,6 +54,23 @@ export const CURRENCY_SYMBOLS: Record<CurrencyCode, string> = {
   KRW: "₩",
 };
 
+export const CURRENCY_LOCALE: Record<CurrencyCode, string> = {
+  USD: "en-US",
+  EUR: "de-DE",
+  GBP: "en-GB",
+  COP: "es-CO",
+  MXN: "es-MX",
+  BRL: "pt-BR",
+  ARS: "es-AR",
+  JPY: "ja-JP",
+  CNY: "zh-CN",
+  INR: "en-IN",
+  CAD: "en-CA",
+  AUD: "en-AU",
+  CHF: "de-CH",
+  KRW: "ko-KR",
+};
+
 export const CURRENCY_OPTIONS: { value: CurrencyCode; label: string }[] = [
   { value: "USD", label: "🇺🇸 USD" },
   { value: "EUR", label: "🇪🇺 EUR" },

@@ -1,7 +1,7 @@
 "use client";
 
 // React
-import { useCallback, useMemo, useState } from "react";
+import { type ChangeEvent, useCallback, useMemo, useState } from "react";
 // Libraries
 import { useTranslations } from "next-intl";
 // Hooks
@@ -9,15 +9,22 @@ import { useCoffeeCalcStore } from "@/components/coffee-calc/use-coffee-calc-sto
 // Components
 import { Input } from "@/components/ui/input";
 // Utils
-import { formatAmountForLocale } from "@/components/coffee-calc/coffee-calc.utils";
+import {
+  formatAmountForLocale,
+  formatDisplayAmount,
+  getDecimalSeparator,
+  getGroupSeparator,
+} from "@/components/coffee-calc/coffee-calc.utils";
 import { cn } from "@/lib/utils";
 // Constants
 import {
   COFFEE_PRICES_USD,
   COFFEE_TYPES,
+  CURRENCY_LOCALE,
   CURRENCY_OPTIONS,
   CURRENCY_SYMBOLS,
   EXCHANGE_RATES,
+  isZeroDecimalCurrency,
   type CurrencyCode,
 } from "@/lib/coffee-calc-data";
 
@@ -36,6 +43,17 @@ export const CoffeeCalcConverterCard = () => {
 
   // State
   const [shareIdle, setShareIdle] = useState(true);
+  const [displayValue, setDisplayValue] = useState(() => {
+    const n = Number.parseFloat(amountInput);
+    return Number.isFinite(n) && n > 0
+      ? formatDisplayAmount(n, currency)
+      : amountInput;
+  });
+
+  // Hooks
+  const locale = CURRENCY_LOCALE[currency];
+  const decSep = useMemo(() => getDecimalSeparator(locale), [locale]);
+  const groupSep = useMemo(() => getGroupSeparator(locale), [locale]);
 
   // Values
   const amount = useMemo(() => {
@@ -90,6 +108,80 @@ export const CoffeeCalcConverterCard = () => {
   }, [coffeeCount]);
 
   // Actions
+  const handleAmountChange = useCallback(
+    (e: ChangeEvent<HTMLInputElement>) => {
+      const inputVal = e.target.value;
+      const isZeroDec = isZeroDecimalCurrency(currency);
+
+      // Strip thousands separators to isolate digit+decimal input
+      const escapedGroup = groupSep.replaceAll(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const stripped = inputVal.replaceAll(new RegExp(escapedGroup, "g"), "");
+
+      let rawNumeric: string;
+      if (isZeroDec) {
+        rawNumeric = stripped.replaceAll(/\D/g, "");
+      } else {
+        const parts = stripped.split(decSep);
+        const intDigits = parts[0].replaceAll(/\D/g, "");
+        const decDigits =
+          parts.length > 1
+            ? parts.slice(1).join("").replaceAll(/\D/g, "").slice(0, 2)
+            : null;
+        rawNumeric =
+          decDigits !== null ? `${intDigits}.${decDigits}` : intDigits;
+      }
+
+      setAmountInput(rawNumeric);
+
+      if (!rawNumeric) {
+        setDisplayValue("");
+        return;
+      }
+
+      const n = Number.parseFloat(rawNumeric) || 0;
+      const endsWithDec = !isZeroDec && stripped.endsWith(decSep);
+
+      if (endsWithDec) {
+        const intFormatted = new Intl.NumberFormat(locale, {
+          maximumFractionDigits: 0,
+          useGrouping: true,
+        }).format(n);
+        setDisplayValue(intFormatted + decSep);
+      } else {
+        const decIdx = stripped.lastIndexOf(decSep);
+        const userDecPlaces =
+          decIdx >= 0
+            ? stripped.slice(decIdx + 1).replaceAll(/\D/g, "").length
+            : 0;
+        const formatted = new Intl.NumberFormat(locale, {
+          minimumFractionDigits: isZeroDec ? 0 : Math.min(userDecPlaces, 2),
+          maximumFractionDigits: isZeroDec ? 0 : 2,
+          useGrouping: true,
+        }).format(n);
+        setDisplayValue(formatted);
+      }
+    },
+    [currency, decSep, groupSep, locale, setAmountInput],
+  );
+
+  const handleCurrencyChange = useCallback(
+    (newCurrency: CurrencyCode) => {
+      setCurrency(newCurrency);
+      const n = Number.parseFloat(amountInput);
+      if (Number.isFinite(n) && n > 0) {
+        setDisplayValue(formatDisplayAmount(n, newCurrency));
+      }
+    },
+    [amountInput, setCurrency],
+  );
+
+  const handleAmountBlur = useCallback(() => {
+    const n = Number.parseFloat(amountInput);
+    setDisplayValue(
+      Number.isFinite(n) && n > 0 ? formatDisplayAmount(n, currency) : "",
+    );
+  }, [amountInput, currency]);
+
   const shareResult = useCallback(async () => {
     const text = t("shareText", {
       amount: formatAmountForLocale(amount, currency),
@@ -128,18 +220,23 @@ export const CoffeeCalcConverterCard = () => {
               </span>
               <Input
                 id="coffee-amount"
-                type="number"
+                type="text"
+                inputMode={
+                  isZeroDecimalCurrency(currency) ? "numeric" : "decimal"
+                }
                 className="coffee-calc-amount-input"
                 placeholder="100"
-                min={0}
-                value={amountInput}
-                onChange={(e) => setAmountInput(e.target.value)}
+                value={displayValue}
+                onChange={handleAmountChange}
+                onBlur={handleAmountBlur}
               />
             </div>
             <select
               className="coffee-calc-currency-select"
               value={currency}
-              onChange={(e) => setCurrency(e.target.value as CurrencyCode)}
+              onChange={(e) =>
+                handleCurrencyChange(e.target.value as CurrencyCode)
+              }
               aria-label="Currency"
             >
               {CURRENCY_OPTIONS.map((o) => (
