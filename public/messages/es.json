@@ -8,6 +8,12 @@
     "message": "¡Vaya! Esta página parece haberse enfriado, como un café olvidado.",
     "cta": "Volver al inicio"
   },
+  "Consent": {
+    "bannerTitle": "Cookies y privacidad",
+    "bannerText": "Usamos cookies para analítica (Google Tag Manager) y publicidad (Google AdSense). Las cookies estrictamente necesarias siguen activas. Puedes aceptar el resto o rechazarlas.",
+    "accept": "Aceptar todo",
+    "reject": "Rechazar opcionales"
+  },
   "CoffeeCalc": {
     "metadataTitle": "Calculadora de costo de café — ¿cuántas tazas es?",
     "metadataDescription": "Calculadora online gratis: convierte cualquier precio en tazas de café (espresso, latte, cappuccino y más). 14 monedas. Compara gastos y presupuesta sin registro.",

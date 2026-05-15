@@ -8,6 +8,12 @@
     "message": "Oops! This page seems to have gone cold — like a forgotten coffee.",
     "cta": "Back to Home"
   },
+  "Consent": {
+    "bannerTitle": "Cookies & privacy",
+    "bannerText": "We use cookies for analytics (Google Tag Manager) and ads (Google AdSense). Essential security cookies always stay on. You can accept optional tracking or reject it.",
+    "accept": "Accept all",
+    "reject": "Reject optional"
+  },
   "CoffeeCalc": {
     "metadataTitle": "Coffee Cost Calculator — How Many Cups of Coffee?",
     "metadataDescription": "Free online coffee calculator: convert any price into cups (espresso, latte, cappuccino & more). 14 currencies. Budget and compare spending—no signup.",

@@ -1,15 +1,31 @@
 import type { Metadata } from "next";
 import { Figtree, Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
-import { GoogleTagManager } from "@next/third-parties/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { ConsentThirdParties } from "@/components/consent/consent-third-parties";
 import { BASE_URL } from "@/lib/config";
 import { openGraphLocaleTag } from "@/lib/seo-open-graph-locale";
 import { cn } from "@/lib/utils";
 import "../globals.css";
+
+const consentModeDefaultScript = `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'functionality_storage': 'denied',
+  'personalization_storage': 'denied',
+  'security_storage': 'granted',
+  'wait_for_update': 500
+});
+`;
 
 const figtree = Figtree({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -49,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${BASE_URL}/${locale}`,
       languages: {
-        "x-default": BASE_URL,
+        "x-default": `${BASE_URL}/${routing.defaultLocale}`,
         ...Object.fromEntries(
           routing.locales.map((loc) => [loc, `${BASE_URL}/${loc}`]),
         ),
@@ -104,13 +120,14 @@ export default async function LocaleLayout({ children, params }: Props) {
       )}
     >
       <body className="min-h-full flex flex-col">
-        <GoogleTagManager gtmId="GTM-MBD3HG86" />
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8195825937047934"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
+          id="consent-mode-default"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: consentModeDefaultScript }}
         />
+        <NextIntlClientProvider>
+          <ConsentThirdParties>{children}</ConsentThirdParties>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

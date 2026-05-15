@@ -8,6 +8,12 @@
     "message": "おっと！このページは忘れられたコーヒーのように冷めてしまったようです。",
     "cta": "ホームに戻る"
   },
+  "Consent": {
+    "bannerTitle": "Cookie とプライバシー",
+    "bannerText": "当サイトでは Google Tag Manager（分析）と Google AdSense（広告）のために Cookie を使用します。必須の Cookie は常に有効です。任意のトラッキングを承諾するか拒否できます。",
+    "accept": "すべて許可",
+    "reject": "任意のみ拒否"
+  },
   "CoffeeCalc": {
     "metadataTitle": "コーヒー費用計算 — 価格はコーヒー何杯分？",
     "metadataDescription": "無料のオンライン計算ツール：金額をコーヒーの杯数に換算（エスプレッソ、ラテ、カプチーノほか）。14通貨。登録なしで比較・家計の目安に。",
