@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Figtree, Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -42,6 +42,10 @@ const geistMono = Geist_Mono({
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+export const viewport: Viewport = {
+  themeColor: "#1b0e07",
+};
 
 type Props = Readonly<{
   children: React.ReactNode;
@@ -96,7 +100,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: t("metadataDescription"),
       images: [`${BASE_URL}/${locale}/opengraph-image`],
     },
-    themeColor: "#1b0e07",
     appleWebApp: {
       capable: true,
       title: "CoffeeCalc",
