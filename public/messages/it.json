@@ -1,0 +1,75 @@
+{
+  "global": {
+    "loading": "Caricamento...",
+    "backButton": "Indietro",
+    "selectLanguage": "Seleziona lingua",
+    "langsNavAria": "Lingue disponibili",
+    "languageNames": {
+      "en": "Inglese",
+      "es": "Spagnolo",
+      "fr": "Francese",
+      "pt": "Portoghese",
+      "de": "Tedesco",
+      "ja": "Giapponese",
+      "it": "Italiano",
+      "ko": "Coreano"
+    }
+  },
+  "NotFound": {
+    "title": "Pagina non trovata",
+    "message": "Ops! Questa pagina si è raffreddata come un caffè dimenticato.",
+    "cta": "Torna alla home"
+  },
+  "Consent": {
+    "bannerTitle": "Cookie e privacy",
+    "bannerText": "Usiamo cookie per analytics (Google Tag Manager) e pubblicità (Google AdSense). I cookie strettamente necessari restano attivi. Puoi accettare il tracciamento facoltativo o rifiutarlo.",
+    "accept": "Accetta tutto",
+    "reject": "Rifiuta opzionali"
+  },
+  "CoffeeCalc": {
+    "metadataTitle": "Calcolatore costo caffè — quante tazze?",
+    "metadataDescription": "Calcolatore online gratuito: converti qualsiasi prezzo in tazze di caffè (espresso, latte, cappuccino e altro). 14 valute. Metti a confronto le spese senza registrazione.",
+    "title": "Quanti <accent>Caffè</accent> Sono?",
+    "subtitle": "Trasforma ogni prezzo in tazze di caffè. Perché tutto ha più senso misurato in caffeina.",
+    "labelAmount": "Il tuo importo",
+    "labelCoffee": "Scegli il caffè",
+    "resultLabel": "{type}",
+    "resultDetail": "a ~{price} ciascuno in {currency}",
+    "shareBtn": "Condividi",
+    "funFactLabel": "☕ Lo sapevi?",
+    "funFacts": [
+      "La Finlandia consuma più caffè pro capite — circa 12 kg a persona all'anno!",
+      "Il caffè è la seconda materia prima commerciata al mondo, dopo il petrolio grezzo.",
+      "Gli italiani amano l'espresso: milioni di tazzine ogni giorno.",
+      "Un latte a Zurigo può costare intorno a 7,50 $ — tra i più cari al mondo.",
+      "Il Brasile produce circa un terzo del caffè mondiale."
+    ],
+    "seoTitle": "Perché misurare in caffè?",
+    "seoText": "Spendiamo ogni giorno per il caffè: è l'unità perfetta per capire il costo reale delle cose. Che tu stia facendo un budget, confrontando prezzi o sia solo curioso — CoffeeCalc ti aiuta a vedere ogni prezzo attraverso la tua bevanda preferita. Il multi-valuta consente di confrontare i costi del caffè in tutto il mondo.",
+    "faqTitle": "Domande frequenti",
+    "faq1Q": "Come converte CoffeeCalc un prezzo in tazze di caffè?",
+    "faq1A": "Usiamo prezzi medi approssimativi per tipo di bevanda, convertiamo l'importo con i tassi di cambio e stimiamo quante tazze equivalgono. I prezzi reali in bar variano: considera il risultato una stima rapida, non un preventivo.",
+    "faq2Q": "Quali bevute e valute posso usare?",
+    "faq2A": "Sei tipi (espresso, cappuccino, latte, americano, mocha, cold brew) e 14 valute principali per confronti rapidi a casa o all'estero.",
+    "faq3Q": "È gratis? Serve un account?",
+    "faq3A": "Sì — CoffeeCalc è gratuito nel browser e non richiede registrazione.",
+    "faq4Q": "Perché confrontare i costi in tazze di caffè?",
+    "faq4A": "Per molte persone il caffè è una spesa quotidiana; chiedersi «quanti latte sono?» rende gli importi più chiari quando si gestisce il budget o si valuta uno svago.",
+    "schemaFeature1": "Sei tipi di bevanda da confrontare",
+    "schemaFeature2": "14 valute con tassi di cambio approssimativi",
+    "schemaFeature3": "Funziona nel browser senza account",
+    "footer": "Fatto con amore e caffeina",
+    "disclaimer": "I prezzi sono medie approssimative. I prezzi reali variano in base al luogo.",
+    "coffeeNames": {
+      "espresso": "Espresso",
+      "cappuccino": "Cappuccino",
+      "latte": "Latte",
+      "americano": "Americano",
+      "mocha": "Mocha",
+      "coldBrew": "Cold brew"
+    },
+    "shareText": "☕ {amount} {currency} = {count} {type}! Prova su CoffeeCalc",
+    "copied": "Copiato! ☕",
+    "brandLine": "☕ CoffeeCalc — {footer}"
+  }
+}

@@ -1,12 +1,30 @@
 {
   "global": {
     "loading": "Chargement...",
-    "backButton": "Retour"
+    "backButton": "Retour",
+    "selectLanguage": "Choisir la langue",
+    "langsNavAria": "Langues disponibles",
+    "languageNames": {
+      "en": "Anglais",
+      "es": "Espagnol",
+      "fr": "Français",
+      "pt": "Portugais",
+      "de": "Allemand",
+      "ja": "Japonais",
+      "it": "Italien",
+      "ko": "Coréen"
+    }
   },
   "NotFound": {
     "title": "Page introuvable",
     "message": "Oups ! Cette page semble s'être refroidie, comme un café oublié.",
     "cta": "Retour à l'accueil"
+  },
+  "Consent": {
+    "bannerTitle": "Cookies et confidentialité",
+    "bannerText": "Nous utilisons des cookies pour l'analytique (Google Tag Manager) et la publicité (Google AdSense). Les cookies strictement nécessaires restent actifs. Vous pouvez tout accepter ou refuser l'optionnel.",
+    "accept": "Tout accepter",
+    "reject": "Refuser l'optionnel"
   },
   "CoffeeCalc": {
     "metadataTitle": "Calculateur coût café — combien de tasses ?",
