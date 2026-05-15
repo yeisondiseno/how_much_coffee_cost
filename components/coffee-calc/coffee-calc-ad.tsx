@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 // Next
 import { usePathname } from "next/navigation";
+import { ADSENSE_CLIENT_ID } from "@/lib/config";
 
 // Types (module-local)
 type CoffeeCalcAd = {
@@ -33,7 +34,7 @@ export const CoffeeCalcAd = ({ slot }: CoffeeCalcAd) => {
         <ins
           className="adsbygoogle"
           style={{ display: "inline-block", width: "300px", height: "250px" }}
-          data-ad-client="ca-pub-8195825937047934"
+          data-ad-client={ADSENSE_CLIENT_ID}
           data-ad-slot={slot}
           suppressHydrationWarning
         ></ins>

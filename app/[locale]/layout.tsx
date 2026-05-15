@@ -128,6 +128,16 @@ export default async function LocaleLayout({ children, params }: Props) {
         figtree.variable,
       )}
     >
+      <head>
+        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link
+          rel="preconnect"
+          href="https://pagead2.googlesyndication.com"
+          crossOrigin="anonymous"
+        />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+      </head>
       <body className="min-h-full flex flex-col">
         <Script
           id="consent-mode-default"

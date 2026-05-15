@@ -10,7 +10,9 @@
       "fr": "French",
       "pt": "Portuguese",
       "de": "German",
-      "ja": "Japanese"
+      "ja": "Japanese",
+      "it": "Italian",
+      "ko": "Korean"
     }
   },
   "NotFound": {
