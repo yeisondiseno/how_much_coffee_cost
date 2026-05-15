@@ -554,6 +554,48 @@
   font-size: 14px;
   color: #8b7355;
   line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.coffee-calc-seo-faq {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(139, 115, 85, 0.2);
+}
+
+.coffee-calc-seo-faq-heading {
+  font-family: var(--font-coffee-playfair), ui-serif, Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--coffee-espresso);
+  margin: 0 0 14px;
+  font-weight: 600;
+}
+
+.coffee-calc-seo-faq-list {
+  margin: 0;
+}
+
+.coffee-calc-seo-faq-item {
+  margin-bottom: 16px;
+}
+
+.coffee-calc-seo-faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.coffee-calc-seo-faq-q {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--coffee-espresso);
+  margin: 0 0 6px;
+  line-height: 1.45;
+}
+
+.coffee-calc-seo-faq-a {
+  font-size: 14px;
+  color: #8b7355;
+  line-height: 1.65;
+  margin: 0;
 }
 
 @media (max-width: 560px) {

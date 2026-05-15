@@ -9,8 +9,8 @@
     "cta": "Back to Home"
   },
   "CoffeeCalc": {
-    "metadataTitle": "Coffee Price Calculator — How Many Coffees Is That?",
-    "metadataDescription": "CoffeeCalc converts any price into cups of coffee — espresso, latte, cappuccino and more. Multi-currency support for 14 currencies worldwide. Try it free!",
+    "metadataTitle": "Coffee Cost Calculator — How Many Cups of Coffee?",
+    "metadataDescription": "Free online coffee calculator: convert any price into cups (espresso, latte, cappuccino & more). 14 currencies. Budget and compare spending—no signup.",
     "title": "How Many <accent>Coffees</accent> Is That?",
     "subtitle": "Convert any price into cups of coffee. Because everything makes more sense measured in caffeine.",
     "labelAmount": "Your amount",
@@ -26,8 +26,20 @@
       "A Starbucks Grande Latte in Zurich costs around $7.50 — one of the priciest in the world.",
       "Brazil produces about a third of the world's coffee supply."
     ],
-    "seoTitle": "Why Measure in Coffee?",
+    "seoTitle": "Why measure in coffee?",
     "seoText": "We spend on coffee every day, making it the perfect unit to understand the real cost of things. Whether you're budgeting, comparing prices, or just curious — CoffeeCalc helps you see any price through the lens of your favorite drink. Multi-currency support lets you compare coffee costs worldwide.",
+    "faqTitle": "Common questions",
+    "faq1Q": "How does CoffeeCalc turn a price into cups of coffee?",
+    "faq1A": "We use approximate average prices for each drink type, convert your amount with exchange rates, then estimate how many cups that money represents. Real café prices vary, so treat results as a quick benchmark—not a quote.",
+    "faq2Q": "Which drinks and currencies can I use?",
+    "faq2A": "Six drink types (espresso, cappuccino, latte, americano, mocha, cold brew) and 14 major currencies for fast comparisons at home or abroad.",
+    "faq3Q": "Is it free? Do I need an account?",
+    "faq3A": "Yes—CoffeeCalc is free in your browser and you don't need to sign up.",
+    "faq4Q": "Why compare costs in coffee cups?",
+    "faq4A": "Coffee is an everyday purchase for many people, so “how many lattes is this?” makes amounts easier to reason about when budgeting or weighing a splurge.",
+    "schemaFeature1": "Six drink types you can compare side by side",
+    "schemaFeature2": "14 currencies with approximate exchange rates",
+    "schemaFeature3": "Runs in the browser with no account required",
     "footer": "Made with love & caffeine",
     "disclaimer": "Prices are approximate averages. Actual coffee prices vary by location.",
     "coffeeNames": {
