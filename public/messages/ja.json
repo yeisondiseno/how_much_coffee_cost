@@ -1,12 +1,30 @@
 {
   "global": {
     "loading": "読み込み中...",
-    "backButton": "戻る"
+    "backButton": "戻る",
+    "selectLanguage": "言語を選択",
+    "langsNavAria": "利用可能な言語",
+    "languageNames": {
+      "en": "英語",
+      "es": "スペイン語",
+      "fr": "フランス語",
+      "pt": "ポルトガル語",
+      "de": "ドイツ語",
+      "ja": "日本語",
+      "it": "イタリア語",
+      "ko": "韓国語"
+    }
   },
   "NotFound": {
     "title": "ページが見つかりません",
     "message": "おっと！このページは忘れられたコーヒーのように冷めてしまったようです。",
     "cta": "ホームに戻る"
+  },
+  "Consent": {
+    "bannerTitle": "Cookie とプライバシー",
+    "bannerText": "当サイトでは Google Tag Manager（分析）と Google AdSense（広告）のために Cookie を使用します。必須の Cookie は常に有効です。任意のトラッキングを承諾するか拒否できます。",
+    "accept": "すべて許可",
+    "reject": "任意のみ拒否"
   },
   "CoffeeCalc": {
     "metadataTitle": "コーヒー費用計算 — 価格はコーヒー何杯分？",

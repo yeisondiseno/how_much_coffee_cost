@@ -1,12 +1,30 @@
 {
   "global": {
     "loading": "Carregando...",
-    "backButton": "Voltar"
+    "backButton": "Voltar",
+    "selectLanguage": "Escolher idioma",
+    "langsNavAria": "Idiomas disponíveis",
+    "languageNames": {
+      "en": "Inglês",
+      "es": "Espanhol",
+      "fr": "Francês",
+      "pt": "Português",
+      "de": "Alemão",
+      "ja": "Japonês",
+      "it": "Italiano",
+      "ko": "Coreano"
+    }
   },
   "NotFound": {
     "title": "Página não encontrada",
     "message": "Ops! Esta página parece ter esfriado, como um café esquecido.",
     "cta": "Voltar ao início"
+  },
+  "Consent": {
+    "bannerTitle": "Cookies e privacidade",
+    "bannerText": "Usamos cookies para análise (Google Tag Manager) e anúncios (Google AdSense). Cookies estritamente necessários permanecem ativos. Você pode aceitar tudo ou recusar o opcional.",
+    "accept": "Aceitar tudo",
+    "reject": "Recusar opcionais"
   },
   "CoffeeCalc": {
     "metadataTitle": "Calculadora de custo do café — quantas xícaras?",

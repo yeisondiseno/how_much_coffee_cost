@@ -478,6 +478,8 @@
 .coffee-calc-ad-box {
   width: 100%;
   display: block;
+  min-height: calc(250px + 60px);
+  box-sizing: border-box;
   background: linear-gradient(135deg, var(--coffee-steam), var(--coffee-latte));
   border: 2px dashed var(--coffee-crema);
   border-radius: 16px;

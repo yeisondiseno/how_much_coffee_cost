@@ -13,7 +13,7 @@ const sitemap = (): MetadataRoute.Sitemap =>
         ...Object.fromEntries(
           routing.locales.map((loc) => [loc, `${BASE_URL}/${loc}`]),
         ),
-        "x-default": BASE_URL,
+        "x-default": `${BASE_URL}/${routing.defaultLocale}`,
       },
     },
   }));

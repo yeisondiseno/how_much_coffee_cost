@@ -1,12 +1,30 @@
 {
   "global": {
     "loading": "Wird geladen...",
-    "backButton": "Zurück"
+    "backButton": "Zurück",
+    "selectLanguage": "Sprache wählen",
+    "langsNavAria": "Verfügbare Sprachen",
+    "languageNames": {
+      "en": "Englisch",
+      "es": "Spanisch",
+      "fr": "Französisch",
+      "pt": "Portugiesisch",
+      "de": "Deutsch",
+      "ja": "Japanisch",
+      "it": "Italienisch",
+      "ko": "Koreanisch"
+    }
   },
   "NotFound": {
     "title": "Seite nicht gefunden",
     "message": "Ups! Diese Seite scheint abgekühlt zu sein, wie ein vergessener Kaffee.",
     "cta": "Zurück zur Startseite"
+  },
+  "Consent": {
+    "bannerTitle": "Cookies & Datenschutz",
+    "bannerText": "Wir nutzen Cookies für Analytics (Google Tag Manager) und Werbung (Google AdSense). Notwendige Cookies bleiben aktiv. Du kannst optional zustimmen oder ablehnen.",
+    "accept": "Alle akzeptieren",
+    "reject": "Optionale ablehnen"
   },
   "CoffeeCalc": {
     "metadataTitle": "Kaffeekosten-Rechner — wie viele Tassen?",
