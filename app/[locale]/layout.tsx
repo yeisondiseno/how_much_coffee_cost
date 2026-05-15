@@ -96,6 +96,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: t("metadataDescription"),
       images: [`${BASE_URL}/${locale}/opengraph-image`],
     },
+    themeColor: "#1b0e07",
+    appleWebApp: {
+      capable: true,
+      title: "CoffeeCalc",
+      statusBarStyle: "black-translucent",
+    },
   };
 }
 

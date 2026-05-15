@@ -1,7 +1,17 @@
 {
   "global": {
     "loading": "Chargement...",
-    "backButton": "Retour"
+    "backButton": "Retour",
+    "selectLanguage": "Choisir la langue",
+    "langsNavAria": "Langues disponibles",
+    "languageNames": {
+      "en": "Anglais",
+      "es": "Espagnol",
+      "fr": "Français",
+      "pt": "Portugais",
+      "de": "Allemand",
+      "ja": "Japonais"
+    }
   },
   "NotFound": {
     "title": "Page introuvable",

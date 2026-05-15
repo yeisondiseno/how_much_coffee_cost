@@ -1,7 +1,17 @@
 {
   "global": {
     "loading": "Loading...",
-    "backButton": "Back"
+    "backButton": "Back",
+    "selectLanguage": "Select language",
+    "langsNavAria": "Available languages",
+    "languageNames": {
+      "en": "English",
+      "es": "Spanish",
+      "fr": "French",
+      "pt": "Portuguese",
+      "de": "German",
+      "ja": "Japanese"
+    }
   },
   "NotFound": {
     "title": "Page Not Found",
