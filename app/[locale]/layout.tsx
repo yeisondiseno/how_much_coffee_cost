@@ -7,6 +7,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { BASE_URL } from "@/lib/config";
+import { openGraphLocaleTag } from "@/lib/seo-open-graph-locale";
 import { cn } from "@/lib/utils";
 import "../globals.css";
 
@@ -36,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "CoffeeCalc" });
 
   return {
+    metadataBase: new URL(BASE_URL),
     title: {
       default: t("metadataTitle"),
       template: "%s · CoffeeCalc",
@@ -58,7 +60,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: t("metadataDescription"),
       url: `${BASE_URL}/${locale}`,
       siteName: "CoffeeCalc",
-      locale,
+      locale: openGraphLocaleTag(locale),
+      alternateLocale: routing.locales
+        .filter((loc) => loc !== locale)
+        .map(openGraphLocaleTag),
       type: "website",
       images: [
         {
