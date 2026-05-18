@@ -1,15 +1,20 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Figtree, Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+// Libraries
 import { routing } from "@/i18n/routing";
-import { ConsentThirdParties } from "@/components/consent/consent-third-parties";
 import { BASE_URL } from "@/lib/config";
 import { openGraphLocaleTag } from "@/lib/seo-open-graph-locale";
+// Components
+import { ConsentThirdParties } from "@/components/consent/consent-third-parties";
+// Utils
 import { cn } from "@/lib/utils";
+// Styles
 import "../globals.css";
 
 const consentModeDefaultScript = `
@@ -150,6 +155,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         </NextIntlClientProvider>
 
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
