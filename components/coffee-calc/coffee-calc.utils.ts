@@ -4,10 +4,11 @@ import type { CurrencyCode } from "@/lib/coffee-calc-data";
 import { CURRENCY_LOCALE, isZeroDecimalCurrency } from "@/lib/coffee-calc-data";
 
 export function formatAmountForLocale(n: number, currency: CurrencyCode): string {
+  const locale = CURRENCY_LOCALE[currency];
   const opts: Intl.NumberFormatOptions = {
     maximumFractionDigits: isZeroDecimalCurrency(currency) ? 0 : 2,
   };
-  return n.toLocaleString(undefined, opts);
+  return n.toLocaleString(locale, opts);
 }
 
 export const getDecimalSeparator = (locale: string): string => {

@@ -43,12 +43,16 @@ export const CoffeeCalcConverterCard = () => {
 
   // State
   const [shareIdle, setShareIdle] = useState(true);
-  const [displayValue, setDisplayValue] = useState(() => {
+  const [editDraft, setEditDraft] = useState<string | null>(null);
+
+  const derivedDisplayValue = useMemo(() => {
     const n = Number.parseFloat(amountInput);
     return Number.isFinite(n) && n > 0
       ? formatDisplayAmount(n, currency)
       : amountInput;
-  });
+  }, [amountInput, currency]);
+
+  const displayValue = editDraft ?? derivedDisplayValue;
 
   // Hooks
   const locale = CURRENCY_LOCALE[currency];
@@ -134,7 +138,7 @@ export const CoffeeCalcConverterCard = () => {
       setAmountInput(rawNumeric);
 
       if (!rawNumeric) {
-        setDisplayValue("");
+        setEditDraft("");
         return;
       }
 
@@ -146,7 +150,7 @@ export const CoffeeCalcConverterCard = () => {
           maximumFractionDigits: 0,
           useGrouping: true,
         }).format(n);
-        setDisplayValue(intFormatted + decSep);
+        setEditDraft(intFormatted + decSep);
       } else {
         const decIdx = stripped.lastIndexOf(decSep);
         const userDecPlaces =
@@ -158,7 +162,7 @@ export const CoffeeCalcConverterCard = () => {
           maximumFractionDigits: isZeroDec ? 0 : 2,
           useGrouping: true,
         }).format(n);
-        setDisplayValue(formatted);
+        setEditDraft(formatted);
       }
     },
     [currency, decSep, groupSep, locale, setAmountInput],
@@ -167,26 +171,20 @@ export const CoffeeCalcConverterCard = () => {
   const handleCurrencyChange = useCallback(
     (newCurrency: CurrencyCode) => {
       setCurrency(newCurrency);
-      const n = Number.parseFloat(amountInput);
-      if (Number.isFinite(n) && n > 0) {
-        setDisplayValue(formatDisplayAmount(n, newCurrency));
-      }
+      setEditDraft(null);
     },
-    [amountInput, setCurrency],
+    [setCurrency],
   );
 
   const handleAmountBlur = useCallback(() => {
-    const n = Number.parseFloat(amountInput);
-    setDisplayValue(
-      Number.isFinite(n) && n > 0 ? formatDisplayAmount(n, currency) : "",
-    );
-  }, [amountInput, currency]);
+    setEditDraft(null);
+  }, []);
 
   const shareResult = useCallback(async () => {
     const text = t("shareText", {
       amount: formatAmountForLocale(amount, currency),
       currency,
-      count: coffeeCount.toLocaleString(),
+      count: coffeeCount.toLocaleString(locale),
       type: coffeeName,
     });
 
@@ -204,7 +202,7 @@ export const CoffeeCalcConverterCard = () => {
       setShareIdle(false);
       globalThis.setTimeout(() => setShareIdle(true), 2000);
     }
-  }, [amount, coffeeCount, coffeeName, currency, t]);
+  }, [amount, coffeeCount, coffeeName, currency, locale, t]);
 
   return (
     <div className="coffee-calc-card">
@@ -298,7 +296,7 @@ export const CoffeeCalcConverterCard = () => {
 
         <output htmlFor="coffee-amount" className="coffee-calc-result">
           <div className="coffee-calc-result-number">
-            {amount > 0 ? coffeeCount.toLocaleString() : "—"}
+            {amount > 0 ? coffeeCount.toLocaleString(locale) : "—"}
           </div>
           <div className="coffee-calc-result-label">
             {t("resultLabel", { type: coffeeName })}

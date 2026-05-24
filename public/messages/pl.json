@@ -1,0 +1,76 @@
+{
+  "global": {
+    "loading": "Ładowanie...",
+    "backButton": "Wstecz",
+    "selectLanguage": "Wybierz język",
+    "langsNavAria": "Dostępne języki",
+    "languageNames": {
+      "en": "Angielski",
+      "es": "Hiszpański",
+      "fr": "Francuski",
+      "pt": "Portugalski",
+      "de": "Niemiecki",
+      "ja": "Japoński",
+      "it": "Włoski",
+      "ko": "Koreański",
+      "pl": "Polski"
+    }
+  },
+  "NotFound": {
+    "title": "Nie znaleziono strony",
+    "message": "Ups! Ta strona wygląda na zimną — jak zapomniana kawa.",
+    "cta": "Wróć na stronę główną"
+  },
+  "Consent": {
+    "bannerTitle": "Cookies i prywatność",
+    "bannerText": "Używamy plików cookie do analityki (Google Tag Manager) i reklam (Google AdSense). Niezbędne pliki cookie bezpieczeństwa są zawsze włączone. Możesz zaakceptować opcjonalne śledzenie lub je odrzucić.",
+    "accept": "Akceptuj wszystkie",
+    "reject": "Odrzuć opcjonalne"
+  },
+  "CoffeeCalc": {
+    "metadataTitle": "Kalkulator kosztów kawy — ile filiżanek kawy?",
+    "metadataDescription": "Darmowy kalkulator online: zamień dowolną cenę na filiżanki (espresso, latte, cappuccino i więcej). 14 walut. Planuj budżet i porównuj wydatki — bez rejestracji.",
+    "title": "Ile to <accent>kaw</accent>?",
+    "subtitle": "Zamień dowolną cenę na filiżanki kawy. Bo wszystko ma więcej sensu, gdy mierzysz w kofeinę.",
+    "labelAmount": "Twoja kwota",
+    "labelCoffee": "Wybierz kawę",
+    "resultLabel": "{type}",
+    "resultDetail": "po ~{price} za sztukę w {currency}",
+    "shareBtn": "Udostępnij wynik",
+    "funFactLabel": "☕ Ciekawostka",
+    "funFacts": [
+      "Finlandia ma najwyższe spożycie kawy na mieszkańca — około 12 kg na osobę rocznie!",
+      "Kawa jest drugim co do wielkości towarem handlowym na Ziemi, tuż po ropie naftowej.",
+      "Polacy piją średnio około 3 filiżanek kawy dziennie.",
+      "Latte w Starbucksie w Zurychu kosztuje około 7,50 $ — jeden z najdroższych na świecie.",
+      "Brazylia produkuje około jednej trzeciej światowego zapasu kawy."
+    ],
+    "seoTitle": "Dlaczego mierzyć w kawie?",
+    "seoText": "Codziennie wydajemy pieniądze na kawę, więc to idealna jednostka, by zrozumieć prawdziwy koszt rzeczy. Niezależnie od tego, czy planujesz budżet, porównujesz ceny, czy po prostu jesteś ciekawy — CoffeeCalc pozwala spojrzeć na każdą kwotę przez pryzmat ulubionego napoju. Obsługa wielu walut umożliwia porównywanie cen kawy na całym świecie.",
+    "faqTitle": "Często zadawane pytania",
+    "faq1Q": "Jak CoffeeCalc zamienia cenę na filiżanki kawy?",
+    "faq1A": "Używamy przybliżonych średnich cen dla każdego rodzaju napoju, przeliczamy kwotę według kursów walut, a następnie szacujemy, ile filiżanek reprezentuje ta kwota. Rzeczywiste ceny w kawiarniach się różnią — traktuj wyniki jako szybki punkt odniesienia, a nie wycenę.",
+    "faq2Q": "Jakie napoje i waluty mogę użyć?",
+    "faq2A": "Sześć rodzajów napojów (espresso, cappuccino, latte, americano, mocha, cold brew) i 14 głównych walut do szybkich porównań w domu i za granicą.",
+    "faq3Q": "Czy to jest darmowe? Czy potrzebuję konta?",
+    "faq3A": "Tak — CoffeeCalc jest darmowy w przeglądarce i nie wymaga rejestracji.",
+    "faq4Q": "Dlaczego porównywać koszty w filiżankach kawy?",
+    "faq4A": "Kawa to codzienny wydatek dla wielu osób, więc pytanie „ile to latte?” ułatwia ocenę kwot przy planowaniu budżetu lub rozważaniu większego wydatku.",
+    "schemaFeature1": "Sześć rodzajów napojów do porównania obok siebie",
+    "schemaFeature2": "14 walut z przybliżonymi kursami wymiany",
+    "schemaFeature3": "Działa w przeglądarce bez konieczności zakładania konta",
+    "footer": "Stworzone z miłością i kofeiną",
+    "disclaimer": "Ceny to przybliżone średnie. Rzeczywiste ceny kawy różnią się w zależności od lokalizacji.",
+    "coffeeNames": {
+      "espresso": "Espresso",
+      "cappuccino": "Cappuccino",
+      "latte": "Latte",
+      "americano": "Americano",
+      "mocha": "Mocha",
+      "coldBrew": "Cold Brew"
+    },
+    "shareText": "☕ {amount} {currency} = {count} {type}! Sprawdź swoje na CoffeeCalc",
+    "copied": "Skopiowano! ☕",
+    "brandLine": "☕ CoffeeCalc — {footer}"
+  }
+}
