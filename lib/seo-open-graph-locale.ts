@@ -9,6 +9,7 @@ export function openGraphLocaleTag(locale: string): string {
     ja: "ja_JP",
     it: "it_IT",
     ko: "ko_KR",
+    pl: "pl_PL",
   };
   return map[locale] ?? locale;
 }
