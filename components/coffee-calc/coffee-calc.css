@@ -528,6 +528,15 @@
   font-weight: 600;
 }
 
+.coffee-calc-footer-legal {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
 .coffee-calc-footer-langs {
   margin-top: 12px;
   display: flex;
@@ -536,6 +545,93 @@
   flex-wrap: wrap;
   font-size: 11px;
   opacity: 0.5;
+}
+
+.coffee-calc-legal {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  animation: coffee-calc-fade-up 0.8s ease both;
+}
+
+.coffee-calc-legal-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--coffee-accent);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.coffee-calc-legal-back:hover {
+  text-decoration: underline;
+}
+
+.coffee-calc-legal-article {
+  background: var(--coffee-milk);
+  border: 1px solid var(--coffee-steam);
+  border-radius: 16px;
+  padding: 28px 24px 32px;
+  box-shadow: 0 4px 24px rgba(27, 14, 7, 0.06);
+}
+
+.coffee-calc-legal-title {
+  font-family: var(--font-coffee-playfair), Georgia, serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  color: var(--coffee-espresso);
+}
+
+.coffee-calc-legal-updated {
+  margin: 0 0 20px;
+  font-size: 12px;
+  color: var(--coffee-crema);
+}
+
+.coffee-calc-legal-intro {
+  margin: 0 0 24px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--coffee-espresso);
+}
+
+.coffee-calc-legal-section {
+  margin-bottom: 22px;
+}
+
+.coffee-calc-legal-section:last-child {
+  margin-bottom: 0;
+}
+
+.coffee-calc-legal-section h2 {
+  font-family: var(--font-coffee-playfair), Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--coffee-espresso);
+}
+
+.coffee-calc-legal-section p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(27, 14, 7, 0.85);
+}
+
+.coffee-calc-legal-link-row {
+  margin-top: 10px !important;
+}
+
+.coffee-calc-legal-link-row a {
+  color: var(--coffee-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.coffee-calc-legal-link-row a:hover {
+  text-decoration: underline;
 }
 
 .coffee-calc-seo {

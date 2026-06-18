@@ -6,6 +6,8 @@ import { type ReactNode, useCallback, useEffect, useState } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 import Script from "next/script";
+// Components (local)
+import { Link } from "@/i18n/navigation";
 // Config
 import { ADSENSE_CLIENT_ID, CONSENT_STORAGE_KEY, GTM_ID } from "@/lib/config";
 
@@ -84,7 +86,13 @@ export const ConsentThirdParties = ({
                 {t("bannerTitle")}
               </p>
               <p id="cookie-consent-desc" className="mt-1 text-stone-600">
-                {t("bannerText")}
+                {t("bannerText")}{" "}
+                <Link
+                  href="/privacy"
+                  className="font-medium text-[#c05621] underline underline-offset-2 hover:text-[#a84819]"
+                >
+                  {t("privacyLink")}
+                </Link>
               </p>
             </div>
             <div className="flex shrink-0 flex-wrap gap-2 md:justify-end">

@@ -1,83 +1,12 @@
 {
-  "global": {
-    "loading": "Loading...",
-    "backButton": "Back",
-    "selectLanguage": "Select language",
-    "langsNavAria": "Available languages",
-    "languageNames": {
-      "en": "English",
-      "es": "Spanish",
-      "fr": "French",
-      "pt": "Portuguese",
-      "de": "German",
-      "ja": "Japanese",
-      "it": "Italian",
-      "ko": "Korean",
-      "pl": "Polish"
-    }
-  },
-  "NotFound": {
-    "title": "Page Not Found",
-    "message": "Oops! This page seems to have gone cold — like a forgotten coffee.",
-    "cta": "Back to Home"
-  },
   "Consent": {
-    "bannerTitle": "Cookies & privacy",
-    "bannerText": "We use cookies for analytics (Google Tag Manager) and ads (Google AdSense). Essential security cookies always stay on. You can accept optional tracking or reject it.",
-    "accept": "Accept all",
-    "reject": "Reject optional",
     "privacyLink": "Read our Privacy Policy"
-  },
-  "CoffeeCalc": {
-    "metadataTitle": "Coffee Cost Calculator — How Many Cups of Coffee?",
-    "metadataDescription": "Free online coffee calculator: convert any price into cups (espresso, latte, cappuccino & more). 14 currencies. Budget and compare spending—no signup.",
-    "title": "How Many <accent>Coffees</accent> Is That?",
-    "subtitle": "Convert any price into cups of coffee. Because everything makes more sense measured in caffeine.",
-    "labelAmount": "Your amount",
-    "labelCoffee": "Choose your coffee",
-    "resultLabel": "{type}",
-    "resultDetail": "at ~{price} each in {currency}",
-    "shareBtn": "Share Result",
-    "funFactLabel": "☕ Fun Fact",
-    "funFacts": [
-      "Finland consumes the most coffee per capita — about 12 kg per person per year!",
-      "Coffee is the second most traded commodity on Earth, right after crude oil.",
-      "The average American spends about $1,100 per year on coffee.",
-      "A Starbucks Grande Latte in Zurich costs around $7.50 — one of the priciest in the world.",
-      "Brazil produces about a third of the world's coffee supply."
-    ],
-    "seoTitle": "Why measure in coffee?",
-    "seoText": "We spend on coffee every day, making it the perfect unit to understand the real cost of things. Whether you're budgeting, comparing prices, or just curious — CoffeeCalc helps you see any price through the lens of your favorite drink. Multi-currency support lets you compare coffee costs worldwide.",
-    "faqTitle": "Common questions",
-    "faq1Q": "How does CoffeeCalc turn a price into cups of coffee?",
-    "faq1A": "We use approximate average prices for each drink type, convert your amount with exchange rates, then estimate how many cups that money represents. Real café prices vary, so treat results as a quick benchmark—not a quote.",
-    "faq2Q": "Which drinks and currencies can I use?",
-    "faq2A": "Six drink types (espresso, cappuccino, latte, americano, mocha, cold brew) and 14 major currencies for fast comparisons at home or abroad.",
-    "faq3Q": "Is it free? Do I need an account?",
-    "faq3A": "Yes—CoffeeCalc is free in your browser and you don't need to sign up.",
-    "faq4Q": "Why compare costs in coffee cups?",
-    "faq4A": "Coffee is an everyday purchase for many people, so “how many lattes is this?” makes amounts easier to reason about when budgeting or weighing a splurge.",
-    "schemaFeature1": "Six drink types you can compare side by side",
-    "schemaFeature2": "14 currencies with approximate exchange rates",
-    "schemaFeature3": "Runs in the browser with no account required",
-    "footer": "Made with love & caffeine",
-    "disclaimer": "Prices are approximate averages. Actual coffee prices vary by location.",
-    "coffeeNames": {
-      "espresso": "Espresso",
-      "cappuccino": "Cappuccino",
-      "latte": "Latte",
-      "americano": "Americano",
-      "mocha": "Mocha",
-      "coldBrew": "Cold Brew"
-    },
-    "shareText": "☕ {amount} {currency} = {count} {type}! Check yours at CoffeeCalc",
-    "copied": "Copied! ☕",
-    "brandLine": "☕ CoffeeCalc — {footer}"
   },
   "Legal": {
     "navPrivacy": "Privacy Policy",
     "navTerms": "Terms of Use",
     "navAbout": "About",
+    "navContact": "Contact",
     "navAria": "Legal pages",
     "backHome": "Back to calculator",
     "Privacy": {
@@ -199,7 +128,6 @@
         }
       }
     },
-    "navContact": "Contact",
     "Contact": {
       "metadataTitle": "Contact",
       "metadataDescription": "Contact CoffeeCalc for privacy questions, feedback, and general inquiries about the free coffee cost calculator. No email required—find the right resources here.",
