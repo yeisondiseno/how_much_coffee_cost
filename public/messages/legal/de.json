@@ -1,83 +1,12 @@
 {
-  "global": {
-    "loading": "Wird geladen...",
-    "backButton": "Zurück",
-    "selectLanguage": "Sprache wählen",
-    "langsNavAria": "Verfügbare Sprachen",
-    "languageNames": {
-      "en": "Englisch",
-      "es": "Spanisch",
-      "fr": "Französisch",
-      "pt": "Portugiesisch",
-      "de": "Deutsch",
-      "ja": "Japanisch",
-      "it": "Italienisch",
-      "ko": "Koreanisch",
-      "pl": "Polnisch"
-    }
-  },
-  "NotFound": {
-    "title": "Seite nicht gefunden",
-    "message": "Ups! Diese Seite scheint abgekühlt zu sein, wie ein vergessener Kaffee.",
-    "cta": "Zurück zur Startseite"
-  },
   "Consent": {
-    "bannerTitle": "Cookies & Datenschutz",
-    "bannerText": "Wir nutzen Cookies für Analytics (Google Tag Manager) und Werbung (Google AdSense). Notwendige Cookies bleiben aktiv. Du kannst optional zustimmen oder ablehnen.",
-    "accept": "Alle akzeptieren",
-    "reject": "Optionale ablehnen",
     "privacyLink": "Unsere Datenschutzerklärung lesen"
-  },
-  "CoffeeCalc": {
-    "metadataTitle": "Kaffeekosten-Rechner — wie viele Tassen?",
-    "metadataDescription": "Kostenloser Online-Rechner: Preise in Tassen umrechnen (Espresso, Latte, Cappuccino u. a.). 14 Währungen. Ausgaben vergleichen ohne Anmeldung.",
-    "title": "Wie viele <accent>Kaffees</accent> sind das?",
-    "subtitle": "Rechne jeden Preis in Tassen Kaffee um. Weil alles in Koffein gemessen mehr Sinn ergibt.",
-    "labelAmount": "Dein Betrag",
-    "labelCoffee": "Wähle deinen Kaffee",
-    "resultLabel": "{type}",
-    "resultDetail": "bei ~{price} pro Stück in {currency}",
-    "shareBtn": "Teilen",
-    "funFactLabel": "☕ Wusstest du?",
-    "funFacts": [
-      "Finnland hat den höchsten Kaffeekonsum pro Kopf — etwa 12 kg pro Person und Jahr!",
-      "Kaffee ist das zweitmeist gehandelte Gut der Erde, direkt nach Rohöl.",
-      "Deutsche trinken durchschnittlich etwa 164 Liter Kaffee pro Jahr.",
-      "Ein Latte in Zürich kostet rund 7,50 $ — einer der teuersten weltweit.",
-      "Brasilien produziert etwa ein Drittel des weltweiten Kaffees."
-    ],
-    "seoTitle": "Warum in Kaffee messen?",
-    "seoText": "Wir geben täglich Geld für Kaffee aus — das macht ihn zur perfekten Einheit, um die wahren Kosten der Dinge zu verstehen. Ob du budgetierst, Preise vergleichst oder einfach neugierig bist — CoffeeCalc hilft dir, jeden Preis durch die Brille deines Lieblingsgetränks zu sehen. Multiwährung unterstützt den weltweiten Vergleich von Kaffeepreisen.",
-    "faqTitle": "Häufige Fragen",
-    "faq1Q": "Wie rechnet CoffeeCalc einen Preis in Tassen um?",
-    "faq1A": "Wir nutzen grobe Durchschnittspreise pro Getränk, rechnen deinen Betrag mit Wechselkursen um und schätzen die Tassenanzahl. Lokale Preise variieren — Ergebnis als schnelle Orientierung, nicht als exakter Betrag.",
-    "faq2Q": "Welche Getränke und Währungen gibt es?",
-    "faq2A": "Sechs Varianten (Espresso, Cappuccino, Latte, Americano, Mocha, Cold Brew) und 14 wichtige Währungen zum Vergleichen.",
-    "faq3Q": "Ist es kostenlos? Brauche ich ein Konto?",
-    "faq3A": "Ja — CoffeeCalc ist kostenlos im Browser und ohne Registrierung.",
-    "faq4Q": "Warum Vergleiche in Kaffeetassen?",
-    "faq4A": "Kaffee kaufen viele regelmäßig; „Wie viele Lattes sind das?“ macht Beträge beim Budgetieren oder spontanen Käufen greifbarer.",
-    "schemaFeature1": "Sechs Getränketypen zum Vergleichen",
-    "schemaFeature2": "14 Währungen mit ungefähren Wechselkursen",
-    "schemaFeature3": "Läuft im Browser ohne Konto",
-    "footer": "Mit Liebe und Koffein gemacht",
-    "disclaimer": "Preise sind ungefähre Durchschnittswerte. Tatsächliche Preise variieren je nach Ort.",
-    "coffeeNames": {
-      "espresso": "Espresso",
-      "cappuccino": "Cappuccino",
-      "latte": "Latte",
-      "americano": "Americano",
-      "mocha": "Mocha",
-      "coldBrew": "Cold Brew"
-    },
-    "shareText": "☕ {amount} {currency} = {count} {type}! Probier es auf CoffeeCalc",
-    "copied": "Kopiert! ☕",
-    "brandLine": "☕ CoffeeCalc — {footer}"
   },
   "Legal": {
     "navPrivacy": "Datenschutzerklärung",
     "navTerms": "Nutzungsbedingungen",
     "navAbout": "Über uns",
+    "navContact": "Kontakt",
     "navAria": "Rechtliche Seiten",
     "backHome": "Zurück zum Rechner",
     "Privacy": {
@@ -199,7 +128,6 @@
         }
       }
     },
-    "navContact": "Kontakt",
     "Contact": {
       "metadataTitle": "Kontakt",
       "metadataDescription": "Kontaktieren Sie CoffeeCalc bei Fragen zum Datenschutz, Feedback und allgemeinen Anfragen zum kostenlosen Kaffeekosten-Rechner. Keine E-Mail erforderlich — finden Sie hier die richtigen Ressourcen.",

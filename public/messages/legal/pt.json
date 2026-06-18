@@ -1,83 +1,12 @@
 {
-  "global": {
-    "loading": "Carregando...",
-    "backButton": "Voltar",
-    "selectLanguage": "Escolher idioma",
-    "langsNavAria": "Idiomas disponíveis",
-    "languageNames": {
-      "en": "Inglês",
-      "es": "Espanhol",
-      "fr": "Francês",
-      "pt": "Português",
-      "de": "Alemão",
-      "ja": "Japonês",
-      "it": "Italiano",
-      "ko": "Coreano",
-      "pl": "Polonês"
-    }
-  },
-  "NotFound": {
-    "title": "Página não encontrada",
-    "message": "Ops! Esta página parece ter esfriado, como um café esquecido.",
-    "cta": "Voltar ao início"
-  },
   "Consent": {
-    "bannerTitle": "Cookies e privacidade",
-    "bannerText": "Usamos cookies para análise (Google Tag Manager) e anúncios (Google AdSense). Cookies estritamente necessários permanecem ativos. Você pode aceitar tudo ou recusar o opcional.",
-    "accept": "Aceitar tudo",
-    "reject": "Recusar opcionais",
     "privacyLink": "Leia nossa Política de Privacidade"
-  },
-  "CoffeeCalc": {
-    "metadataTitle": "Calculadora de custo do café — quantas xícaras?",
-    "metadataDescription": "Calculadora online gratuita: converta qualquer valor em xícaras (espresso, latte, cappuccino e mais). 14 moedas. Compare gastos sem cadastro.",
-    "title": "Quantos <accent>Cafés</accent> É Isso?",
-    "subtitle": "Converta qualquer preço em xícaras de café. Porque tudo faz mais sentido medido em cafeína.",
-    "labelAmount": "Seu valor",
-    "labelCoffee": "Escolha seu café",
-    "resultLabel": "{type}",
-    "resultDetail": "a ~{price} cada em {currency}",
-    "shareBtn": "Compartilhar",
-    "funFactLabel": "☕ Curiosidade",
-    "funFacts": [
-      "A Finlândia consome mais café per capita — cerca de 12 kg por pessoa por ano!",
-      "O café é a segunda mercadoria mais negociada na Terra, logo depois do petróleo.",
-      "O americano médio gasta cerca de US$ 1.100 por ano com café.",
-      "O Brasil é o maior produtor de café do mundo!",
-      "Um brasileiro bebe em média 839 xícaras de café por ano."
-    ],
-    "seoTitle": "Por que medir em café?",
-    "seoText": "Gastamos com café todos os dias, o que o torna a unidade perfeita para entender o custo real das coisas. Esteja você fazendo orçamento, comparando preços ou só curioso — CoffeeCalc ajuda a ver qualquer preço pela lente da sua bebida favorita. Suporte a várias moedas permite comparar o custo do café no mundo todo.",
-    "faqTitle": "Perguntas frequentes",
-    "faq1Q": "Como o CoffeeCalc transforma um preço em xícaras de café?",
-    "faq1A": "Usamos preços médios aproximados por tipo de bebida, convertemos seu valor com câmbio e estimamos quantas xícaras esse dinheiro representa. Preços reais variam — veja como referência rápida, não como valor exato.",
-    "faq2Q": "Quais bebidas e moedas posso usar?",
-    "faq2A": "Seis tipos (espresso, cappuccino, latte, americano, mocha, cold brew) e 14 moedas principais para comparar em casa ou viajando.",
-    "faq3Q": "É grátis? Preciso de conta?",
-    "faq3A": "Sim: CoffeeCalc é gratuito no navegador e não exige cadastro.",
-    "faq4Q": "Por que comparar custos em xícaras de café?",
-    "faq4A": "Para muita gente o café é gasto do dia a dia; pensar \"quantos lattes são isso?\" deixa valores mais intuitivos na hora de orçar ou decidir um gasto extra.",
-    "schemaFeature1": "Seis tipos de bebida para comparar",
-    "schemaFeature2": "14 moedas com taxas de câmbio aproximadas",
-    "schemaFeature3": "Roda no navegador sem criar conta",
-    "footer": "Feito com amor e cafeína",
-    "disclaimer": "Os preços são médias aproximadas. Os preços reais variam conforme o local.",
-    "coffeeNames": {
-      "espresso": "Espresso",
-      "cappuccino": "Cappuccino",
-      "latte": "Latte",
-      "americano": "Americano",
-      "mocha": "Mocha",
-      "coldBrew": "Cold brew"
-    },
-    "shareText": "☕ {amount} {currency} = {count} {type}! Veja no CoffeeCalc",
-    "copied": "Copiado! ☕",
-    "brandLine": "☕ CoffeeCalc — {footer}"
   },
   "Legal": {
     "navPrivacy": "Política de Privacidade",
     "navTerms": "Termos de Uso",
     "navAbout": "Sobre",
+    "navContact": "Contato",
     "navAria": "Páginas legais",
     "backHome": "Voltar à calculadora",
     "Privacy": {
@@ -199,7 +128,6 @@
         }
       }
     },
-    "navContact": "Contato",
     "Contact": {
       "metadataTitle": "Contato",
       "metadataDescription": "Entre em contato com o CoffeeCalc para dúvidas sobre privacidade, feedback e consultas gerais sobre a calculadora gratuita de custo do café. Não é necessário e-mail — encontre os recursos certos aqui.",

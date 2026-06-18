@@ -1,83 +1,12 @@
 {
-  "global": {
-    "loading": "Cargando...",
-    "backButton": "Volver",
-    "selectLanguage": "Elegir idioma",
-    "langsNavAria": "Idiomas disponibles",
-    "languageNames": {
-      "en": "Inglés",
-      "es": "Español",
-      "fr": "Francés",
-      "pt": "Portugués",
-      "de": "Alemán",
-      "ja": "Japonés",
-      "it": "Italiano",
-      "ko": "Coreano",
-      "pl": "Polaco"
-    }
-  },
-  "NotFound": {
-    "title": "Página no encontrada",
-    "message": "¡Vaya! Esta página parece haberse enfriado, como un café olvidado.",
-    "cta": "Volver al inicio"
-  },
   "Consent": {
-    "bannerTitle": "Cookies y privacidad",
-    "bannerText": "Usamos cookies para analítica (Google Tag Manager) y publicidad (Google AdSense). Las cookies estrictamente necesarias siguen activas. Puedes aceptar el resto o rechazarlas.",
-    "accept": "Aceptar todo",
-    "reject": "Rechazar opcionales",
     "privacyLink": "Leer la política de privacidad"
-  },
-  "CoffeeCalc": {
-    "metadataTitle": "Calculadora de costo de café — ¿cuántas tazas es?",
-    "metadataDescription": "Calculadora online gratis: convierte cualquier precio en tazas de café (espresso, latte, cappuccino y más). 14 monedas. Compara gastos y presupuesta sin registro.",
-    "title": "¿Cuántos <accent>Cafés</accent> Es Eso?",
-    "subtitle": "Convierte cualquier precio en tazas de café. Porque todo tiene más sentido medido en cafeína.",
-    "labelAmount": "Tu monto",
-    "labelCoffee": "Elige tu café",
-    "resultLabel": "{type}",
-    "resultDetail": "a ~{price} cada uno en {currency}",
-    "shareBtn": "Compartir",
-    "funFactLabel": "☕ Dato curioso",
-    "funFacts": [
-      "Finlandia consume más café per cápita — ¡unos 12 kg por persona al año!",
-      "El café es el segundo producto más comercializado en el mundo, después del petróleo.",
-      "Un estadounidense promedio gasta unos $1,100 al año en café.",
-      "Colombia es el tercer productor de café del mundo y su café es considerado de los mejores.",
-      "Brasil produce alrededor de un tercio del café mundial."
-    ],
-    "seoTitle": "¿Por qué medir en café?",
-    "seoText": "Gastamos en café todos los días, lo que lo convierte en la unidad perfecta para entender el costo real de las cosas. Ya sea que estés presupuestando, comparando precios o simplemente curioso — CoffeeCalc te ayuda a ver cualquier precio a través de tu bebida favorita. El soporte multimoneda te permite comparar costos del café en todo el mundo.",
-    "faqTitle": "Preguntas frecuentes",
-    "faq1Q": "¿Cómo convierte CoffeeCalc un precio en tazas de café?",
-    "faq1A": "Usamos precios promedio aproximados por tipo de bebida, convertimos tu monto con tipos de cambio y estimamos cuántas tazas equivale ese dinero. Los precios reales en cafeterías varían: considéralo una referencia rápida, no un valor exacto.",
-    "faq2Q": "¿Qué bebidas y monedas puedo usar?",
-    "faq2A": "Seis tipos de café (espresso, cappuccino, latte, americano, mocha y cold brew) y 14 monedas principales para comparar en casa o viajando.",
-    "faq3Q": "¿Es gratis? ¿Necesito cuenta?",
-    "faq3A": "Sí: CoffeeCalc es gratis en el navegador y no requiere registro.",
-    "faq4Q": "¿Por qué comparar costos en tazas de café?",
-    "faq4A": "Para muchas personas el café es un gasto cotidiano; preguntarte «¿cuántos lattes es esto?» hace más intuitivos los montos al armar tu presupuesto o decidir un capricho.",
-    "schemaFeature1": "Seis tipos de bebida para comparar",
-    "schemaFeature2": "14 monedas con tipos de cambio aproximados",
-    "schemaFeature3": "Funciona en el navegador sin crear cuenta",
-    "footer": "Hecho con amor y cafeína",
-    "disclaimer": "Los precios son promedios aproximados. Los precios reales varían según la ubicación.",
-    "coffeeNames": {
-      "espresso": "Espresso",
-      "cappuccino": "Cappuccino",
-      "latte": "Latte",
-      "americano": "Americano",
-      "mocha": "Mocha",
-      "coldBrew": "Cold Brew"
-    },
-    "shareText": "☕ {amount} {currency} = ¡{count} {type}! Míralo en CoffeeCalc",
-    "copied": "¡Copiado! ☕",
-    "brandLine": "☕ CoffeeCalc — {footer}"
   },
   "Legal": {
     "navPrivacy": "Política de privacidad",
     "navTerms": "Términos de uso",
     "navAbout": "Acerca de",
+    "navContact": "Contacto",
     "navAria": "Páginas legales",
     "backHome": "Volver a la calculadora",
     "Privacy": {
@@ -199,7 +128,6 @@
         }
       }
     },
-    "navContact": "Contacto",
     "Contact": {
       "metadataTitle": "Contacto",
       "metadataDescription": "Contacta con CoffeeCalc para consultas de privacidad, comentarios y preguntas generales sobre la calculadora gratuita de costo de café. Sin correo—encuentra los recursos adecuados aquí.",
