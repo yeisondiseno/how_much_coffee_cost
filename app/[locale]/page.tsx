@@ -7,6 +7,8 @@ type Props = Readonly<{
   params: Promise<{ locale: string }>;
 }>;
 
+const FAQ_COUNT = 10;
+
 const jsonLdStringify = (data: unknown) =>
   JSON.stringify(data).replaceAll("<", String.raw`\u003c`);
 
@@ -16,12 +18,10 @@ export default async function Home({ params }: Props) {
 
   const t = await getTranslations({ locale, namespace: "CoffeeCalc" });
 
-  const faqItems = [
-    { question: t("faq1Q"), answer: t("faq1A") },
-    { question: t("faq2Q"), answer: t("faq2A") },
-    { question: t("faq3Q"), answer: t("faq3A") },
-    { question: t("faq4Q"), answer: t("faq4A") },
-  ];
+  const faqItems = Array.from({ length: FAQ_COUNT }, (_, index) => {
+    const n = index + 1;
+    return { question: t(`faq${n}Q`), answer: t(`faq${n}A`) };
+  });
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -52,6 +52,36 @@ export default async function Home({ params }: Props) {
         isPartOf: { "@id": `${BASE_URL}/#website` },
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         featureList: [t("schemaFeature1"), t("schemaFeature2"), t("schemaFeature3")],
+      },
+      {
+        "@type": "HowTo",
+        "@id": `${BASE_URL}/${locale}#howto`,
+        name: t("howToName"),
+        description: t("howToDescription"),
+        inLanguage: locale,
+        isPartOf: { "@id": `${BASE_URL}/${locale}#webapp` },
+        step: [
+          {
+            "@type": "HowToStep",
+            name: t("howToStep1Name"),
+            text: t("howToStep1Text"),
+          },
+          {
+            "@type": "HowToStep",
+            name: t("howToStep2Name"),
+            text: t("howToStep2Text"),
+          },
+          {
+            "@type": "HowToStep",
+            name: t("howToStep3Name"),
+            text: t("howToStep3Text"),
+          },
+          {
+            "@type": "HowToStep",
+            name: t("howToStep4Name"),
+            text: t("howToStep4Text"),
+          },
+        ],
       },
       {
         "@type": "FAQPage",

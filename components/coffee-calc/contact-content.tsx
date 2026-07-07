@@ -2,6 +2,8 @@
 import { getTranslations } from "next-intl/server";
 // Components (local)
 import { Link } from "@/i18n/navigation";
+// Libraries
+import { CONTACT_EMAIL } from "@/lib/config";
 
 const CONTACT_LINK_SECTIONS = {
   privacyQuestions: { href: "/privacy", labelKey: "privacyPageLink" },
@@ -25,6 +27,14 @@ export const ContactContent = async () => {
       <h1 className="coffee-calc-legal-title">{t("Contact.title")}</h1>
       <p className="coffee-calc-legal-updated">{t("Contact.lastUpdated")}</p>
       <p className="coffee-calc-legal-intro">{t("Contact.intro")}</p>
+      <section className="coffee-calc-legal-section coffee-calc-contact-email">
+        <h2>{t("Contact.sections.email.title")}</h2>
+        <p>{t("Contact.sections.email.body")}</p>
+        <p className="coffee-calc-legal-link-row">
+          <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+        </p>
+        <p>{t("Contact.sections.email.responseTime")}</p>
+      </section>
       {sectionKeys.map((key) => {
         const linkConfig = CONTACT_LINK_SECTIONS[key as ContactLinkSection];
 

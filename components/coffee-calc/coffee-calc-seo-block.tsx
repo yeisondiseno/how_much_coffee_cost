@@ -1,14 +1,29 @@
 // Libraries
 import { getTranslations } from "next-intl/server";
+// Components (local)
+import { CoffeeCalcPriceTable } from "@/components/coffee-calc/coffee-calc-price-table";
+import { Link } from "@/i18n/navigation";
+
+const FAQ_COUNT = 10;
 
 export const CoffeeCalcSeoBlock = async () => {
   const t = await getTranslations("CoffeeCalc");
 
-  const faqEntries = [
-    { id: "faq1", q: t("faq1Q"), a: t("faq1A") },
-    { id: "faq2", q: t("faq2Q"), a: t("faq2A") },
-    { id: "faq3", q: t("faq3Q"), a: t("faq3A") },
-    { id: "faq4", q: t("faq4Q"), a: t("faq4A") },
+  const faqEntries = Array.from({ length: FAQ_COUNT }, (_, index) => {
+    const n = index + 1;
+    return {
+      id: `faq${n}`,
+      q: t(`faq${n}Q`),
+      a: t(`faq${n}A`),
+    };
+  });
+
+  const useCaseKeys = ["useCase1", "useCase2", "useCase3"] as const;
+  const howItWorksSteps = [
+    "howItWorksStep1",
+    "howItWorksStep2",
+    "howItWorksStep3",
+    "howItWorksStep4",
   ] as const;
 
   return (
@@ -18,6 +33,46 @@ export const CoffeeCalcSeoBlock = async () => {
     >
       <h2 id="coffee-calc-seo-main-heading">{t("seoTitle")}</h2>
       <p>{t("seoText")}</p>
+
+      <section className="coffee-calc-seo-section">
+        <h3>{t("howItWorksTitle")}</h3>
+        <p>{t("howItWorksIntro")}</p>
+        <ol className="coffee-calc-seo-steps">
+          {howItWorksSteps.map((stepKey) => (
+            <li key={stepKey}>{t(stepKey)}</li>
+          ))}
+        </ol>
+        <p>{t("howItWorksExample")}</p>
+      </section>
+
+      <section className="coffee-calc-seo-section">
+        <h3>{t("methodologyTitle")}</h3>
+        <p>{t("methodologyText")}</p>
+        <p>{t("methodologyDisclaimer")}</p>
+      </section>
+
+      <section className="coffee-calc-seo-section">
+        <h3>{t("comparisonTitle")}</h3>
+        <CoffeeCalcPriceTable />
+      </section>
+
+      <section className="coffee-calc-seo-section">
+        <h3>{t("useCasesTitle")}</h3>
+        {useCaseKeys.map((key) => (
+          <div key={key} className="coffee-calc-seo-use-case">
+            <h4>{t(`${key}Title`)}</h4>
+            <p>{t(`${key}Text`)}</p>
+          </div>
+        ))}
+      </section>
+
+      <section className="coffee-calc-seo-section coffee-calc-seo-blog-cta">
+        <h3>{t("blogCtaTitle")}</h3>
+        <p>{t("blogCtaText")}</p>
+        <Link href="/blog" className="coffee-calc-seo-blog-link">
+          {t("blogCtaLink")} →
+        </Link>
+      </section>
 
       <div className="coffee-calc-seo-faq">
         <h3 className="coffee-calc-seo-faq-heading">{t("faqTitle")}</h3>
