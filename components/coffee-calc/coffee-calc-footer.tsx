@@ -17,6 +17,7 @@ export const CoffeeCalcFooter = async () => {
         {t("disclaimer")}
       </p>
       <nav className="coffee-calc-footer-legal" aria-label={tl("navAria")}>
+        <Link href="/blog">{tl("navBlog")}</Link>
         <Link href="/privacy">{tl("navPrivacy")}</Link>
         <Link href="/terms">{tl("navTerms")}</Link>
         <Link href="/about">{tl("navAbout")}</Link>

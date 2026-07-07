@@ -1,5 +1,7 @@
 # Reporte de auditoría AdSense — CoffeeCalc
 
+> **Actualización (jul 2026):** La Fase 1 (páginas legales) está completada. Para el plan de acción vigente, ver [`adsense-remediation-plan.md`](./adsense-remediation-plan.md).
+
 | Campo                  | Valor                                                |
 | ---------------------- | ---------------------------------------------------- |
 | **Sitio**              | [howmanycoffees.net](https://www.howmanycoffees.net) |

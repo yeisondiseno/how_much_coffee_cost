@@ -35,11 +35,14 @@ export const LEGAL_PAGE_SECTIONS = {
   about: [
     "whatIs",
     "whoWeAre",
+    "operator",
     "mission",
     "howItWorks",
     "accuracy",
+    "connect",
   ],
   contact: [
+    "email",
     "whatWeHelpWith",
     "privacyQuestions",
     "generalInquiries",

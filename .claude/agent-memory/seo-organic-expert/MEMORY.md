@@ -6,12 +6,16 @@
 - SEO: `generateMetadata` in `app/[locale]/layout.tsx`, JSON-LD in `app/[locale]/page.tsx`
 - Sitemap: only locale home URLs (`app/sitemap.ts`)
 
-## AdSense blockers (audited 2026-06)
+## AdSense blockers (updated 2026-07)
 
-1. ~~**No legal/trust pages**~~ — privacy, terms, about, contact implemented (no public email)
-2. **Thin content** — single-page tool; legal pages add depth but blog content still needed
-3. **Consent gates AdSense script** — `consent-third-parties.tsx` loads ads only after accept
-4. ~~**No privacy link in cookie banner**~~ — fixed
+1. ~~**No legal/trust pages**~~ — privacy, terms, about, contact implemented
+2. ~~**Thin content**~~ — home expanded (~800+ words), blog with 5 articles (9 locales)
+3. ~~**No real contact channel**~~ — contact@howmanycoffees.net added
+4. **Consent gates AdSense script** — `consent-third-parties.tsx` loads ads only after accept
+5. ~~**No privacy link in cookie banner**~~ — fixed
+6. ~~**Ad slots visible pre-approval**~~ — hidden via `NEXT_PUBLIC_SHOW_ADS=false` (default)
+
+**Remediation plan:** `specs/adsense-remediation-plan.md` — Phases A–E implemented in code (Jul 2026)
 
 ## Legal pages (implemented 2026-06)
 

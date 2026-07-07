@@ -57,6 +57,51 @@
     "faq3A": "Yes—CoffeeCalc is free in your browser and you don't need to sign up.",
     "faq4Q": "Why compare costs in coffee cups?",
     "faq4A": "Coffee is an everyday purchase for many people, so “how many lattes is this?” makes amounts easier to reason about when budgeting or weighing a splurge.",
+    "howItWorksTitle": "How CoffeeCalc works",
+    "howItWorksIntro": "CoffeeCalc turns any monetary amount into a number of coffee cups in four quick steps. The tool runs entirely in your browser—no account, no data sent to our servers.",
+    "howItWorksStep1": "Enter the amount you want to compare—a product price, rent payment, salary figure, or any number that helps you make sense of money.",
+    "howItWorksStep2": "Choose one of 14 supported currencies. CoffeeCalc converts your amount using approximate exchange rates so you can compare at home or abroad.",
+    "howItWorksStep3": "Pick a drink type: espresso, cappuccino, latte, americano, mocha, or cold brew. Each uses a different reference average price.",
+    "howItWorksStep4": "Read the result: how many cups your amount represents at the chosen drink's average price in your currency.",
+    "howItWorksExample": "Example: enter $50, select USD, and choose Latte (~$5 each). CoffeeCalc shows 10 cups—meaning that $50 equals about ten lattes at average U.S. café prices.",
+    "methodologyTitle": "How we estimate coffee prices",
+    "methodologyText": "CoffeeCalc uses reference average prices per drink type, maintained in USD and converted to other currencies with approximate exchange rates. Espresso averages around $2.50, a latte about $5, and a mocha roughly $5.50—these figures reflect typical specialty-café pricing in the United States and similar markets, not promotional or grocery-store coffee. Exchange rates are updated periodically but are estimates, not live trading quotes.",
+    "methodologyDisclaimer": "Real café prices vary by city, neighborhood, brand, and season. CoffeeCalc provides a quick benchmark for perspective and comparison—not a quote from your local barista. Always verify prices locally when spending decisions matter.",
+    "comparisonTitle": "Average drink prices by currency",
+    "comparisonCaption": "Approximate average prices per drink type in USD, EUR, and GBP. Values are estimates for quick comparison.",
+    "comparisonDrink": "Drink",
+    "useCasesTitle": "Practical ways to use CoffeeCalc",
+    "useCase1Title": "Monthly budgeting",
+    "useCase1Text": "Add up recurring expenses—streaming, gym, phone bill—and convert each to coffee cups. A $15 subscription is about three lattes per month; a $120 utility bill is roughly twenty-four. Seeing costs in a daily ritual you already know makes trade-offs clearer when trimming a budget.",
+    "useCase2Title": "Salary comparison across countries",
+    "useCase2Text": "Job offers in different currencies are hard to compare at a glance. Enter a monthly salary in each currency, pick a drink, and see how many cups per month it represents. A higher nominal salary in an expensive city may buy fewer lattes than a lower one elsewhere—CoffeeCalc makes that tangible without spreadsheets.",
+    "useCase3Title": "Understanding inflation and rising prices",
+    "useCase3Text": "When something that used to cost “five coffees” now costs eight, the jump is easier to feel than a percentage alone. Enter last year's price and this year's side by side, or compare a historical amount to today. CoffeeCalc helps translate abstract inflation into everyday terms you can share with friends or family.",
+    "blogCtaTitle": "Go deeper with our coffee guides",
+    "blogCtaText": "The calculator is just the start. Our blog covers country-by-country prices, monthly budgeting tips, salary comparisons, and the history of coffee costs—written to help you use CoffeeCalc with real-world context.",
+    "blogCtaLink": "Browse the CoffeeCalc blog",
+    "faq5Q": "Where do CoffeeCalc's average drink prices come from?",
+    "faq5A": "We maintain reference averages per drink type based on typical specialty-café pricing in the United States and comparable markets—espresso around $2.50, cappuccino near $4.50, latte about $5, and mocha roughly $5.50. These are not scraped from a single chain; they reflect blended estimates from public price surveys, menu listings, and regional reports. Prices shift over time and differ by neighborhood, so we treat them as stable benchmarks for comparison rather than live quotes. When we update averages, we revise the calculator and note changes on the About page.",
+    "faq6Q": "How often are exchange rates updated in CoffeeCalc?",
+    "faq6A": "Exchange rates in CoffeeCalc are approximate estimates, not real-time forex feeds. We update them periodically to keep multi-currency comparisons reasonable for budgeting and travel planning. Daily market swings are usually small enough that a rough rate still gives a useful cup count, but large currency moves can make results slightly stale until the next update. For major financial decisions—contracts, transfers, or tax reporting—use an official rate from your bank or central bank. CoffeeCalc is designed for quick perspective, not precision trading.",
+    "faq7Q": "Can I use CoffeeCalc to plan travel spending?",
+    "faq7A": "Yes. Pick the currency of your destination, enter a daily or weekly budget, and choose the drink you order most often abroad. The result shows roughly how many café visits that budget covers at average local-style prices. Pair this with our blog articles on coffee costs by country for richer context. Remember that tourist districts and airports often charge more than neighborhood cafés, so treat the number as a planning starting point. Adjust the amount upward if you know you will mostly visit premium venues or add tips and taxes not reflected in averages.",
+    "faq8Q": "Why might my result differ from what I pay at my local café?",
+    "faq8A": "Your local shop may charge more or less than our reference average for many reasons: rent, labor costs, brand positioning, cup size, milk alternatives, and local taxes all affect the final price. A independent roaster in a high-rent district might charge $7 for a latte while a suburban chain charges $4. CoffeeCalc intentionally uses middle-ground averages so comparisons stay consistent across drink types and currencies. Use the tool to compare relative scale—\"this gadget costs fifty lattes\"—rather than expecting an exact match to yesterday's receipt.",
+    "faq9Q": "Does CoffeeCalc store the amounts I enter?",
+    "faq9A": "No. Calculations run entirely in your browser. Amounts you type are not sent to CoffeeCalc servers or saved in a user account—we do not offer accounts. Optional analytics, only if you accept cookies, may record aggregate page views through Google Tag Manager, but not the specific numbers you enter in the calculator. Your consent choice is stored locally in your browser. If you share a result using the share button, only the generated text is copied; we do not log that action server-side.",
+    "faq10Q": "How should I read the price comparison table on this page?",
+    "faq10A": "The table shows approximate average prices for each drink type converted into USD, EUR, and GBP using our reference rates. It helps you see how espresso, latte, and other drinks rank against each other in the same currency, or how one drink compares across regions at a glance. Numbers are rounded for readability and do not include tax, tip, or loyalty discounts. Use the table alongside the calculator: pick a drink and currency that match your habits, then enter real amounts you care about. For deeper regional breakdowns, see our blog posts on coffee prices by country.",
+    "howToName": "How to convert any price to coffee cups",
+    "howToDescription": "Use CoffeeCalc to turn any monetary amount into an approximate number of coffee cups by entering an amount, choosing a currency, and selecting a drink type.",
+    "howToStep1Name": "Enter your amount",
+    "howToStep1Text": "Type the price or sum you want to compare—such as a product cost, bill, or salary—in the amount field on the CoffeeCalc home page.",
+    "howToStep2Name": "Choose a currency",
+    "howToStep2Text": "Select one of 14 supported currencies so CoffeeCalc can convert your amount using approximate exchange rates.",
+    "howToStep3Name": "Select a drink type",
+    "howToStep3Text": "Pick espresso, cappuccino, latte, americano, mocha, or cold brew. Each drink uses a different reference average price.",
+    "howToStep4Name": "Read your result",
+    "howToStep4Text": "View how many cups your amount represents at the chosen drink's average price, then share or compare with another amount.",
     "schemaFeature1": "Six drink types you can compare side by side",
     "schemaFeature2": "14 currencies with approximate exchange rates",
     "schemaFeature3": "Runs in the browser with no account required",
@@ -75,6 +120,7 @@
     "brandLine": "☕ CoffeeCalc — {footer}"
   },
   "Legal": {
+    "navBlog": "Blog",
     "navPrivacy": "Privacy Policy",
     "navTerms": "Terms of Use",
     "navAbout": "About",
@@ -174,7 +220,7 @@
       "metadataTitle": "About CoffeeCalc",
       "metadataDescription": "Learn about CoffeeCalc — the free coffee cost calculator that turns any price into cups of coffee. Our mission, how it works, and price accuracy notes.",
       "title": "About CoffeeCalc",
-      "lastUpdated": "Last updated: June 17, 2026",
+      "lastUpdated": "Last updated: July 6, 2026",
       "intro": "CoffeeCalc helps you understand money in a way that feels human: cups of coffee. This page explains what the project is, who builds it, and how to interpret the numbers you see.",
       "sections": {
         "whatIs": {
@@ -184,6 +230,10 @@
         "whoWeAre": {
           "title": "Who operates CoffeeCalc?",
           "body": "CoffeeCalc is an independent side project built and maintained by a solo developer passionate about simple, useful web tools. It is not affiliated with any coffee chain, financial institution, or government body. We aim to keep the tool fast, free, and accessible in multiple languages."
+        },
+        "operator": {
+          "title": "About the developer",
+          "body": "CoffeeCalc is created and maintained by Alex, a solo developer working on this site as an indie side project alongside a full-time job. The goal is a fast, privacy-respecting utility anyone can use without signing up—built because comparing prices in coffee cups made budgeting more intuitive in daily life. Alex handles design, code, translations, and content updates. CoffeeCalc is not a company with a large team; it is one person's attempt to build something genuinely useful on the open web."
         },
         "mission": {
           "title": "Our mission",
@@ -196,19 +246,28 @@
         "accuracy": {
           "title": "Accuracy and limitations",
           "body": "Coffee shop prices vary widely by neighborhood, brand, and country. Exchange rates fluctuate daily. CoffeeCalc provides a quick benchmark—not a quote from your local café. Use it for perspective and rough comparisons, and always check real prices when spending matters."
+        },
+        "connect": {
+          "title": "Get in touch and keep learning",
+          "body": "Questions, feedback, or privacy concerns? Visit our Contact page to reach Alex by email at contact@howmanycoffees.net. For longer guides on budgeting, travel, and coffee prices around the world, browse the CoffeeCalc blog linked from the site footer and home page."
         }
       }
     },
     "navContact": "Contact",
     "Contact": {
       "metadataTitle": "Contact",
-      "metadataDescription": "Contact CoffeeCalc for privacy questions, feedback, and general inquiries about the free coffee cost calculator. No email required—find the right resources here.",
+      "metadataDescription": "Contact CoffeeCalc at contact@howmanycoffees.net for privacy questions, feedback, and general inquiries about the free coffee cost calculator. We aim to reply within 48–72 hours.",
       "title": "Contact",
-      "lastUpdated": "Last updated: June 17, 2026",
-      "intro": "We're glad you reached out. This page explains how to get help with CoffeeCalc topics such as privacy, how the calculator works, and site feedback. We don't publish a public email address, but the sections below point you to the right information.",
+      "lastUpdated": "Last updated: July 6, 2026",
+      "intro": "We're glad you reached out. For privacy questions, calculator feedback, or general inquiries, email us at contact@howmanycoffees.net. The sections below explain what we can help with and what to expect when you write.",
       "privacyPageLink": "Read the Privacy Policy →",
       "aboutPageLink": "Visit About CoffeeCalc →",
       "sections": {
+        "email": {
+          "title": "Email us directly",
+          "body": "The fastest way to reach CoffeeCalc is by email at contact@howmanycoffees.net. Use this address for privacy requests, bug reports, translation corrections, partnership questions, or general feedback about the calculator and blog.",
+          "responseTime": "We aim to respond within 48–72 hours on business days. Messages about urgent privacy concerns are prioritized. If you do not hear back within a week, check your spam folder and try sending again."
+        },
         "whatWeHelpWith": {
           "title": "What can we help with?",
           "body": "Visitors usually contact us about privacy and cookies, how drink prices and exchange rates are estimated, accuracy of results, accessibility or bugs, and ideas to improve the calculator. Choose the section below that best matches your question."
@@ -223,11 +282,11 @@
         },
         "feedback": {
           "title": "Feedback and suggestions",
-          "body": "We welcome ideas to make CoffeeCalc clearer, faster, or more useful. We're building privacy-friendly ways to receive feedback without requiring an email address. Check this page for updates when new options become available."
+          "body": "We welcome ideas to make CoffeeCalc clearer, faster, or more useful—new drink types, currencies, blog topics, or accessibility improvements. Send suggestions to contact@howmanycoffees.net with as much detail as you can. While we cannot implement every request, we read all messages and prioritize changes that help the most visitors."
         },
         "responseExpectations": {
           "title": "What to expect",
-          "body": "CoffeeCalc is maintained by a small independent team. We review privacy-related concerns and site quality on an ongoing basis and update policies, translations, and calculator content when needed. Thank you for helping us keep the tool trustworthy and useful."
+          "body": "CoffeeCalc is maintained by Alex as an indie side project. Email to contact@howmanycoffees.net is reviewed regularly; expect a reply within 48–72 hours on business days. We update policies, translations, and calculator content based on feedback and legal requirements. Thank you for helping us keep the tool trustworthy and useful."
         }
       }
     }

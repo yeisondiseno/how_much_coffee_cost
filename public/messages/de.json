@@ -30,7 +30,7 @@
   },
   "CoffeeCalc": {
     "metadataTitle": "Kaffeekosten-Rechner — wie viele Tassen?",
-    "metadataDescription": "Kostenloser Online-Rechner: Preise in Tassen umrechnen (Espresso, Latte, Cappuccino u. a.). 14 Währungen. Ausgaben vergleichen ohne Anmeldung.",
+    "metadataDescription": "Kostenloser Kaffee-Rechner online: jeden Preis in Tassen umrechnen (Espresso, Latte, Cappuccino u. a.). 14 Währungen. Budget planen und vergleichen — ohne Anmeldung.",
     "title": "Wie viele <accent>Kaffees</accent> sind das?",
     "subtitle": "Rechne jeden Preis in Tassen Kaffee um. Weil alles in Koffein gemessen mehr Sinn ergibt.",
     "labelAmount": "Dein Betrag",
@@ -57,6 +57,51 @@
     "faq3A": "Ja — CoffeeCalc ist kostenlos im Browser und ohne Registrierung.",
     "faq4Q": "Warum Vergleiche in Kaffeetassen?",
     "faq4A": "Kaffee kaufen viele regelmäßig; „Wie viele Lattes sind das?“ macht Beträge beim Budgetieren oder spontanen Käufen greifbarer.",
+    "howItWorksTitle": "So funktioniert CoffeeCalc",
+    "howItWorksIntro": "CoffeeCalc wandelt jeden Geldbetrag in vier schnellen Schritten in eine Anzahl Kaffeetassen um. Das Tool läuft vollständig in deinem Browser — ohne Konto und ohne Datenübertragung an unsere Server.",
+    "howItWorksStep1": "Gib den Betrag ein, den du vergleichen möchtest — Produktpreis, Miete, Gehalt oder jede Zahl, die Geld greifbarer macht.",
+    "howItWorksStep2": "Wähle eine der 14 unterstützten Währungen. CoffeeCalc rechnet deinen Betrag mit ungefähren Wechselkursen um, damit du zu Hause oder im Ausland vergleichen kannst.",
+    "howItWorksStep3": "Wähle einen Getränketyp: Espresso, Cappuccino, Latte, Americano, Mocha oder Cold Brew. Jeder nutzt einen anderen Referenz-Durchschnittspreis.",
+    "howItWorksStep4": "Lies das Ergebnis: wie viele Tassen dein Betrag zum Durchschnittspreis des gewählten Getränks in deiner Währung entspricht.",
+    "howItWorksExample": "Beispiel: Gib 50 $ ein, wähle USD und Latte (~5 $ pro Stück). CoffeeCalc zeigt 10 Tassen — das heißt, 50 $ entsprechen etwa zehn Lattes zu durchschnittlichen US-Cafépreisen.",
+    "methodologyTitle": "Wie wir Kaffeepreise schätzen",
+    "methodologyText": "CoffeeCalc nutzt Referenz-Durchschnittspreise pro Getränketyp, gepflegt in USD und in andere Währungen mit ungefähren Wechselkursen umgerechnet. Espresso liegt bei etwa 2,50 $, Latte um 5 $ und Mocha bei rund 5,50 $ — Werte typischer Spezialitäten-Cafés in den USA und ähnlichen Märkten, nicht Aktions- oder Supermarktkaffee. Wechselkurse werden periodisch aktualisiert, sind aber Schätzungen, keine Live-Kurse.",
+    "methodologyDisclaimer": "Echte Cafépreise variieren je nach Stadt, Viertel, Marke und Saison. CoffeeCalc liefert einen schnellen Richtwert zur Einordnung und zum Vergleich — kein Angebot deines lokalen Baristas. Prüfe Preise vor wichtigen Ausgaben immer vor Ort.",
+    "comparisonTitle": "Durchschnittspreise nach Getränk und Währung",
+    "comparisonCaption": "Ungefähre Durchschnittspreise pro Getränketyp in USD, EUR und GBP. Schätzwerte für schnellen Vergleich.",
+    "comparisonDrink": "Getränk",
+    "useCasesTitle": "Praktische Anwendungen von CoffeeCalc",
+    "useCase1Title": "Monatsbudget",
+    "useCase1Text": "Addiere wiederkehrende Ausgaben — Streaming, Fitnessstudio, Handyrechnung — und rechne jede in Kaffeetassen um. Ein 15-$-Abo sind etwa drei Lattes pro Monat; eine 120-$-Rechnung rund vierundzwanzig. Kosten in einem täglichen Ritual, das du kennst, machen Abwägungen beim Kürzen des Budgets klarer.",
+    "useCase2Title": "Gehaltsvergleich zwischen Ländern",
+    "useCase2Text": "Jobangebote in verschiedenen Währungen sind schwer auf einen Blick zu vergleichen. Gib ein Monatsgehalt in jeder Währung ein, wähle ein Getränk und sieh, wie viele Tassen pro Monat es repräsentiert. Ein höheres Nominalegehalt in einer teuren Stadt kann weniger Lattes kaufen als ein niedrigeres anderswo — CoffeeCalc macht das ohne Tabellenkalkulation greifbar.",
+    "useCase3Title": "Inflation und steigende Preise verstehen",
+    "useCase3Text": "Wenn etwas, das früher „fünf Kaffees“ kostete, jetzt acht kostet, spürt man den Sprung leichter als nur einen Prozentsatz. Gib den Preis vom letzten Jahr und heute nebeneinander ein oder vergleiche einen historischen Betrag mit heute. CoffeeCalc übersetzt abstrakte Inflation in Alltagssprache, die du mit Freunden oder Familie teilen kannst.",
+    "blogCtaTitle": "Vertiefe dich mit unseren Kaffee-Guides",
+    "blogCtaText": "Der Rechner ist nur der Anfang. Unser Blog behandelt Preise nach Ländern, Monatsbudget-Tipps, Gehaltsvergleiche und die Geschichte der Kaffeekosten — geschrieben, damit du CoffeeCalc mit realem Kontext nutzt.",
+    "blogCtaLink": "CoffeeCalc-Blog durchstöbern",
+    "faq5Q": "Woher stammen die Durchschnittspreise in CoffeeCalc?",
+    "faq5A": "Wir pflegen Referenz-Durchschnitte pro Getränketyp basierend auf typischen Spezialitäten-Cafépreisen in den USA und vergleichbaren Märkten — Espresso um 2,50 $, Cappuccino nahe 4,50 $, Latte etwa 5 $ und Mocha rund 5,50 $. Sie stammen nicht von einer einzelnen Kette; sie spiegeln kombinierte Schätzungen aus öffentlichen Preisumfragen, Speisekarten und regionalen Berichten wider. Preise ändern sich und unterscheiden sich je nach Viertel, daher behandeln wir sie als stabile Vergleichsmaßstäbe, nicht als Live-Angebote. Bei Aktualisierungen passen wir den Rechner an und vermerken Änderungen auf der Seite Über uns.",
+    "faq6Q": "Wie oft werden Wechselkurse in CoffeeCalc aktualisiert?",
+    "faq6A": "Wechselkurse in CoffeeCalc sind ungefähre Schätzungen, keine Echtzeit-Forex-Feeds. Wir aktualisieren sie periodisch, damit Multiwährungsvergleiche für Budget und Reiseplanung sinnvoll bleiben. Tägliche Schwankungen sind meist klein genug, dass ein grober Kurs noch eine nützliche Tassenanzahl liefert, aber große Währungsbewegungen können Ergebnisse bis zur nächsten Aktualisierung leicht veralten lassen. Für wichtige Finanzentscheidungen — Verträge, Überweisungen oder Steuererklärungen — nutze einen offiziellen Kurs deiner Bank oder Zentralbank. CoffeeCalc ist für schnelle Perspektive gedacht, nicht für präzises Trading.",
+    "faq7Q": "Kann ich CoffeeCalc für Reiseausgaben planen?",
+    "faq7A": "Ja. Wähle die Währung deines Reiseziels, gib ein Tages- oder Wochenbudget ein und wähle das Getränk, das du im Ausland am häufigsten bestellst. Das Ergebnis zeigt ungefähr, wie viele Cafébesuche das Budget bei durchschnittlichen lokalen Preisen abdeckt. Kombiniere das mit unseren Blog-Artikeln zu Kaffeekosten nach Ländern. Denke daran, dass Touristenviertel und Flughäfen oft mehr verlangen als Nachbarschaftscafés — behandle die Zahl als Planungsstartpunkt. Erhöhe den Betrag, wenn du vor allem Premium-Lokale besuchen wirst oder Trinkgeld und Steuern einplanen möchtest, die in den Durchschnitten nicht enthalten sind.",
+    "faq8Q": "Warum kann mein Ergebnis von meinem lokalen Café abweichen?",
+    "faq8A": "Dein Lokal kann aus vielen Gründen mehr oder weniger verlangen als unser Referenzdurchschnitt: Miete, Lohnkosten, Markenpositionierung, Bechergröße, Milchalternativen und lokale Steuern. Ein unabhängiger Röster in einem teuren Viertel verlangt vielleicht 7 $ für einen Latte, während eine Vorstadtkette 4 $ nimmt. CoffeeCalc nutzt bewusst mittlere Durchschnitte, damit Vergleiche über Getränke und Währungen konsistent bleiben. Nutze das Tool für relative Größenordnung — „dieses Gadget kostet fünfzig Lattes“ — statt eine exakte Übereinstimmung mit dem gestrigen Beleg zu erwarten.",
+    "faq9Q": "Speichert CoffeeCalc die Beträge, die ich eingebe?",
+    "faq9A": "Nein. Berechnungen laufen vollständig in deinem Browser. Eingegebene Beträge werden nicht an CoffeeCalc-Server gesendet oder in einem Konto gespeichert — wir bieten keine Konten an. Optionale Analysen, nur bei Cookie-Zustimmung, können aggregierte Seitenaufrufe über Google Tag Manager erfassen, aber nicht die konkreten Zahlen im Rechner. Deine Einwilligungswahl wird lokal im Browser gespeichert. Beim Teilen über den Share-Button wird nur der generierte Text kopiert; wir protokollieren das serverseitig nicht.",
+    "faq10Q": "Wie soll ich die Preisvergleichstabelle auf dieser Seite lesen?",
+    "faq10A": "Die Tabelle zeigt ungefähre Durchschnittspreise pro Getränketyp, umgerechnet in USD, EUR und GBP mit unseren Referenzkursen. Sie hilft zu sehen, wie Espresso, Latte und andere Getränke in derselben Währung zueinander stehen oder ein Getränk zwischen Regionen auf einen Blick zu vergleichen. Zahlen sind zur Lesbarkeit gerundet und enthalten keine Steuern, Trinkgelder oder Treuerabatte. Nutze die Tabelle zusammen mit dem Rechner: wähle Getränk und Währung passend zu deinen Gewohnheiten und gib reale Beträge ein. Für tiefere regionale Aufschlüsselungen sieh unsere Blog-Beiträge zu Kaffeepreisen nach Ländern.",
+    "howToName": "So rechnest du jeden Preis in Kaffeetassen um",
+    "howToDescription": "Nutze CoffeeCalc, um jeden Geldbetrag in eine ungefähre Anzahl Kaffeetassen umzuwandeln, indem du einen Betrag eingibst, eine Währung wählst und einen Getränketyp auswählst.",
+    "howToStep1Name": "Betrag eingeben",
+    "howToStep1Text": "Tippe den Preis oder die Summe, die du vergleichen möchtest — Produktkosten, Rechnung oder Gehalt — in das Betragsfeld auf der CoffeeCalc-Startseite.",
+    "howToStep2Name": "Währung wählen",
+    "howToStep2Text": "Wähle eine der 14 unterstützten Währungen, damit CoffeeCalc deinen Betrag mit ungefähren Wechselkursen umrechnen kann.",
+    "howToStep3Name": "Getränketyp auswählen",
+    "howToStep3Text": "Wähle Espresso, Cappuccino, Latte, Americano, Mocha oder Cold Brew. Jedes Getränk nutzt einen anderen Referenz-Durchschnittspreis.",
+    "howToStep4Name": "Ergebnis lesen",
+    "howToStep4Text": "Sieh, wie viele Tassen dein Betrag zum Durchschnittspreis des gewählten Getränks entspricht, und teile oder vergleiche mit einem anderen Betrag.",
     "schemaFeature1": "Sechs Getränketypen zum Vergleichen",
     "schemaFeature2": "14 Währungen mit ungefähren Wechselkursen",
     "schemaFeature3": "Läuft im Browser ohne Konto",
@@ -75,6 +120,7 @@
     "brandLine": "☕ CoffeeCalc — {footer}"
   },
   "Legal": {
+    "navBlog": "Blog",
     "navPrivacy": "Datenschutzerklärung",
     "navTerms": "Nutzungsbedingungen",
     "navAbout": "Über uns",
@@ -174,7 +220,7 @@
       "metadataTitle": "Über CoffeeCalc",
       "metadataDescription": "Erfahren Sie mehr über CoffeeCalc — den kostenlosen Kaffeekosten-Rechner, der jeden Preis in Kaffeetassen umrechnet. Unsere Mission, Funktionsweise und Hinweise zur Preisgenauigkeit.",
       "title": "Über CoffeeCalc",
-      "lastUpdated": "Zuletzt aktualisiert: 17. Juni 2026",
+      "lastUpdated": "Zuletzt aktualisiert: 6. Juli 2026",
       "intro": "CoffeeCalc hilft Ihnen, Geld auf eine greifbare Weise zu verstehen: in Kaffeetassen. Diese Seite erklärt, was das Projekt ist, wer es entwickelt und wie Sie die angezeigten Zahlen einordnen sollten.",
       "sections": {
         "whatIs": {
@@ -184,6 +230,10 @@
         "whoWeAre": {
           "title": "Wer betreibt CoffeeCalc?",
           "body": "CoffeeCalc ist ein unabhängiges Nebenprojekt, das von einem Solo-Entwickler mit Leidenschaft für einfache, nützliche Web-Tools entwickelt und gepflegt wird. Es ist nicht mit einer Kaffeekette, Finanzinstitution oder Behörde verbunden. Wir möchten das Tool schnell, kostenlos und in mehreren Sprachen zugänglich halten."
+        },
+        "operator": {
+          "title": "Über den Entwickler",
+          "body": "CoffeeCalc wird von Alex erstellt und gepflegt, einem Solo-Entwickler, der an dieser Seite als indie Nebenprojekt neben seinem Vollzeitjob arbeitet. Ziel ist ein schnelles, datenschutzfreundliches Tool, das jeder ohne Anmeldung nutzen kann — entstanden, weil Preisvergleiche in Kaffeetassen das Budget im Alltag intuitiver machten. Alex kümmert sich um Design, Code, Übersetzungen und Inhaltsaktualisierungen. CoffeeCalc ist kein Unternehmen mit großem Team; es ist der Versuch einer Person, etwas wirklich Nützliches im offenen Web zu bauen."
         },
         "mission": {
           "title": "Unsere Mission",
@@ -196,19 +246,28 @@
         "accuracy": {
           "title": "Genauigkeit und Einschränkungen",
           "body": "Cafépreise variieren stark je nach Viertel, Marke und Land. Wechselkurse schwanken täglich. CoffeeCalc bietet einen schnellen Richtwert — kein Angebot Ihres lokalen Cafés. Nutzen Sie es für Perspektive und grobe Vergleiche, und prüfen Sie bei wichtigen Ausgaben immer die tatsächlichen Preise."
+        },
+        "connect": {
+          "title": "Kontakt und weiterlesen",
+          "body": "Fragen, Feedback oder Datenschutzbedenken? Besuchen Sie unsere Kontaktseite, um Alex per E-Mail unter contact@howmanycoffees.net zu erreichen. Für ausführlichere Guides zu Budget, Reisen und Kaffeepreisen weltweit durchstöbern Sie den CoffeeCalc-Blog, verlinkt in der Fußzeile und auf der Startseite."
         }
       }
     },
     "navContact": "Kontakt",
     "Contact": {
       "metadataTitle": "Kontakt",
-      "metadataDescription": "Kontaktieren Sie CoffeeCalc bei Fragen zum Datenschutz, Feedback und allgemeinen Anfragen zum kostenlosen Kaffeekosten-Rechner. Keine E-Mail erforderlich — finden Sie hier die richtigen Ressourcen.",
+      "metadataDescription": "Kontaktieren Sie CoffeeCalc unter contact@howmanycoffees.net bei Fragen zum Datenschutz, Feedback und allgemeinen Anfragen zum kostenlosen Kaffeekosten-Rechner. Antwort innerhalb von 48–72 Stunden.",
       "title": "Kontakt",
-      "lastUpdated": "Zuletzt aktualisiert: 17. Juni 2026",
-      "intro": "Schön, dass Sie sich gemeldet haben. Diese Seite erklärt, wie Sie Hilfe zu CoffeeCalc-Themen wie Datenschutz, Funktionsweise des Rechners und Feedback zur Website erhalten. Wir veröffentlichen keine öffentliche E-Mail-Adresse, aber die Abschnitte unten verweisen Sie auf die richtigen Informationen.",
+      "lastUpdated": "Zuletzt aktualisiert: 6. Juli 2026",
+      "intro": "Schön, dass Sie sich gemeldet haben. Bei Datenschutzfragen, Rechner-Feedback oder allgemeinen Anfragen schreiben Sie uns an contact@howmanycoffees.net. Die Abschnitte unten erklären, wobei wir helfen können und was Sie beim Schreiben erwarten können.",
       "privacyPageLink": "Datenschutzerklärung lesen →",
       "aboutPageLink": "Über CoffeeCalc besuchen →",
       "sections": {
+        "email": {
+          "title": "Schreiben Sie uns direkt",
+          "body": "Der schnellste Weg zu CoffeeCalc ist per E-Mail an contact@howmanycoffees.net. Nutzen Sie diese Adresse für Datenschutzanfragen, Fehlermeldungen, Übersetzungskorrekturen, Partnerschaftsfragen oder allgemeines Feedback zum Rechner und Blog.",
+          "responseTime": "Wir antworten in der Regel innerhalb von 48–72 Stunden an Werktagen. Nachrichten zu dringenden Datenschutzthemen haben Priorität. Wenn Sie innerhalb einer Woche keine Antwort erhalten, prüfen Sie den Spam-Ordner und versuchen Sie es erneut."
+        },
         "whatWeHelpWith": {
           "title": "Wobei können wir helfen?",
           "body": "Besucher kontaktieren uns in der Regel zu Datenschutz und Cookies, zur Schätzung von Getränkepreisen und Wechselkursen, zur Genauigkeit der Ergebnisse, zu Barrierefreiheit oder Fehlern sowie mit Ideen zur Verbesserung des Rechners. Wählen Sie den Abschnitt unten, der am besten zu Ihrer Frage passt."
@@ -223,11 +282,11 @@
         },
         "feedback": {
           "title": "Feedback und Vorschläge",
-          "body": "Wir freuen uns über Ideen, CoffeeCalc verständlicher, schneller oder nützlicher zu machen. Wir entwickeln datenschutzfreundliche Wege, Feedback zu erhalten, ohne eine E-Mail-Adresse zu verlangen. Schauen Sie auf dieser Seite nach Updates, wenn neue Optionen verfügbar sind."
+          "body": "Wir freuen uns über Ideen, CoffeeCalc verständlicher, schneller oder nützlicher zu machen — neue Getränketypen, Währungen, Blog-Themen oder Barrierefreiheitsverbesserungen. Senden Sie Vorschläge an contact@howmanycoffees.net mit möglichst vielen Details. Wir können nicht jede Anfrage umsetzen, lesen aber alle Nachrichten und priorisieren Änderungen, die den meisten Besuchern helfen."
         },
         "responseExpectations": {
           "title": "Was Sie erwarten können",
-          "body": "CoffeeCalc wird von einem kleinen unabhängigen Team gepflegt. Wir prüfen datenschutzbezogene Anliegen und die Qualität der Website fortlaufend und aktualisieren bei Bedarf Richtlinien, Übersetzungen und Rechner-Inhalte. Vielen Dank, dass Sie uns helfen, das Tool vertrauenswürdig und nützlich zu halten."
+          "body": "CoffeeCalc wird von Alex als indie Nebenprojekt gepflegt. E-Mails an contact@howmanycoffees.net werden regelmäßig geprüft; rechnen Sie mit einer Antwort innerhalb von 48–72 Stunden an Werktagen. Wir aktualisieren Richtlinien, Übersetzungen und Rechner-Inhalte basierend auf Feedback und rechtlichen Anforderungen. Danke, dass Sie uns helfen, das Tool vertrauenswürdig und nützlich zu halten."
         }
       }
     }
