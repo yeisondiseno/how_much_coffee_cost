@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
-import { BLOG_POST_SLUGS } from "@/lib/blog/posts";
 import { BASE_URL } from "@/lib/config";
 import { LEGAL_PAGE_SLUGS } from "@/lib/legal-sections";
 
@@ -36,22 +35,12 @@ const sitemap = (): MetadataRoute.Sitemap => {
     }
 
     entries.push({
-      url: `${BASE_URL}/${locale}/blog`,
+      url: `${BASE_URL}/${locale}/faq`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.7,
-      alternates: buildAlternates("/blog"),
+      alternates: buildAlternates("/faq"),
     });
-
-    for (const slug of BLOG_POST_SLUGS) {
-      entries.push({
-        url: `${BASE_URL}/${locale}/blog/${slug}`,
-        lastModified: new Date(),
-        changeFrequency: "monthly",
-        priority: 0.7,
-        alternates: buildAlternates(`/blog/${slug}`),
-      });
-    }
   }
 
   return entries;

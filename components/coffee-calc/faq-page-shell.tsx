@@ -1,6 +1,3 @@
-// Libraries
-import type { ReactNode } from "react";
-import { getLocale } from "next-intl/server";
 // Components (local)
 import { CoffeeCalcFooter } from "@/components/coffee-calc/coffee-calc-footer";
 import {
@@ -8,28 +5,18 @@ import {
   coffeeCalcPlayfair,
 } from "@/components/coffee-calc/coffee-calc-fonts";
 import { CoffeeCalcLangBar } from "@/components/coffee-calc/coffee-calc-lang-bar";
+import { FaqContent } from "@/components/coffee-calc/faq-content";
 import { Link } from "@/i18n/navigation";
-// Libraries
-import { loadBlogMessages } from "@/lib/blog/messages";
 // Utils
 import { cn } from "@/lib/utils";
 // Styles
 import "./coffee-calc.css";
 
-type BlogPageShellProps = Readonly<{
-  children: ReactNode;
-  backHref?: string;
-  backLabel?: string;
+type FaqPageShellProps = Readonly<{
+  backLabel: string;
 }>;
 
-export const BlogPageShell = async ({
-  children,
-  backHref = "/",
-  backLabel,
-}: BlogPageShellProps) => {
-  const locale = await getLocale();
-  const blog = await loadBlogMessages(locale);
-
+export const FaqPageShell = async ({ backLabel }: FaqPageShellProps) => {
   return (
     <main
       className={cn(
@@ -39,11 +26,11 @@ export const BlogPageShell = async ({
       )}
     >
       <CoffeeCalcLangBar />
-      <div className="coffee-calc-legal coffee-calc-blog">
-        <Link href={backHref} className="coffee-calc-legal-back">
-          ← {backLabel ?? blog.backHome}
+      <div className="coffee-calc-legal">
+        <Link href="/" className="coffee-calc-legal-back">
+          ← {backLabel}
         </Link>
-        {children}
+        <FaqContent />
       </div>
       <CoffeeCalcFooter />
     </main>

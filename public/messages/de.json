@@ -77,15 +77,12 @@
     "useCase2Text": "Jobangebote in verschiedenen Währungen sind schwer auf einen Blick zu vergleichen. Gib ein Monatsgehalt in jeder Währung ein, wähle ein Getränk und sieh, wie viele Tassen pro Monat es repräsentiert. Ein höheres Nominalegehalt in einer teuren Stadt kann weniger Lattes kaufen als ein niedrigeres anderswo — CoffeeCalc macht das ohne Tabellenkalkulation greifbar.",
     "useCase3Title": "Inflation und steigende Preise verstehen",
     "useCase3Text": "Wenn etwas, das früher „fünf Kaffees“ kostete, jetzt acht kostet, spürt man den Sprung leichter als nur einen Prozentsatz. Gib den Preis vom letzten Jahr und heute nebeneinander ein oder vergleiche einen historischen Betrag mit heute. CoffeeCalc übersetzt abstrakte Inflation in Alltagssprache, die du mit Freunden oder Familie teilen kannst.",
-    "blogCtaTitle": "Vertiefe dich mit unseren Kaffee-Guides",
-    "blogCtaText": "Der Rechner ist nur der Anfang. Unser Blog behandelt Preise nach Ländern, Monatsbudget-Tipps, Gehaltsvergleiche und die Geschichte der Kaffeekosten — geschrieben, damit du CoffeeCalc mit realem Kontext nutzt.",
-    "blogCtaLink": "CoffeeCalc-Blog durchstöbern",
     "faq5Q": "Woher stammen die Durchschnittspreise in CoffeeCalc?",
     "faq5A": "Wir pflegen Referenz-Durchschnitte pro Getränketyp basierend auf typischen Spezialitäten-Cafépreisen in den USA und vergleichbaren Märkten — Espresso um 2,50 $, Cappuccino nahe 4,50 $, Latte etwa 5 $ und Mocha rund 5,50 $. Sie stammen nicht von einer einzelnen Kette; sie spiegeln kombinierte Schätzungen aus öffentlichen Preisumfragen, Speisekarten und regionalen Berichten wider. Preise ändern sich und unterscheiden sich je nach Viertel, daher behandeln wir sie als stabile Vergleichsmaßstäbe, nicht als Live-Angebote. Bei Aktualisierungen passen wir den Rechner an und vermerken Änderungen auf der Seite Über uns.",
     "faq6Q": "Wie oft werden Wechselkurse in CoffeeCalc aktualisiert?",
     "faq6A": "Wechselkurse in CoffeeCalc sind ungefähre Schätzungen, keine Echtzeit-Forex-Feeds. Wir aktualisieren sie periodisch, damit Multiwährungsvergleiche für Budget und Reiseplanung sinnvoll bleiben. Tägliche Schwankungen sind meist klein genug, dass ein grober Kurs noch eine nützliche Tassenanzahl liefert, aber große Währungsbewegungen können Ergebnisse bis zur nächsten Aktualisierung leicht veralten lassen. Für wichtige Finanzentscheidungen — Verträge, Überweisungen oder Steuererklärungen — nutze einen offiziellen Kurs deiner Bank oder Zentralbank. CoffeeCalc ist für schnelle Perspektive gedacht, nicht für präzises Trading.",
     "faq7Q": "Kann ich CoffeeCalc für Reiseausgaben planen?",
-    "faq7A": "Ja. Wähle die Währung deines Reiseziels, gib ein Tages- oder Wochenbudget ein und wähle das Getränk, das du im Ausland am häufigsten bestellst. Das Ergebnis zeigt ungefähr, wie viele Cafébesuche das Budget bei durchschnittlichen lokalen Preisen abdeckt. Kombiniere das mit unseren Blog-Artikeln zu Kaffeekosten nach Ländern. Denke daran, dass Touristenviertel und Flughäfen oft mehr verlangen als Nachbarschaftscafés — behandle die Zahl als Planungsstartpunkt. Erhöhe den Betrag, wenn du vor allem Premium-Lokale besuchen wirst oder Trinkgeld und Steuern einplanen möchtest, die in den Durchschnitten nicht enthalten sind.",
+    "faq7A": "Ja. Wähle die Währung deines Reiseziels, gib ein Tages- oder Wochenbudget ein und wähle das Getränk, das du im Ausland am häufigsten bestellst. Das Ergebnis zeigt ungefähr, wie viele Cafébesuche das Budget bei durchschnittlichen lokalen Preisen abdeckt. Kombiniere das mit unseren página de preguntas frecuentes zu Kaffeekosten nach Ländern. Denke daran, dass Touristenviertel und Flughäfen oft mehr verlangen als Nachbarschaftscafés — behandle die Zahl als Planungsstartpunkt. Erhöhe den Betrag, wenn du vor allem Premium-Lokale besuchen wirst oder Trinkgeld und Steuern einplanen möchtest, die in den Durchschnitten nicht enthalten sind.",
     "faq8Q": "Warum kann mein Ergebnis von meinem lokalen Café abweichen?",
     "faq8A": "Dein Lokal kann aus vielen Gründen mehr oder weniger verlangen als unser Referenzdurchschnitt: Miete, Lohnkosten, Markenpositionierung, Bechergröße, Milchalternativen und lokale Steuern. Ein unabhängiger Röster in einem teuren Viertel verlangt vielleicht 7 $ für einen Latte, während eine Vorstadtkette 4 $ nimmt. CoffeeCalc nutzt bewusst mittlere Durchschnitte, damit Vergleiche über Getränke und Währungen konsistent bleiben. Nutze das Tool für relative Größenordnung — „dieses Gadget kostet fünfzig Lattes“ — statt eine exakte Übereinstimmung mit dem gestrigen Beleg zu erwarten.",
     "faq9Q": "Speichert CoffeeCalc die Beträge, die ich eingebe?",
@@ -117,10 +114,12 @@
     },
     "shareText": "☕ {amount} {currency} = {count} {type}! Probier es auf CoffeeCalc",
     "copied": "Kopiert! ☕",
-    "brandLine": "☕ CoffeeCalc — {footer}"
+    "brandLine": "☕ CoffeeCalc — {footer}",
+    "faqCtaTitle": "Weitere Fragen zu CoffeeCalc?",
+    "faqCtaText": "Unsere FAQ erklärt den Rechner, regionale Kaffeepreise, Budget in Tassen, Währungen, Datenschutz und Cookies.",
+    "faqCtaLink": "Alle häufig gestellten Fragen ansehen"
   },
   "Legal": {
-    "navBlog": "Blog",
     "navPrivacy": "Datenschutzerklärung",
     "navTerms": "Nutzungsbedingungen",
     "navAbout": "Über uns",
@@ -233,7 +232,7 @@
         },
         "operator": {
           "title": "Über den Entwickler",
-          "body": "CoffeeCalc wird von Alex erstellt und gepflegt, einem Solo-Entwickler, der an dieser Seite als indie Nebenprojekt neben seinem Vollzeitjob arbeitet. Ziel ist ein schnelles, datenschutzfreundliches Tool, das jeder ohne Anmeldung nutzen kann — entstanden, weil Preisvergleiche in Kaffeetassen das Budget im Alltag intuitiver machten. Alex kümmert sich um Design, Code, Übersetzungen und Inhaltsaktualisierungen. CoffeeCalc ist kein Unternehmen mit großem Team; es ist der Versuch einer Person, etwas wirklich Nützliches im offenen Web zu bauen."
+          "body": "CoffeeCalc wird von Yeison Montoya erstellt und gepflegt, einem Solo-Entwickler, der an dieser Seite als indie Nebenprojekt neben seinem Vollzeitjob arbeitet. Ziel ist ein schnelles, datenschutzfreundliches Tool, das jeder ohne Anmeldung nutzen kann — entstanden, weil Preisvergleiche in Kaffeetassen das Budget im Alltag intuitiver machten. Yeison Montoya kümmert sich um Design, Code, Übersetzungen und Inhaltsaktualisierungen. CoffeeCalc ist kein Unternehmen mit großem Team; es ist der Versuch einer Person, etwas wirklich Nützliches im offenen Web zu bauen."
         },
         "mission": {
           "title": "Unsere Mission",
@@ -249,7 +248,7 @@
         },
         "connect": {
           "title": "Kontakt und weiterlesen",
-          "body": "Fragen, Feedback oder Datenschutzbedenken? Besuchen Sie unsere Kontaktseite, um Alex per E-Mail unter contact@howmanycoffees.net zu erreichen. Für ausführlichere Guides zu Budget, Reisen und Kaffeepreisen weltweit durchstöbern Sie den CoffeeCalc-Blog, verlinkt in der Fußzeile und auf der Startseite."
+          "body": "Fragen, Feedback oder Datenschutzbedenken? Besuchen Sie unsere Kontaktseite, um Yeison Montoya per E-Mail unter contact@howmanycoffees.net zu erreichen. Für ausführlichere Guides zu Budget, Reisen und Kaffeepreisen weltweit durchstöbern Sie den FAQ de CoffeeCalc, verlinkt in der Fußzeile und auf der Startseite."
         }
       }
     },
@@ -286,9 +285,10 @@
         },
         "responseExpectations": {
           "title": "Was Sie erwarten können",
-          "body": "CoffeeCalc wird von Alex als indie Nebenprojekt gepflegt. E-Mails an contact@howmanycoffees.net werden regelmäßig geprüft; rechnen Sie mit einer Antwort innerhalb von 48–72 Stunden an Werktagen. Wir aktualisieren Richtlinien, Übersetzungen und Rechner-Inhalte basierend auf Feedback und rechtlichen Anforderungen. Danke, dass Sie uns helfen, das Tool vertrauenswürdig und nützlich zu halten."
+          "body": "CoffeeCalc wird von Yeison Montoya als indie Nebenprojekt gepflegt. E-Mails an contact@howmanycoffees.net werden regelmäßig geprüft; rechnen Sie mit einer Antwort innerhalb von 48–72 Stunden an Werktagen. Wir aktualisieren Richtlinien, Übersetzungen und Rechner-Inhalte basierend auf Feedback und rechtlichen Anforderungen. Danke, dass Sie uns helfen, das Tool vertrauenswürdig und nützlich zu halten."
         }
       }
-    }
+    },
+    "navFaq": "FAQ"
   }
 }
