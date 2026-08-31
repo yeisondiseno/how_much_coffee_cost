@@ -1,0 +1,95 @@
+{
+  "metadataTitle": "Preguntas frecuentes",
+  "metadataDescription": "Respuestas sobre CoffeeCalc: cómo funciona la calculadora de costo de café, precios estimados, presupuesto, monedas, privacidad y cookies.",
+  "title": "Preguntas frecuentes",
+  "intro": "Todo lo que necesitas saber sobre CoffeeCalc: cómo funcionan los cálculos, de dónde salen los promedios de precio, cómo presupuestar en tazas de café y cómo manejamos la privacidad.",
+  "lastUpdated": "Última actualización: 31 de agosto de 2026",
+  "sectionTitles": {
+    "calculator": "Usar la calculadora",
+    "prices": "Precios del café y monedas",
+    "budget": "Presupuesto en tazas de café",
+    "privacy": "Privacidad y cookies"
+  },
+  "items": {
+    "faq1": {
+      "q": "¿Cómo convierte CoffeeCalc un precio en tazas de café?",
+      "a": "Ingresa un monto, elige una de las 14 monedas y selecciona un tipo de bebida. CoffeeCalc divide tu monto entre el precio promedio de referencia para esa bebida en tu moneda. El resultado es un número entero de tazas para comparar rápido. Los precios reales en cafeterías varían: considéralo una referencia, no un valor exacto."
+    },
+    "faq2": {
+      "q": "¿Qué bebidas y monedas puedo usar?",
+      "a": "Seis tipos de café: espresso, cappuccino, latte, americano, mocha y cold brew. Catorce monedas: USD, EUR, GBP, COP, MXN, BRL, ARS, JPY, CNY, INR, CAD, AUD, CHF y KRW. Cada bebida usa un promedio distinto, así que al pasar de espresso a latte cambia cuántas tazas representa tu monto."
+    },
+    "faq3": {
+      "q": "¿CoffeeCalc es gratis? ¿Necesito cuenta?",
+      "a": "Sí: CoffeeCalc es totalmente gratis y funciona en el navegador. Sin registro, sin inicio de sesión y sin pago. Los montos que ingresas se procesan localmente en tu dispositivo y no se envían a nuestros servidores. Puedes usar la calculadora cuantas veces quieras."
+    },
+    "faq4": {
+      "q": "¿Por qué comparar costos en tazas de café?",
+      "a": "El café es un gasto cotidiano para millones de personas; preguntarte «¿cuántos lattes es esto?» hace que los números abstractos se sientan concretos. Un gadget de $300 es más fácil de evaluar cuando ves que equivale a sesenta lattes de $5. La regla del café sirve para presupuesto, viajes y perspectiva—no como asesoramiento financiero."
+    },
+    "faq5": {
+      "q": "¿Cómo debo leer el resultado en pantalla?",
+      "a": "El número principal es cuántas tazas compra tu monto al precio promedio de la bebida elegida. La línea de detalle muestra el precio de referencia por taza y la moneda. Si ingresas $50 y eliges Latte a ~$5, verás 10 tazas. Prueba distintos tipos de bebida para ver cómo las bebidas con leche reducen el conteo frente al espresso."
+    },
+    "faq6": {
+      "q": "¿De dónde salen los precios promedio de CoffeeCalc?",
+      "a": "Mantenemos promedios de referencia por tipo de bebida según precios típicos de cafeterías especializadas en Estados Unidos y mercados comparables—espresso cerca de $2.50, cappuccino ~$4.50, latte ~$5 y mocha ~$5.50. Combinan encuestas públicas, menús y reportes regionales, no una sola cadena. Los precios cambian; actualizamos la calculadora y lo anotamos en la página About."
+    },
+    "faq7": {
+      "q": "¿Cuánto cuesta el café en distintos países?",
+      "a": "Los precios varían mucho por región. En EE. UU. y Canadá, un latte suele rondar $5 mientras el espresso está cerca de $2.50. En Europa occidental, el espresso en barra puede costar €1.20–€1.80 en Italia; sentarse cuesta más. En ciudades de Latinoamérica hay espressos cotidianos desde $1.50–$2.50, con tiendas specialty más caras. Asia y Oceanía van desde máquinas expendedoras hasta bebidas con leche de $5–$7 en zonas turísticas."
+    },
+    "faq8": {
+      "q": "¿Por qué espresso, latte y cappuccino cuestan distinto?",
+      "a": "El espresso usa menos leche y menos tiempo de barista, por eso ancla el extremo bajo cerca de $2.50. El cappuccino añade leche espumada—~$4.50 de promedio. El latte lleva más leche y suele ir en vaso más grande—~$5. El mocha suma chocolate y jarabe, hacia $5.50. El cold brew ocupa inventario horas, así que ronda $4.50. CoffeeCalc refleja esas diferencias estables entre categorías."
+    },
+    "faq9": {
+      "q": "¿Con qué frecuencia se actualizan los tipos de cambio?",
+      "a": "Los tipos de cambio en CoffeeCalc son estimaciones aproximadas, no cotizaciones en tiempo real. Los actualizamos periódicamente para que las comparaciones multi-moneda sigan siendo razonables. Movimientos grandes de moneda pueden volver los resultados ligeramente desactualizados. Para contratos, transferencias o impuestos, usa la tasa oficial de tu banco."
+    },
+    "faq10": {
+      "q": "¿Por qué mi resultado puede diferir de lo que pago en mi cafetería?",
+      "a": "Tu local puede cobrar más o menos que nuestro promedio por alquiler, mano de obra, marca, tamaño de vaso, leches alternativas e impuestos. Un tostador en zona cara puede cobrar $7 por un latte mientras una cadena suburbana cobra $4. CoffeeCalc usa promedios intermedios para comparar de forma consistente. Úsalo para escala relativa—«esto cuesta cincuenta lattes»—no para igualar tu último recibo."
+    },
+    "faq11": {
+      "q": "¿Cómo puedo presupuestar mi gasto mensual en café?",
+      "a": "Registra dos semanas reales: tazas de ida al trabajo, lattes de fin de semana y café en casa. Multiplica el promedio semanal por 4.3 para el mes. Ingresa ese total en CoffeeCalc y conviértelo a tazas con tu bebida habitual. $86 al mes en lattes de $5 son unas diecisiete bebidas—¿coincide con tu calendario? La claridad viene antes de recortar."
+    },
+    "faq12": {
+      "q": "¿Preparar café en casa es más barato que comprarlo en cafetería?",
+      "a": "Suele serlo por taza, pero no es gratis si cuentas el equipo. Un setup simple puede costar $150–$300. Granos a $18 por bolsa pueden dejar un latte casero básico cerca de $0.70 con leche. Un latte de cafetería a $5 sigue siendo mucho más por taza; mucha gente cambia dos salidas semanales por café en casa y deja un día de capricho. CoffeeCalc ayuda a comparar ambos hábitos en tazas."
+    },
+    "faq13": {
+      "q": "¿Qué es la regla del café para comparar compras?",
+      "a": "La regla del café pregunta: ¿cuántas tazas de mi bebida habitual equivale este precio? Divide cualquier monto entre el precio de referencia de tu taza. Una funda de $120 a lattes de $5 son veinticuatro tazas. Funciona mejor para compras discrecionales y cálculo mental rápido. No sustituye presupuestos detallados de arriendo, deudas o ahorro—hace más tangible el intercambio."
+    },
+    "faq14": {
+      "q": "¿Cómo comparar salarios entre países usando café?",
+      "a": "Ingresa cada salario mensual en su moneda local, elige el mismo tipo de bebida y compara conteos de tazas. Un salario nominal más alto en ciudad cara puede comprar menos lattes que uno menor en otro lugar. Ver «3.200 lattes al año» frente a «2.100» suele ser más tangible que solo convertir moneda. Combínalo con contexto de costo de vida para decisiones serias."
+    },
+    "faq15": {
+      "q": "¿Cómo recortar gasto en cafetería sin dejar el café?",
+      "a": "Los ahorros sostenibles ganan a los recortes drásticos. Cambia un latte semanal por un americano, usa vaso reutilizable donde den descuento o prepara cold brew en casa. Fija un tope mensual en cafetería. En CoffeeCalc, ingresa tu presupuesto objetivo y míralo en tazas—$75 son quince lattes o treinta espressos en promedios típicos de EE. UU. Pequeños cambios preservan el ritual."
+    },
+    "faq16": {
+      "q": "¿CoffeeCalc guarda los montos que ingreso?",
+      "a": "No. Los cálculos corren enteramente en tu navegador. Los montos que escribes no se envían a servidores de CoffeeCalc y no ofrecemos cuentas de usuario. La analítica opcional, solo si aceptas cookies, puede registrar visitas agregadas vía Google Tag Manager, pero no los números específicos que ingresas. Tu elección de consentimiento se guarda localmente."
+    },
+    "faq17": {
+      "q": "¿Qué cookies usa CoffeeCalc?",
+      "a": "Usamos almacenamiento estrictamente necesario para recordar tu consentimiento de cookies en localStorage. Las cookies opcionales solo cargan si pulsas «Aceptar todo»—incluyendo analítica con Google Tag Manager y publicidad con Google AdSense. Si pulsas «Rechazar opcionales», el seguimiento y los anuncios permanecen desactivados. Puedes cambiar tu elección borrando los datos del sitio howmanycoffees.net."
+    },
+    "faq18": {
+      "q": "¿Cómo funciona Google AdSense en este sitio?",
+      "a": "CoffeeCalc puede mostrar anuncios servidos por Google AdSense. Google y sus socios pueden usar cookies para mostrar y medir anuncios según tus visitas a este sitio y a otros. La personalización depende de tu consentimiento y la ley aplicable. Más información en policies.google.com/technologies/ads. Puedes gestionar la personalización en la configuración de tu cuenta de Google."
+    },
+    "faq19": {
+      "q": "¿Qué es Google Consent Mode en CoffeeCalc?",
+      "a": "Implementamos Google Consent Mode v2: el almacenamiento publicitario y de analítica se deniega por defecto hasta que aceptes cookies opcionales. Así las etiquetas cargan respetando la privacidad y solo personalizan tras el consentimiento. Rechazar cookies opcionales mantiene AdSense y GTM en modo no personalizado o desactivado según la etiqueta."
+    },
+    "faq20": {
+      "q": "¿Cómo contacto a CoffeeCalc por privacidad o comentarios?",
+      "a": "Escribe a contact@howmanycoffees.net para privacidad, errores, correcciones de traducción o comentarios generales. Intentamos responder en 48–72 horas hábiles. Para detalles completos sobre datos, lee la Política de privacidad. Para quién opera el proyecto y cómo funcionan los cálculos, visita la página About."
+    }
+  }
+}

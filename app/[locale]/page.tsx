@@ -1,13 +1,14 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CoffeeCalcPage } from "@/components/coffee-calc/coffee-calc-page";
 import { BASE_URL } from "@/lib/config";
+import { HOME_FAQ_COUNT } from "@/lib/faq/types";
 import Script from "next/script";
 
 type Props = Readonly<{
   params: Promise<{ locale: string }>;
 }>;
 
-const FAQ_COUNT = 10;
+const FAQ_COUNT = HOME_FAQ_COUNT;
 
 const jsonLdStringify = (data: unknown) =>
   JSON.stringify(data).replaceAll("<", String.raw`\u003c`);

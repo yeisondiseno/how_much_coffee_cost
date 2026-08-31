@@ -1,0 +1,95 @@
+{
+  "metadataTitle": "Frequently Asked Questions",
+  "metadataDescription": "Answers about CoffeeCalc: how the coffee cost calculator works, drink price estimates, budgeting tips, currencies, privacy, and cookies.",
+  "title": "Frequently Asked Questions",
+  "intro": "Everything you need to know about CoffeeCalc — how calculations work, where price averages come from, budgeting with coffee cups, and how we handle privacy.",
+  "lastUpdated": "Last updated: August 31, 2026",
+  "sectionTitles": {
+    "calculator": "Using the calculator",
+    "prices": "Coffee prices and currencies",
+    "budget": "Budgeting with coffee cups",
+    "privacy": "Privacy and cookies"
+  },
+  "items": {
+    "faq1": {
+      "q": "How does CoffeeCalc turn a price into cups of coffee?",
+      "a": "Enter any amount, pick one of 14 currencies, and choose a drink type. CoffeeCalc divides your amount by the reference average price for that drink in your currency. The result is a whole number of cups for quick comparison. Real café prices vary, so treat the output as a benchmark—not a quote from your local barista."
+    },
+    "faq2": {
+      "q": "Which drinks and currencies can I use?",
+      "a": "Six drink types: espresso, cappuccino, latte, americano, mocha, and cold brew. Fourteen currencies: USD, EUR, GBP, COP, MXN, BRL, ARS, JPY, CNY, INR, CAD, AUD, CHF, and KRW. Each drink uses a different reference average, so switching from espresso to latte changes how many cups your amount represents."
+    },
+    "faq3": {
+      "q": "Is CoffeeCalc free? Do I need an account?",
+      "a": "Yes—CoffeeCalc is completely free and runs in your browser. No signup, no login, and no payment. Amounts you enter are processed locally on your device and are not sent to our servers. You can use the calculator as often as you like without creating an account."
+    },
+    "faq4": {
+      "q": "Why compare costs in coffee cups?",
+      "a": "Coffee is an everyday purchase for millions of people, so asking \"how many lattes is this?\" makes abstract numbers feel concrete. A $300 gadget is easier to weigh when you see it equals sixty $5 lattes. The coffee rule works for budgeting, travel planning, salary comparisons, and casual perspective—not as financial advice."
+    },
+    "faq5": {
+      "q": "How should I read the result on screen?",
+      "a": "The main number is how many cups your amount buys at the chosen drink's average price. The detail line shows the reference price per cup and currency. If you enter $50 and pick Latte at ~$5, you see 10 cups. Try different drink types to see how milk-based drinks reduce the cup count compared to espresso."
+    },
+    "faq6": {
+      "q": "Where do CoffeeCalc's average drink prices come from?",
+      "a": "We maintain reference averages per drink type based on typical specialty-café pricing in the United States and comparable markets—espresso around $2.50, cappuccino near $4.50, latte about $5, and mocha roughly $5.50. These blend public price surveys, menu listings, and regional reports rather than a single chain. Prices shift over time; we revise the calculator and note updates on the About page."
+    },
+    "faq7": {
+      "q": "How much does coffee cost in different countries?",
+      "a": "Prices vary widely by region. In the U.S. and Canada, a latte often lands near $5 while espresso is closer to $2.50. Western Europe rewards quick espressos at the bar—€1.20 to €1.80 in Italy—while seated service costs more. Latin American cities may offer everyday espressos from $1.50 to $2.50, with specialty shops higher. Asia and Oceania span vending-machine coffee to $5–$7 milk drinks in high-rent districts."
+    },
+    "faq8": {
+      "q": "Why do espresso, latte, and cappuccino cost different amounts?",
+      "a": "Espresso uses less milk and less barista time, so it anchors the low end near $2.50. A cappuccino adds steamed milk and foam—about $4.50 on average. A latte uses more milk and often a larger cup—around $5. Mochas add chocolate and syrup, pushing toward $5.50. Cold brew ties up inventory for hours, so cafés price it near $4.50. CoffeeCalc reflects these stable gaps between categories."
+    },
+    "faq9": {
+      "q": "How often are exchange rates updated?",
+      "a": "Exchange rates in CoffeeCalc are approximate estimates, not live forex feeds. We update them periodically to keep multi-currency comparisons reasonable for budgeting and travel. Daily swings are usually small enough that a rough rate still gives a useful cup count, but large currency moves can make results slightly stale. For contracts, transfers, or tax reporting, use an official rate from your bank."
+    },
+    "faq10": {
+      "q": "Why might my result differ from what I pay at my local café?",
+      "a": "Your shop may charge more or less than our reference average because of rent, labor, brand, cup size, alternative milks, and local taxes. A roaster in a high-rent district might charge $7 for a latte while a suburban chain charges $4. CoffeeCalc uses middle-ground averages so comparisons stay consistent. Use the tool for relative scale—\"this costs fifty lattes\"—not an exact match to yesterday's receipt."
+    },
+    "faq11": {
+      "q": "How can I budget my monthly coffee spending?",
+      "a": "Track two weeks of real behavior: commute cups, weekend lattes, and home beans. Multiply your weekly average by 4.3 for a monthly figure. Enter that total in CoffeeCalc and convert it to cups using your usual drink. A $86 month at $5 lattes is about seventeen drinks—does that match your calendar? Clarity comes before cutting; the goal is an honest baseline."
+    },
+    "faq12": {
+      "q": "Is home brewing cheaper than buying café coffee?",
+      "a": "Usually yes per cup, but not free once you count equipment. A simple setup might cost $150–$300 upfront. Beans at $18 per bag can land near $0.70 per basic home latte once you add milk. A $5 café latte is still far more per cup, which is why many people replace two outings per week with home brew and keep one treat day. CoffeeCalc helps you compare either habit in cups."
+    },
+    "faq13": {
+      "q": "What is the coffee rule for comparing purchases?",
+      "a": "The coffee rule asks: how many cups of my usual drink does this price equal? Divide any amount by your reference cup price. A $120 phone case at $5 lattes is twenty-four cups. The rule works best for discretionary purchases and quick mental math. It does not replace detailed budgets for rent, debt, or savings goals—it makes trade-offs easier to feel."
+    },
+    "faq14": {
+      "q": "How can I compare salaries across countries using coffee?",
+      "a": "Enter each monthly salary in its local currency, pick the same drink type, and compare cup counts. A higher nominal salary in an expensive city may buy fewer lattes than a lower salary elsewhere. Seeing \"3,200 lattes per year\" versus \"2,100 lattes\" is often more tangible than raw currency conversion alone. Pair with local cost-of-living context for serious decisions."
+    },
+    "faq15": {
+      "q": "How do I cut café spending without quitting coffee?",
+      "a": "Sustainable savings beat dramatic cuts. Swap one weekly latte for an americano, use a reusable cup where discounts apply, or batch cold brew at home. Set a prepaid monthly café cap. On CoffeeCalc, enter your target budget and see it as cups—$75 equals fifteen lattes or thirty espressos at typical U.S. averages. Small swaps preserve the ritual while protecting larger goals."
+    },
+    "faq16": {
+      "q": "Does CoffeeCalc store the amounts I enter?",
+      "a": "No. Calculations run entirely in your browser. Amounts you type are not sent to CoffeeCalc servers and we do not offer user accounts. Optional analytics, only if you accept cookies, may record aggregate page views through Google Tag Manager, but not the specific numbers you enter. Your consent choice is stored locally in your browser."
+    },
+    "faq17": {
+      "q": "What cookies does CoffeeCalc use?",
+      "a": "We use strictly necessary storage to remember your cookie consent choice in localStorage. Optional cookies load only if you click \"Accept all\"—including analytics through Google Tag Manager and advertising through Google AdSense. If you click \"Reject optional\", tracking and ad tags stay disabled. You can change your choice by clearing site data for howmanycoffees.net."
+    },
+    "faq18": {
+      "q": "How does Google AdSense work on this site?",
+      "a": "CoffeeCalc may display ads served by Google AdSense. Google and its partners may use cookies to show and measure ads based on your visits to this site and others. Ad personalization depends on your consent and applicable law. Learn more at policies.google.com/technologies/ads. You can manage ad personalization in your Google account settings."
+    },
+    "faq19": {
+      "q": "What is Google Consent Mode on CoffeeCalc?",
+      "a": "We implement Google Consent Mode v2: advertising and analytics storage default to denied until you accept optional cookies. That means tags load in a privacy-respecting way and only personalize after consent. Rejecting optional cookies keeps AdSense and GTM in a non-personalized or disabled state depending on the tag."
+    },
+    "faq20": {
+      "q": "How do I contact CoffeeCalc about privacy or feedback?",
+      "a": "Email contact@howmanycoffees.net for privacy questions, bug reports, translation corrections, or general feedback. We aim to reply within 48–72 hours on business days. For full details on data handling, read our Privacy Policy. For who runs the project and how calculations work, see the About page."
+    }
+  }
+}

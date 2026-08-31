@@ -77,15 +77,12 @@
     "useCase2Text": "Le offerte di lavoro in valute diverse sono difficili da confrontare a colpo d'occhio. Inserisci uno stipendio mensile in ogni valuta, scegli una bevanda e vedi quante tazze al mese rappresenta. Uno stipendio nominale più alto in una città cara può comprare meno latte che uno più basso altrove — CoffeeCalc lo rende tangibile senza fogli di calcolo.",
     "useCase3Title": "Capire inflazione e prezzi in aumento",
     "useCase3Text": "Quando qualcosa che costava «cinque caffè» ora ne costa otto, il salto si percepisce meglio di una percentuale da sola. Inserisci il prezzo dell'anno scorso e quello di oggi affiancati, o confronta un importo storico con l'attuale. CoffeeCalc traduce l'inflazione astratta in termini quotidiani da condividere con amici o famiglia.",
-    "blogCtaTitle": "Approfondisci con le nostre guide sul caffè",
-    "blogCtaText": "Il calcolatore è solo l'inizio. Il nostro blog copre prezzi paese per paese, consigli di budget mensile, confronti salariali e la storia dei costi del caffè — scritto per usare CoffeeCalc con contesto reale.",
-    "blogCtaLink": "Sfoglia il blog CoffeeCalc",
     "faq5Q": "Da dove provengono i prezzi medi delle bevande in CoffeeCalc?",
     "faq5A": "Manteniamo medie di riferimento per tipo di bevanda basate su prezzi tipici dei bar specializzati negli Stati Uniti e mercati comparabili — espresso intorno a 2,50 $, cappuccino vicino a 4,50 $, latte circa 5 $ e mocha verso 5,50 $. Non provengono da una singola catena; riflettono stime combinate da sondaggi pubblici, menu e report regionali. I prezzi cambiano nel tempo e differiscono per quartiere, quindi li trattiamo come riferimenti stabili, non quotazioni live. Quando aggiorniamo le medie, rivediamo il calcolatore e lo segnaliamo nella pagina Informazioni.",
     "faq6Q": "Con quale frequenza vengono aggiornati i tassi di cambio in CoffeeCalc?",
     "faq6A": "I tassi di cambio in CoffeeCalc sono stime approssimative, non feed forex in tempo reale. Li aggiorniamo periodicamente per mantenere confronti multi-valuta ragionevoli per budget e pianificazione di viaggio. Le oscillazioni giornaliere sono di solito abbastanza piccole perché un tasso approssimativo dia ancora un conteggio utile di tazze, ma grandi movimenti valutari possono rendere i risultati leggermente datati fino al prossimo aggiornamento. Per decisioni finanziarie importanti — contratti, bonifici o dichiarazioni fiscali — usa un tasso ufficiale della tua banca o banca centrale. CoffeeCalc è pensato per prospettiva rapida, non trading di precisione.",
     "faq7Q": "Posso usare CoffeeCalc per pianificare le spese di viaggio?",
-    "faq7A": "Sì. Scegli la valuta della destinazione, inserisci un budget giornaliero o settimanale e seleziona la bevanda che ordini più spesso all'estero. Il risultato mostra approssimativamente quante visite al bar copre quel budget a prezzi medi locali. Combinalo con i nostri articoli del blog sui costi del caffè per paese. Ricorda che zone turistiche e aeroporti spesso costano più dei bar di quartiere — tratta il numero come punto di partenza. Aumenta l'importo se sai che frequenterai soprattutto locali premium o vuoi margine per mance e tasse non incluse nelle medie.",
+    "faq7A": "Sì. Scegli la valuta della destinazione, inserisci un budget giornaliero o settimanale e seleziona la bevanda che ordini più spesso all'estero. Il risultato mostra approssimativamente quante visite al bar copre quel budget a prezzi medi locali. Combinalo con i nostri página de preguntas frecuentes sui costi del caffè per paese. Ricorda che zone turistiche e aeroporti spesso costano più dei bar di quartiere — tratta il numero come punto di partenza. Aumenta l'importo se sai che frequenterai soprattutto locali premium o vuoi margine per mance e tasse non incluse nelle medie.",
     "faq8Q": "Perché il mio risultato può differire da quanto pago nel mio bar locale?",
     "faq8A": "Il tuo locale può addebitare più o meno della nostra media di riferimento per molte ragioni: affitto, manodopera, posizionamento del brand, dimensione della tazza, latte alternative e tasse locali. Un torrefattore indipendente in un quartiere costoso può chiedere 7 $ per un latte mentre una catena in periferia ne chiede 4. CoffeeCalc usa di proposito medie intermedie perché i confronti restino coerenti tra bevande e valute. Usa lo strumento per scala relativa — «questo gadget costa cinquanta latte» — invece di aspettarti una corrispondenza esatta con lo scontrino di ieri.",
     "faq9Q": "CoffeeCalc memorizza gli importi che inserisco?",
@@ -117,10 +114,12 @@
     },
     "shareText": "☕ {amount} {currency} = {count} {type}! Prova su CoffeeCalc",
     "copied": "Copiato! ☕",
-    "brandLine": "☕ CoffeeCalc — {footer}"
+    "brandLine": "☕ CoffeeCalc — {footer}",
+    "faqCtaTitle": "Altre domande su CoffeeCalc?",
+    "faqCtaText": "Le nostre FAQ spiegano il calcolatore, i prezzi regionali del caffè, il budget in tazze, le valute, la privacy e i cookie.",
+    "faqCtaLink": "Vedi tutte le domande frequenti"
   },
   "Legal": {
-    "navBlog": "Blog",
     "navPrivacy": "Informativa sulla privacy",
     "navTerms": "Termini di utilizzo",
     "navAbout": "Informazioni",
@@ -233,7 +232,7 @@
         },
         "operator": {
           "title": "Informazioni sullo sviluppatore",
-          "body": "CoffeeCalc è creato e mantenuto da Alex, uno sviluppatore solista che lavora su questo sito come progetto personale indipendente accanto al lavoro a tempo pieno. L'obiettivo è uno strumento veloce e rispettoso della privacy che chiunque possa usare senza registrazione — nato perché confrontare i prezzi in tazze di caffè rendeva il budget quotidiano più intuitivo. Alex gestisce design, codice, traduzioni e aggiornamenti dei contenuti. CoffeeCalc non è un'azienda con un grande team; è il tentativo di una persona di costruire qualcosa di genuinamente utile sul web aperto."
+          "body": "CoffeeCalc è creato e mantenuto da Yeison Montoya, uno sviluppatore solista che lavora su questo sito come progetto personale indipendente accanto al lavoro a tempo pieno. L'obiettivo è uno strumento veloce e rispettoso della privacy che chiunque possa usare senza registrazione — nato perché confrontare i prezzi in tazze di caffè rendeva il budget quotidiano più intuitivo. Yeison Montoya gestisce design, codice, traduzioni e aggiornamenti dei contenuti. CoffeeCalc non è un'azienda con un grande team; è il tentativo di una persona di costruire qualcosa di genuinamente utile sul web aperto."
         },
         "mission": {
           "title": "La nostra missione",
@@ -249,7 +248,7 @@
         },
         "connect": {
           "title": "Contatti e approfondimenti",
-          "body": "Domande, feedback o dubbi sulla privacy? Visita la nostra pagina Contatti per scrivere ad Alex all'indirizzo contact@howmanycoffees.net. Per guide più approfondite su budget, viaggi e prezzi del caffè nel mondo, sfoglia il blog CoffeeCalc collegato dal footer e dalla home page."
+          "body": "Domande, feedback o dubbi sulla privacy? Visita la nostra pagina Contatti per scrivere ad Yeison Montoya all'indirizzo contact@howmanycoffees.net. Per guide più approfondite su budget, viaggi e prezzi del caffè nel mondo, sfoglia il FAQ de CoffeeCalc collegato dal footer e dalla home page."
         }
       }
     },
@@ -265,7 +264,7 @@
       "sections": {
         "email": {
           "title": "Scrivici direttamente",
-          "body": "Il modo più rapido per contattare CoffeeCalc è l'e-mail a contact@howmanycoffees.net. Usa questo indirizzo per richieste sulla privacy, segnalazioni di bug, correzioni di traduzione, domande di partnership o feedback generale sul calcolatore e sul blog.",
+          "body": "Il modo più rapido per contattare CoffeeCalc è l'e-mail a contact@howmanycoffees.net. Usa questo indirizzo per richieste sulla privacy, segnalazioni di bug, correzioni di traduzione, domande di partnership o feedback generale sul calculator and FAQ.",
           "responseTime": "Puntiamo a rispondere entro 48–72 ore nei giorni lavorativi. I messaggi su privacy urgente hanno priorità. Se non ricevi risposta entro una settimana, controlla lo spam e riprova."
         },
         "whatWeHelpWith": {
@@ -282,13 +281,14 @@
         },
         "feedback": {
           "title": "Feedback e suggerimenti",
-          "body": "Accogliamo idee per rendere CoffeeCalc più chiaro, veloce o utile — nuovi tipi di bevanda, valute, argomenti del blog o miglioramenti di accessibilità. Invia suggerimenti a contact@howmanycoffees.net con il maggior dettaglio possibile. Non possiamo implementare ogni richiesta, ma leggiamo tutti i messaggi e diamo priorità ai cambiamenti che aiutano più visitatori."
+          "body": "Accogliamo idee per rendere CoffeeCalc più chiaro, veloce o utile — nuovi tipi di bevanda, valute, página de preguntas frecuentes o miglioramenti di accessibilità. Invia suggerimenti a contact@howmanycoffees.net con il maggior dettaglio possibile. Non possiamo implementare ogni richiesta, ma leggiamo tutti i messaggi e diamo priorità ai cambiamenti che aiutano più visitatori."
         },
         "responseExpectations": {
           "title": "Cosa aspettarsi",
-          "body": "CoffeeCalc è mantenuto da Alex come progetto personale indipendente. L'e-mail a contact@howmanycoffees.net viene controllata regolarmente; aspettati una risposta entro 48–72 ore nei giorni lavorativi. Aggiorniamo policy, traduzioni e contenuti del calcolatore in base a feedback e requisiti legali. Grazie per aiutarci a mantenere lo strumento affidabile e utile."
+          "body": "CoffeeCalc è mantenuto da Yeison Montoya come progetto personale indipendente. L'e-mail a contact@howmanycoffees.net viene controllata regolarmente; aspettati una risposta entro 48–72 ore nei giorni lavorativi. Aggiorniamo policy, traduzioni e contenuti del calcolatore in base a feedback e requisiti legali. Grazie per aiutarci a mantenere lo strumento affidabile e utile."
         }
       }
-    }
+    },
+    "navFaq": "FAQ"
   }
 }

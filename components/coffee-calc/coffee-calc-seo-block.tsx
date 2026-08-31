@@ -3,8 +3,9 @@ import { getTranslations } from "next-intl/server";
 // Components (local)
 import { CoffeeCalcPriceTable } from "@/components/coffee-calc/coffee-calc-price-table";
 import { Link } from "@/i18n/navigation";
+import { HOME_FAQ_COUNT } from "@/lib/faq/types";
 
-const FAQ_COUNT = 10;
+const FAQ_COUNT = HOME_FAQ_COUNT;
 
 export const CoffeeCalcSeoBlock = async () => {
   const t = await getTranslations("CoffeeCalc");
@@ -66,11 +67,11 @@ export const CoffeeCalcSeoBlock = async () => {
         ))}
       </section>
 
-      <section className="coffee-calc-seo-section coffee-calc-seo-blog-cta">
-        <h3>{t("blogCtaTitle")}</h3>
-        <p>{t("blogCtaText")}</p>
-        <Link href="/blog" className="coffee-calc-seo-blog-link">
-          {t("blogCtaLink")} →
+      <section className="coffee-calc-seo-section coffee-calc-seo-faq-cta">
+        <h3>{t("faqCtaTitle")}</h3>
+        <p>{t("faqCtaText")}</p>
+        <Link href="/faq" className="coffee-calc-seo-blog-link">
+          {t("faqCtaLink")} →
         </Link>
       </section>
 
@@ -84,6 +85,9 @@ export const CoffeeCalcSeoBlock = async () => {
             </div>
           ))}
         </dl>
+        <p className="coffee-calc-seo-faq-more">
+          <Link href="/faq">{t("faqCtaLink")} →</Link>
+        </p>
       </div>
     </article>
   );

@@ -60,16 +60,12 @@ export const ConsentThirdParties = ({
   return (
     <>
       {children}
-      {consent === "accepted" ? (
-        <>
-          <GoogleTagManager gtmId={GTM_ID} />
-          <Script
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
-        </>
-      ) : null}
+      <Script
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+        crossOrigin="anonymous"
+        strategy="afterInteractive"
+      />
+      {consent === "accepted" ? <GoogleTagManager gtmId={GTM_ID} /> : null}
       {showBanner ? (
         <div
           role="dialog"

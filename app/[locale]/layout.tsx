@@ -8,7 +8,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 // Libraries
 import { routing } from "@/i18n/routing";
-import { BASE_URL } from "@/lib/config";
+import { ADSENSE_CLIENT_ID, BASE_URL } from "@/lib/config";
 import { openGraphLocaleTag } from "@/lib/seo-open-graph-locale";
 // Components
 import { ConsentThirdParties } from "@/components/consent/consent-third-parties";
@@ -110,6 +110,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       capable: true,
       title: "CoffeeCalc",
       statusBarStyle: "black-translucent",
+    },
+    other: {
+      "google-adsense-account": ADSENSE_CLIENT_ID,
     },
   };
 }
