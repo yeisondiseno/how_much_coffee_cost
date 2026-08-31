@@ -1,43 +1,58 @@
 "use client";
 
-import { useEffect } from "react";
-// Next
-import { usePathname } from "next/navigation";
-import { ADSENSE_CLIENT_ID } from "@/lib/config";
+import { useEffect, useRef } from "react";
+import { ADSENSE_CLIENT_ID, SHOW_ADS } from "@/lib/config";
 
-// Types (module-local)
-type CoffeeCalcAd = {
+type CoffeeCalcAdProps = {
   slot: string;
 };
 
 declare global {
-  var adsbygoogle: Record<string, unknown>[];
+  interface Window {
+    adsbygoogle?: Record<string, unknown>[];
+  }
 }
 
+const loadAd = (ins: HTMLElement) => {
+  if (ins.getAttribute("data-adsbygoogle-status")) return;
+
+  (window.adsbygoogle = window.adsbygoogle || []).push({});
+};
+
 // million-ignore
-export const CoffeeCalcAd = ({ slot }: CoffeeCalcAd) => {
-  // Hooks
-  const pathname = usePathname();
+export const CoffeeCalcAd = ({ slot }: CoffeeCalcAdProps) => {
+  const insRef = useRef<HTMLModElement>(null);
+  const initializedRef = useRef(false);
 
   useEffect(() => {
+    if (!SHOW_ADS || initializedRef.current) return;
+
+    const ins = insRef.current;
+    if (!ins) return;
+
+    initializedRef.current = true;
+
     try {
-      globalThis.adsbygoogle = globalThis.adsbygoogle || [];
-      globalThis.adsbygoogle.push({});
+      loadAd(ins);
     } catch (error) {
+      initializedRef.current = false;
       console.error("Error cargando el anuncio de AdSense:", error);
     }
-  }, [pathname]);
+  }, [slot]);
+
+  if (!SHOW_ADS) return null;
 
   return (
     <div className="coffee-calc-ad">
       <div className="coffee-calc-ad-box">
         <ins
+          ref={insRef}
           className="adsbygoogle"
           style={{ display: "inline-block", width: "300px", height: "250px" }}
           data-ad-client={ADSENSE_CLIENT_ID}
           data-ad-slot={slot}
           suppressHydrationWarning
-        ></ins>
+        />
       </div>
     </div>
   );

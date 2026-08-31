@@ -1,0 +1,163 @@
+{
+  "Consent": {
+    "privacyLink": "Read our Privacy Policy"
+  },
+  "Legal": {
+    "navPrivacy": "Privacy Policy",
+    "navTerms": "Terms of Use",
+    "navAbout": "About",
+    "navContact": "Contact",
+    "navAria": "Legal pages",
+    "backHome": "Back to calculator",
+    "Privacy": {
+      "metadataTitle": "Privacy Policy",
+      "metadataDescription": "How CoffeeCalc collects and uses data, including cookies, Google AdSense advertising, and Google Tag Manager analytics. Learn about your choices.",
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: June 17, 2026",
+      "intro": "CoffeeCalc (howmanycoffees.net) respects your privacy. This policy explains what information we process when you use our free coffee cost calculator, how third-party services such as Google AdSense and Google Tag Manager work on the site, and what choices you have regarding cookies and advertising.",
+      "sections": {
+        "dataWeCollect": {
+          "title": "Information we collect",
+          "body": "CoffeeCalc does not require an account and we do not ask you to submit personal details to use the calculator. When you visit the site, basic technical data may be processed automatically by our hosting provider and by third-party services you choose to enable—such as your IP address, browser type, device type, approximate location derived from IP, pages viewed, and referral source. If you accept optional cookies, Google Tag Manager and Google AdSense may set or read cookies and similar technologies to measure traffic and show ads."
+        },
+        "cookies": {
+          "title": "Cookies and similar technologies",
+          "body": "We use strictly necessary storage to remember your cookie consent choice in your browser (localStorage). Optional cookies are only activated if you click \"Accept all\" on our consent banner. Optional categories include analytics cookies (to understand how visitors use CoffeeCalc) and advertising cookies (to deliver and measure ads). If you click \"Reject optional\", optional tracking and advertising tags remain disabled."
+        },
+        "adsense": {
+          "title": "Google AdSense",
+          "body": "CoffeeCalc may display ads served by Google AdSense. Google and its partners may use cookies and other identifiers to show ads based on your visits to this site and other sites on the Internet. Ad personalization depends on your consent and applicable law. You can learn more about how Google uses data at policies.google.com/technologies/ads. You may also manage ad personalization in your Google account settings and through industry opt-out tools where available."
+        },
+        "analytics": {
+          "title": "Google Tag Manager and analytics",
+          "body": "We use Google Tag Manager (GTM) to manage analytics and advertising tags in a controlled way. GTM loads only after you accept optional cookies. Analytics helps us understand aggregate usage—such as which pages are visited and general performance—so we can improve CoffeeCalc. Analytics data is not used to identify you personally."
+        },
+        "consent": {
+          "title": "Your consent choices",
+          "body": "We implement Google Consent Mode: advertising and analytics storage default to denied until you accept optional cookies. You can accept or reject optional cookies at any time via the banner shown on your first visit. To change your choice later, clear site data or localStorage for howmanycoffees.net in your browser settings; the banner will appear again on your next visit."
+        },
+        "retention": {
+          "title": "Data retention",
+          "body": "Your consent preference is stored locally in your browser until you clear it. Log and analytics data retained by Google or our hosting provider are kept according to each provider's own retention schedules. We do not maintain a user account database for CoffeeCalc."
+        },
+        "children": {
+          "title": "Children's privacy",
+          "body": "CoffeeCalc is a general-audience utility site and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal data through optional third-party services on this site, please contact us so we can review the situation."
+        },
+        "changes": {
+          "title": "Changes to this policy",
+          "body": "We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or third-party services. When we do, we will revise the \"Last updated\" date at the top of this page. Continued use of CoffeeCalc after changes means you accept the updated policy."
+        },
+        "inquiries": {
+          "title": "Privacy inquiries",
+          "body": "If you have questions about this Privacy Policy or how CoffeeCalc handles data, please visit our Contact page for guidance on privacy-related topics and available resources."
+        }
+      }
+    },
+    "Terms": {
+      "metadataTitle": "Terms of Use",
+      "metadataDescription": "Terms governing your use of CoffeeCalc, the free coffee cost calculator at howmanycoffees.net. Read disclaimers, acceptable use, and limitations.",
+      "title": "Terms of Use",
+      "lastUpdated": "Last updated: June 17, 2026",
+      "intro": "These Terms of Use govern your access to CoffeeCalc at howmanycoffees.net. By using the site, you agree to these terms. If you do not agree, please do not use the service.",
+      "sections": {
+        "acceptance": {
+          "title": "Acceptance of terms",
+          "body": "By accessing or using CoffeeCalc, you confirm that you are at least 13 years old and that you accept these Terms of Use and our Privacy Policy. We may update these terms occasionally; the date at the top of this page indicates the latest version."
+        },
+        "service": {
+          "title": "Description of the service",
+          "body": "CoffeeCalc is a free online tool that converts monetary amounts into an approximate number of coffee cups based on average drink prices and exchange rates. The service is provided for informational and entertainment purposes. We may change, suspend, or discontinue features at any time without notice."
+        },
+        "priceDisclaimer": {
+          "title": "Price and currency disclaimer",
+          "body": "Coffee prices shown in CoffeeCalc are approximate averages and exchange rates are estimates. Real café prices vary by city, venue, season, and currency fluctuations. Results should be treated as a quick reference, not financial, tax, or purchasing advice. Always verify prices locally before making decisions."
+        },
+        "intellectualProperty": {
+          "title": "Intellectual property",
+          "body": "CoffeeCalc's design, branding, text, and original code are protected by applicable intellectual property laws. You may share links to the site and use the calculator for personal, non-commercial purposes. You may not scrape, copy, or republish substantial portions of the site, reverse engineer its code, or use our brand to imply endorsement without permission."
+        },
+        "prohibitedUse": {
+          "title": "Prohibited use",
+          "body": "You agree not to misuse CoffeeCalc. Prohibited behavior includes attempting to disrupt the site, introducing malware, generating fraudulent ad impressions or clicks, using automated traffic to manipulate analytics or advertising, or using the service in violation of applicable law."
+        },
+        "disclaimers": {
+          "title": "Disclaimers",
+          "body": "CoffeeCalc is provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied, including accuracy, availability, or fitness for a particular purpose. We do not guarantee uninterrupted or error-free operation."
+        },
+        "liability": {
+          "title": "Limitation of liability",
+          "body": "To the fullest extent permitted by law, the operators of CoffeeCalc shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the site or reliance on its results, including lost profits or data."
+        },
+        "changes": {
+          "title": "Changes to these terms",
+          "body": "We may revise these Terms of Use when we add features, change monetization, or update legal requirements. Material changes will be reflected by updating the date on this page. Your continued use after changes constitutes acceptance."
+        },
+        "governing": {
+          "title": "General provisions",
+          "body": "If any provision of these terms is found unenforceable, the remaining provisions remain in effect. These terms, together with the Privacy Policy, constitute the entire agreement between you and CoffeeCalc regarding use of the site."
+        }
+      }
+    },
+    "About": {
+      "metadataTitle": "About CoffeeCalc",
+      "metadataDescription": "Learn about CoffeeCalc — the free coffee cost calculator that turns any price into cups of coffee. Our mission, how it works, and price accuracy notes.",
+      "title": "About CoffeeCalc",
+      "lastUpdated": "Last updated: June 17, 2026",
+      "intro": "CoffeeCalc helps you understand money in a way that feels human: cups of coffee. This page explains what the project is, who builds it, and how to interpret the numbers you see.",
+      "sections": {
+        "whatIs": {
+          "title": "What is CoffeeCalc?",
+          "body": "CoffeeCalc is a free, browser-based calculator at howmanycoffees.net. Enter any amount, pick a drink type (espresso, cappuccino, latte, americano, mocha, or cold brew), and choose from 14 currencies. The tool estimates how many cups that money represents using approximate average prices and exchange rates."
+        },
+        "whoWeAre": {
+          "title": "Who operates CoffeeCalc?",
+          "body": "CoffeeCalc is an independent side project built and maintained by a solo developer passionate about simple, useful web tools. It is not affiliated with any coffee chain, financial institution, or government body. We aim to keep the tool fast, free, and accessible in multiple languages."
+        },
+        "mission": {
+          "title": "Our mission",
+          "body": "Everyday expenses are easier to grasp when translated into something familiar. Coffee is a daily ritual for millions of people, making it a relatable unit for budgeting, travel comparisons, and lighthearted perspective. CoffeeCalc exists to make numbers feel tangible—without requiring signup or payment."
+        },
+        "howItWorks": {
+          "title": "How calculations work",
+          "body": "We maintain reference average prices per drink type in USD and apply approximate exchange rates for other supported currencies. The result is rounded to a whole number of cups for readability. The calculator runs entirely in your browser; amounts you enter are not stored on our servers."
+        },
+        "accuracy": {
+          "title": "Accuracy and limitations",
+          "body": "Coffee shop prices vary widely by neighborhood, brand, and country. Exchange rates fluctuate daily. CoffeeCalc provides a quick benchmark—not a quote from your local café. Use it for perspective and rough comparisons, and always check real prices when spending matters."
+        }
+      }
+    },
+    "Contact": {
+      "metadataTitle": "Contact",
+      "metadataDescription": "Contact CoffeeCalc for privacy questions, feedback, and general inquiries about the free coffee cost calculator. No email required—find the right resources here.",
+      "title": "Contact",
+      "lastUpdated": "Last updated: June 17, 2026",
+      "intro": "We're glad you reached out. This page explains how to get help with CoffeeCalc topics such as privacy, how the calculator works, and site feedback. We don't publish a public email address, but the sections below point you to the right information.",
+      "privacyPageLink": "Read the Privacy Policy →",
+      "aboutPageLink": "Visit About CoffeeCalc →",
+      "sections": {
+        "whatWeHelpWith": {
+          "title": "What can we help with?",
+          "body": "Visitors usually contact us about privacy and cookies, how drink prices and exchange rates are estimated, accuracy of results, accessibility or bugs, and ideas to improve the calculator. Choose the section below that best matches your question."
+        },
+        "privacyQuestions": {
+          "title": "Privacy and cookies",
+          "body": "Questions about Google AdSense, Google Tag Manager, cookie consent, or how we handle technical data are covered in our Privacy Policy. It describes what is collected, when optional cookies load, and how to change your consent choice."
+        },
+        "generalInquiries": {
+          "title": "About the project",
+          "body": "If you want to know who runs CoffeeCalc, how calculations work, or how to interpret results, our About page explains the project's mission, methodology, and limitations."
+        },
+        "feedback": {
+          "title": "Feedback and suggestions",
+          "body": "We welcome ideas to make CoffeeCalc clearer, faster, or more useful. We're building privacy-friendly ways to receive feedback without requiring an email address. Check this page for updates when new options become available."
+        },
+        "responseExpectations": {
+          "title": "What to expect",
+          "body": "CoffeeCalc is maintained by a small independent team. We review privacy-related concerns and site quality on an ongoing basis and update policies, translations, and calculator content when needed. Thank you for helping us keep the tool trustworthy and useful."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "Consent": {
+    "privacyLink": "Leia nossa Política de Privacidade"
+  },
+  "Legal": {
+    "navPrivacy": "Política de Privacidade",
+    "navTerms": "Termos de Uso",
+    "navAbout": "Sobre",
+    "navContact": "Contato",
+    "navAria": "Páginas legais",
+    "backHome": "Voltar à calculadora",
+    "Privacy": {
+      "metadataTitle": "Política de Privacidade",
+      "metadataDescription": "Como o CoffeeCalc coleta e usa dados, incluindo cookies, publicidade do Google AdSense e análises do Google Tag Manager. Conheça suas opções.",
+      "title": "Política de Privacidade",
+      "lastUpdated": "Última atualização: 17 de junho de 2026",
+      "intro": "O CoffeeCalc (howmanycoffees.net) respeita sua privacidade. Esta política explica quais informações processamos quando você usa nossa calculadora gratuita de custo do café, como serviços de terceiros como Google AdSense e Google Tag Manager funcionam no site e quais opções você tem em relação a cookies e publicidade.",
+      "sections": {
+        "dataWeCollect": {
+          "title": "Informações que coletamos",
+          "body": "O CoffeeCalc não exige uma conta e não pedimos que você envie dados pessoais para usar a calculadora. Quando você visita o site, dados técnicos básicos podem ser processados automaticamente pelo nosso provedor de hospedagem e por serviços de terceiros que você optar por habilitar — como seu endereço IP, tipo de navegador, tipo de dispositivo, localização aproximada derivada do IP, páginas visualizadas e origem de referência. Se você aceitar cookies opcionais, o Google Tag Manager e o Google AdSense podem definir ou ler cookies e tecnologias similares para medir tráfego e exibir anúncios."
+        },
+        "cookies": {
+          "title": "Cookies e tecnologias similares",
+          "body": "Usamos armazenamento estritamente necessário para lembrar sua escolha de consentimento de cookies no navegador (localStorage). Cookies opcionais só são ativados se você clicar em \"Aceitar todos\" no nosso banner de consentimento. As categorias opcionais incluem cookies analíticos (para entender como os visitantes usam o CoffeeCalc) e cookies de publicidade (para veicular e medir anúncios). Se você clicar em \"Rejeitar opcionais\", as tags opcionais de rastreamento e publicidade permanecem desativadas."
+        },
+        "adsense": {
+          "title": "Google AdSense",
+          "body": "O CoffeeCalc pode exibir anúncios veiculados pelo Google AdSense. O Google e seus parceiros podem usar cookies e outros identificadores para exibir anúncios com base em suas visitas a este site e a outros sites na Internet. A personalização de anúncios depende do seu consentimento e da legislação aplicável. Saiba mais sobre como o Google usa dados em policies.google.com/technologies/ads. Você também pode gerenciar a personalização de anúncios nas configurações da sua Conta Google e por meio de ferramentas de opt-out do setor, quando disponíveis."
+        },
+        "analytics": {
+          "title": "Google Tag Manager e análises",
+          "body": "Usamos o Google Tag Manager (GTM) para gerenciar tags de análise e publicidade de forma controlada. O GTM só é carregado depois que você aceita cookies opcionais. As análises nos ajudam a entender o uso agregado — como quais páginas são visitadas e o desempenho geral — para melhorar o CoffeeCalc. Os dados analíticos não são usados para identificá-lo pessoalmente."
+        },
+        "consent": {
+          "title": "Suas opções de consentimento",
+          "body": "Implementamos o Google Consent Mode: o armazenamento de publicidade e análises fica negado por padrão até que você aceite cookies opcionais. Você pode aceitar ou rejeitar cookies opcionais a qualquer momento pelo banner exibido na sua primeira visita. Para alterar sua escolha depois, limpe os dados do site ou o localStorage de howmanycoffees.net nas configurações do navegador; o banner aparecerá novamente na próxima visita."
+        },
+        "retention": {
+          "title": "Retenção de dados",
+          "body": "Sua preferência de consentimento fica armazenada localmente no navegador até que você a limpe. Dados de log e análises retidos pelo Google ou pelo nosso provedor de hospedagem são mantidos conforme os próprios cronogramas de retenção de cada provedor. Não mantemos um banco de dados de contas de usuário para o CoffeeCalc."
+        },
+        "children": {
+          "title": "Privacidade de crianças",
+          "body": "O CoffeeCalc é um site utilitário para público geral e não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças. Se você acredita que uma criança forneceu dados pessoais por meio de serviços opcionais de terceiros neste site, entre em contato conosco para que possamos analisar a situação."
+        },
+        "changes": {
+          "title": "Alterações nesta política",
+          "body": "Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas, requisitos legais ou serviços de terceiros. Quando o fizermos, revisaremos a data \"Última atualização\" no topo desta página. O uso contínuo do CoffeeCalc após as alterações significa que você aceita a política atualizada."
+        },
+        "inquiries": {
+          "title": "Consultas sobre privacidade",
+          "body": "Se você tiver dúvidas sobre esta Política de Privacidade ou sobre como o CoffeeCalc trata dados, visite nossa página Contato para orientações sobre temas relacionados à privacidade e recursos disponíveis."
+        }
+      }
+    },
+    "Terms": {
+      "metadataTitle": "Termos de Uso",
+      "metadataDescription": "Termos que regem o uso do CoffeeCalc, a calculadora gratuita de custo do café em howmanycoffees.net. Leia avisos, uso aceitável e limitações.",
+      "title": "Termos de Uso",
+      "lastUpdated": "Última atualização: 17 de junho de 2026",
+      "intro": "Estes Termos de Uso regem seu acesso ao CoffeeCalc em howmanycoffees.net. Ao usar o site, você concorda com estes termos. Se não concordar, por favor não use o serviço.",
+      "sections": {
+        "acceptance": {
+          "title": "Aceitação dos termos",
+          "body": "Ao acessar ou usar o CoffeeCalc, você confirma que tem pelo menos 13 anos e que aceita estes Termos de Uso e nossa Política de Privacidade. Podemos atualizar estes termos ocasionalmente; a data no topo desta página indica a versão mais recente."
+        },
+        "service": {
+          "title": "Descrição do serviço",
+          "body": "O CoffeeCalc é uma ferramenta online gratuita que converte valores monetários em um número aproximado de xícaras de café com base em preços médios de bebidas e taxas de câmbio. O serviço é fornecido para fins informativos e de entretenimento. Podemos alterar, suspender ou descontinuar funcionalidades a qualquer momento, sem aviso prévio."
+        },
+        "priceDisclaimer": {
+          "title": "Aviso sobre preços e moedas",
+          "body": "Os preços de café exibidos no CoffeeCalc são médias aproximadas e as taxas de câmbio são estimativas. Os preços reais em cafeterias variam conforme a cidade, o estabelecimento, a temporada e as flutuações cambiais. Os resultados devem ser tratados como uma referência rápida, não como aconselhamento financeiro, fiscal ou de compra. Sempre verifique os preços localmente antes de tomar decisões."
+        },
+        "intellectualProperty": {
+          "title": "Propriedade intelectual",
+          "body": "O design, a marca, os textos e o código original do CoffeeCalc são protegidos pelas leis de propriedade intelectual aplicáveis. Você pode compartilhar links para o site e usar a calculadora para fins pessoais e não comerciais. Você não pode fazer scraping, copiar ou republicar partes substanciais do site, fazer engenharia reversa do código ou usar nossa marca para sugerir endosso sem permissão."
+        },
+        "prohibitedUse": {
+          "title": "Uso proibido",
+          "body": "Você concorda em não fazer uso indevido do CoffeeCalc. Comportamentos proibidos incluem tentar interromper o site, introduzir malware, gerar impressões ou cliques fraudulentos em anúncios, usar tráfego automatizado para manipular análises ou publicidade, ou usar o serviço em violação da lei aplicável."
+        },
+        "disclaimers": {
+          "title": "Isenções de responsabilidade",
+          "body": "O CoffeeCalc é fornecido \"no estado em que se encontra\" e \"conforme disponível\", sem garantias de qualquer tipo, expressas ou implícitas, incluindo precisão, disponibilidade ou adequação a um propósito específico. Não garantimos operação ininterrupta ou livre de erros."
+        },
+        "liability": {
+          "title": "Limitação de responsabilidade",
+          "body": "Na máxima extensão permitida pela lei, os operadores do CoffeeCalc não serão responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos decorrentes do uso do site ou da confiança em seus resultados, incluindo lucros cessantes ou perda de dados."
+        },
+        "changes": {
+          "title": "Alterações nestes termos",
+          "body": "Podemos revisar estes Termos de Uso quando adicionarmos funcionalidades, alterarmos a monetização ou atualizarmos requisitos legais. Alterações materiais serão refletidas pela atualização da data nesta página. Seu uso contínuo após as alterações constitui aceitação."
+        },
+        "governing": {
+          "title": "Disposições gerais",
+          "body": "Se qualquer disposição destes termos for considerada inexequível, as demais disposições permanecem em vigor. Estes termos, juntamente com a Política de Privacidade, constituem o acordo integral entre você e o CoffeeCalc quanto ao uso do site."
+        }
+      }
+    },
+    "About": {
+      "metadataTitle": "Sobre o CoffeeCalc",
+      "metadataDescription": "Conheça o CoffeeCalc — a calculadora gratuita de custo do café que transforma qualquer preço em xícaras de café. Nossa missão, como funciona e notas sobre a precisão dos preços.",
+      "title": "Sobre o CoffeeCalc",
+      "lastUpdated": "Última atualização: 17 de junho de 2026",
+      "intro": "O CoffeeCalc ajuda você a entender dinheiro de um jeito que faz sentido: em xícaras de café. Esta página explica o que é o projeto, quem o desenvolve e como interpretar os números que você vê.",
+      "sections": {
+        "whatIs": {
+          "title": "O que é o CoffeeCalc?",
+          "body": "O CoffeeCalc é uma calculadora gratuita baseada no navegador, em howmanycoffees.net. Digite qualquer valor, escolha um tipo de bebida (espresso, cappuccino, latte, americano, mocha ou cold brew) e selecione entre 14 moedas. A ferramenta estima quantas xícaras esse valor representa usando preços médios aproximados e taxas de câmbio."
+        },
+        "whoWeAre": {
+          "title": "Quem opera o CoffeeCalc?",
+          "body": "O CoffeeCalc é um projeto independente criado e mantido por um desenvolvedor solo apaixonado por ferramentas web simples e úteis. Não é afiliado a nenhuma rede de cafeterias, instituição financeira ou órgão governamental. Nosso objetivo é manter a ferramenta rápida, gratuita e acessível em vários idiomas."
+        },
+        "mission": {
+          "title": "Nossa missão",
+          "body": "Gastos do dia a dia ficam mais fáceis de entender quando traduzidos em algo familiar. O café é um ritual diário para milhões de pessoas, o que o torna uma unidade relacionável para orçamento, comparações de viagem e uma perspectiva leve. O CoffeeCalc existe para tornar os números tangíveis — sem cadastro ou pagamento."
+        },
+        "howItWorks": {
+          "title": "Como funcionam os cálculos",
+          "body": "Mantemos preços médios de referência por tipo de bebida em USD e aplicamos taxas de câmbio aproximadas para as outras moedas suportadas. O resultado é arredondado para um número inteiro de xícaras para facilitar a leitura. A calculadora roda inteiramente no seu navegador; os valores que você digita não são armazenados em nossos servidores."
+        },
+        "accuracy": {
+          "title": "Precisão e limitações",
+          "body": "Os preços em cafeterias variam muito conforme o bairro, a marca e o país. As taxas de câmbio flutuam diariamente. O CoffeeCalc oferece uma referência rápida — não uma cotação da sua cafeteria local. Use-o para perspectiva e comparações aproximadas, e sempre confira os preços reais quando o gasto importa."
+        }
+      }
+    },
+    "Contact": {
+      "metadataTitle": "Contato",
+      "metadataDescription": "Entre em contato com o CoffeeCalc para dúvidas sobre privacidade, feedback e consultas gerais sobre a calculadora gratuita de custo do café. Não é necessário e-mail — encontre os recursos certos aqui.",
+      "title": "Contato",
+      "lastUpdated": "Última atualização: 17 de junho de 2026",
+      "intro": "Ficamos felizes que você entrou em contato. Esta página explica como obter ajuda com assuntos do CoffeeCalc, como privacidade, funcionamento da calculadora e feedback sobre o site. Não publicamos um endereço de e-mail público, mas as seções abaixo direcionam você às informações certas.",
+      "privacyPageLink": "Leia a Política de Privacidade →",
+      "aboutPageLink": "Visite Sobre o CoffeeCalc →",
+      "sections": {
+        "whatWeHelpWith": {
+          "title": "Com o que podemos ajudar?",
+          "body": "Visitantes geralmente nos contactam sobre privacidade e cookies, como os preços das bebidas e taxas de câmbio são estimados, precisão dos resultados, acessibilidade ou bugs, e ideias para melhorar a calculadora. Escolha a seção abaixo que melhor corresponde à sua pergunta."
+        },
+        "privacyQuestions": {
+          "title": "Privacidade e cookies",
+          "body": "Perguntas sobre Google AdSense, Google Tag Manager, consentimento de cookies ou como tratamos dados técnicos estão cobertas em nossa Política de Privacidade. Ela descreve o que é coletado, quando cookies opcionais são carregados e como alterar sua escolha de consentimento."
+        },
+        "generalInquiries": {
+          "title": "Sobre o projeto",
+          "body": "Se você quer saber quem opera o CoffeeCalc, como os cálculos funcionam ou como interpretar os resultados, nossa página Sobre explica a missão do projeto, a metodologia e as limitações."
+        },
+        "feedback": {
+          "title": "Feedback e sugestões",
+          "body": "Acolhemos ideias para tornar o CoffeeCalc mais claro, rápido ou útil. Estamos desenvolvendo formas respeitosas à privacidade de receber feedback sem exigir um endereço de e-mail. Consulte esta página para atualizações quando novas opções estiverem disponíveis."
+        },
+        "responseExpectations": {
+          "title": "O que esperar",
+          "body": "O CoffeeCalc é mantido por uma pequena equipe independente. Revisamos preocupações relacionadas à privacidade e qualidade do site de forma contínua e atualizamos políticas, traduções e conteúdo da calculadora quando necessário. Obrigado por nos ajudar a manter a ferramenta confiável e útil."
+        }
+      }
+    }
+  }
+}

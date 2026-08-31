@@ -1,14 +1,20 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Figtree, Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+// Libraries
 import { routing } from "@/i18n/routing";
-import { ConsentThirdParties } from "@/components/consent/consent-third-parties";
 import { BASE_URL } from "@/lib/config";
 import { openGraphLocaleTag } from "@/lib/seo-open-graph-locale";
+// Components
+import { ConsentThirdParties } from "@/components/consent/consent-third-parties";
+// Utils
 import { cn } from "@/lib/utils";
+// Styles
 import "../globals.css";
 
 const consentModeDefaultScript = `
@@ -64,7 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     description: t("metadataDescription"),
     verification: {
-      google: "QITtAvbig7mPV9WpAzkPTSM8xsaa5YjXWOYZV-tMnpU",
+      google: "lR2SJ2UVLxwIqtX8Yp4gNAcLmsZZSYGOE9Xw5M62els",
     },
     alternates: {
       canonical: `${BASE_URL}/${locale}`,
@@ -147,6 +153,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider>
           <ConsentThirdParties>{children}</ConsentThirdParties>
         </NextIntlClientProvider>
+
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
