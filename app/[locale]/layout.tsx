@@ -70,9 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     description: t("metadataDescription"),
     verification: {
-      google: [
-        "QITtAvbig7mPV9WpAzkPTSM8xsaa5YjXWOYZV-tMnpU",
-      ],
+      google: "QITtAvbig7mPV9WpAzkPTSM8xsaa5YjXWOYZV-tMnpU",
     },
     alternates: {
       canonical: `${BASE_URL}/${locale}`,
